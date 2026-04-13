@@ -1,0 +1,25 @@
+dataset:
+  config_id: dataset_000336
+  adapter: dataset_000336
+  dandiset_id: "000336"
+  version: draft
+
+storage:
+  output_root: data/dandi
+  cache_root: data/dandi/cache
+
+selection:
+  path_filters: []
+  subject_filters: []
+  session_filters: []
+  asset_limit: 6
+
+execution:
+  metadata_only: true
+  streaming_allowed: true
+
+outputs:
+  manifest_json: null
+  manifest_csv: null
+  triage_markdown: null
+  probe_json: null
