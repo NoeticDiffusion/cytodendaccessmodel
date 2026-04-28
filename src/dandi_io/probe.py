@@ -7,10 +7,36 @@ from dandi_io.contracts import AssetRecord, ProbeSummary
 
 
 def probe_assets(records: Sequence[AssetRecord], *, raw_root: Path) -> list[ProbeSummary]:
+    """Probe a collection of local DANDI assets.
+
+    Args:
+        records: Asset records whose local files should be inspected.
+        raw_root: Root directory used to resolve each record's local path.
+
+    Returns:
+        Probe summaries in the same order as the input records.
+    """
     return [probe_local_asset(record, raw_root=raw_root) for record in records]
 
 
 def probe_local_asset(record: AssetRecord, *, raw_root: Path) -> ProbeSummary:
+    """Probe one local NWB asset for lightweight structural metadata.
+
+    The probe first checks file existence and basic HDF5 groups. If `pynwb` is
+    available, it also attempts to read standard NWB containers such as
+    acquisitions, processing modules, intervals, imaging planes, devices, and
+    lab metadata. Probe failures are captured in the returned summary rather
+    than raised, which keeps reviewer inventory scripts robust to partial
+    downloads or heterogeneous files.
+
+    Args:
+        record: Asset record to inspect.
+        raw_root: Root directory used to resolve the local asset path.
+
+    Returns:
+        Probe summary with existence status, file size, inferred metadata, and
+        any non-fatal probe error.
+    """
     local_path = record.local_path(raw_root)
     if not local_path.exists():
         return ProbeSummary(

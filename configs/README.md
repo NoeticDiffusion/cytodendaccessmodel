@@ -48,9 +48,17 @@ The default report now also:
 
 Dataset-selection YAML files for the open-data workflow live under `configs/dandi/`.
 
-Primary current configs:
+Primary current-manuscript configs:
 
+- `configs/dandi/dataset_000336.yaml`
 - `configs/dandi/dataset_000718.yaml`
+- `configs/dandi/dataset_001710.yaml`
+- `configs/dandi/dataset_001710_replication_bundle_01.yaml`
+- `configs/dandi/dataset_001710_group_bundle_01.yaml`
+- `configs/dandi/dataset_000718_subject_complete_bundle_01.yaml`
+
+Legacy or supplementary config:
+
 - `configs/dandi/dataset_000871.yaml`
 
 Use them with the generic DANDI CLI:
@@ -59,4 +67,6 @@ Use them with the generic DANDI CLI:
 - `python -m dandi_io.cli download --config configs/dandi/dataset_000718.yaml`
 - `python -m dandi_io.cli probe --config configs/dandi/dataset_000718.yaml`
 
-The same command pattern applies to `dataset_000871.yaml` and other dataset YAML files in the same directory.
+The same command pattern applies to the other current-manuscript dataset YAML
+files in the same directory. `dataset_000871.yaml` is retained for legacy
+cross-plane analyses and is not required for the current manuscript claims.

@@ -405,10 +405,9 @@ def main() -> None:
     print(f"\n  Result: {'ALL PASS' if all_pass else 'SOME FAIL'}")
 
     # --- JSON output ---
-    output_path = os.path.join(
-        os.path.dirname(__file__), "..", "Project cytodend_accessmodel",
-        "Diary", "013_canonical_values.json"
-    )
+    output_dir = os.path.join(os.path.dirname(__file__), "..", "data", "reviewer")
+    os.makedirs(output_dir, exist_ok=True)
+    output_path = os.path.join(output_dir, "013_canonical_values.json")
     canonical = {
         "canonical_params": {
             "structural_lr": CANONICAL_PARAMS.structural_lr,
@@ -425,7 +424,7 @@ def main() -> None:
     }
     with open(output_path, "w", encoding="utf-8") as f:
         json.dump(canonical, f, indent=2)
-    print(f"\n  Canonical values saved to: 013_canonical_values.json")
+    print(f"\n  Canonical values saved to: {os.path.relpath(output_path, os.path.dirname(os.path.dirname(__file__)))}")
 
     if all_pass:
         print(

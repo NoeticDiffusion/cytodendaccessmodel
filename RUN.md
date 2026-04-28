@@ -1,14 +1,35 @@
-# RUN — Reproducibility Guide
+# RUN - Reviewer Reproducibility Guide
 
 This file describes how to set up the data and run every experiment in the
 repository from a clean checkout.  All commands are run from the **repository
 root** unless stated otherwise.
 
+Use `CLAIMS_TO_EXPERIMENTS.md` as the claim map while running this guide. Use
+`OUTPUTS.md` when you need to know where a script writes reviewer-facing
+artifacts.
+
+Reviewer levels:
+
+- **Level 0 - sanity checks:** install, import/test checks, seed validation, and
+  DANDI inventories when data are present.
+- **Level 1 - no-data simulator reproduction:** all executable model claims,
+  ablations, paper summary, and executable figures.
+- **Level 2 - manuscript open-data reproduction:** DANDI `000718`, `000336`,
+  and `001710` in the order used by the manuscript claims.
+- **Level 3 - full audit:** robustness/null checks, simulator-DANDI bridge
+  scripts, figure regeneration, and integrity checks.
+
+Python `>=3.10` is required. The simulator and DANDI analyses are CPU-sufficient;
+CUDA is not required. The DANDI `001710` bundle is the main disk/time cost
+(`~139` NWB files; plan for several GB and longer wall time than the simulator
+suite).
+
 ---
 
-## 1. Install
+## Level 0 - Install and Sanity Checks
 
 ```bash
+python --version
 python -m pip install --upgrade pip
 python -m pip install -e ".[dev,viz]"
 ```
@@ -16,12 +37,19 @@ python -m pip install -e ".[dev,viz]"
 Core dependencies (`numpy`, `pyyaml`, `torch`, `dandi`, `pynwb`) are declared
 in `pyproject.toml` and installed automatically.
 
+Run the lightweight local checks:
+
+```bash
+pytest
+python experiments/exp_seed_validation.py
+```
+
 ---
 
-## 2. Download DANDI data
+## Level 2 Setup - Download DANDI Data
 
-The experiments require three DANDI datasets.  The expected layout after
-download is:
+The manuscript open-data claims require three DANDI datasets: `000718`,
+`000336`, and `001710`. The expected layout after download is:
 
 ```
 data/dandi/raw/
@@ -37,7 +65,7 @@ data/dandi/raw/
     sub-SparseKO-1/ … sub-SparseKO-7/ (6 sessions each, SparseKO-4 has 5)
 ```
 
-### 2a. Using the `dandi` CLI (recommended)
+### Using the `dandi` CLI (recommended)
 
 Install the CLI if needed: `pip install dandi`
 
@@ -58,7 +86,7 @@ dandi download --output-dir data/dandi/raw "DANDI:001710"
 > files at `data/dandi/raw/<id>/sub-<subject>/`.  This is the path the
 > analysis modules expect.
 
-### 2b. File inventory per dataset
+### File inventory per dataset
 
 **000336** (`data/dandi/raw/000336/`)
 
@@ -101,7 +129,16 @@ Three groups × subjects × 6 sessions (day0–day5), pattern
 
 ---
 
-## 3. Verify the download
+### Legacy `000871` note
+
+The repository also contains `configs/dandi/dataset_000871.yaml` and
+`experiments/dandi_000871_*.py`. These are legacy/supplementary cross-plane
+scripts and are not required for the current manuscript claims. The current
+article uses `000336`, `000718`, and `001710`.
+
+---
+
+## Level 0 - Verify the Download
 
 Quick sanity checks — these scripts read metadata only and require no heavy
 computation:
@@ -114,10 +151,14 @@ python experiments/dandi_001710_01_inventory.py
 
 ---
 
-## 4. Run the simulator experiments
+## Level 1 - Run the Simulator Experiments
 
 These experiments use only the in-repo scaffold (`src/cytodend_accessmodel`)
-and need no data download.
+and need no data download. Most scripts print reviewer-facing terminal tables.
+`exp013_paper_summary.py` also writes `data/reviewer/013_canonical_values.json`.
+`gen_figures_executable.py` writes SVG figures under `.article/Executable
+Structural Accessibility - A Biologically Constrained Cytoskeletal-Dendritic
+Model of Memory Linking/figures/`.
 
 ```bash
 # Core model properties
@@ -152,11 +193,12 @@ python experiments/exp_seed_validation.py
 
 ---
 
-## 5. Run the DANDI open-data experiments
+## Level 2 - Run the DANDI Open-Data Experiments
 
-Run scripts in numbered order within each dataset series.  Dataset 000336
-and 000718 must be downloaded first (step 2); 001710 is required for the
-001710 series.
+Run scripts in numbered order within each dataset series. Dataset `000336`
+and `000718` must be downloaded first; `001710` is required for the `001710`
+series. The `000718` numbering intentionally has no `07` or `09` script in the
+current retained pipeline.
 
 ### Dandiset 000336
 
@@ -208,7 +250,26 @@ python experiments/dandi_simulator_09_sensitivity.py
 
 ---
 
-## 6. Run the test suite
+## Level 3 - Regenerate Manuscript-Facing Open-Data Figures
+
+After the DANDI triage JSON outputs exist, regenerate the manuscript-facing
+open-data PNGs:
+
+```bash
+python -m dandi_analysis.visualisation.cli
+```
+
+By default this renders the current manuscript figures for `000718` and `000336`
+under `.article/A Cytoskeletal-Dendritic Accessibility Model of Associative Memory/figures/`.
+To also render legacy `000871` cross-plane figures, pass:
+
+```bash
+python -m dandi_analysis.visualisation.cli --include-legacy-000871
+```
+
+---
+
+## Level 3 - Run the Test Suite
 
 ```bash
 pytest
@@ -216,8 +277,27 @@ pytest
 
 ---
 
-## 7. Integrity check
+## Level 3 - Integrity Check
 
 ```bash
 python experiments/integrity_check_article2.py
 ```
+
+This check is a secondary integrity gate for older article/table harmonization.
+Treat failures as a prompt to inspect the reported deltas rather than as a
+replacement for the claim map in `CLAIMS_TO_EXPERIMENTS.md`.
+
+---
+
+## Troubleshooting
+
+- If DANDI downloads resume into the wrong folder, verify that files are under
+  `data/dandi/raw/<dandiset>/sub-...` before running experiments.
+- If a script reports missing NWB files, rerun the matching inventory script and
+  compare against the file inventory above.
+- On Windows, run commands from the repository root and keep paths quoted if
+  calling tools manually from a directory with spaces.
+- If figure regeneration fails, confirm that the prerequisite triage JSON files
+  exist under `data/dandi/triage/...`.
+- If installing `torch` is slow, a CPU-only install is sufficient for the
+  reviewer reproduction path.

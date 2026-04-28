@@ -10,6 +10,13 @@ from dandi_io.datasets import Dataset001710Adapter
 
 
 class GenericDatasetAdapter:
+    """Default adapter for datasets without custom triage logic.
+
+    The generic adapter applies only the filters already encoded in
+    `DandiIngestionConfig`. Dataset-specific adapters can override selection,
+    triage metadata, and markdown rendering while preserving the same protocol.
+    """
+
     adapter_id = "generic"
 
     def select_assets(
@@ -17,6 +24,16 @@ class GenericDatasetAdapter:
         records: Sequence[AssetRecord],
         config: DandiIngestionConfig,
     ) -> list[AssetRecord]:
+        """Select assets after config-level filters have been applied.
+
+        Args:
+            records: Candidate asset records.
+            config: Ingestion config containing the optional asset limit.
+
+        Returns:
+            Selected records. If `asset_limit` is unset, all records are
+            returned.
+        """
         limit = config.selection.asset_limit
         if limit is None:
             return list(records)
@@ -29,6 +46,17 @@ class GenericDatasetAdapter:
         *,
         probes: Sequence[ProbeSummary] | None = None,
     ) -> TriageResult:
+        """Build a generic triage result for selected records.
+
+        Args:
+            records: Selected asset records.
+            config: Ingestion config for the run.
+            probes: Optional probe summaries, used only for count metadata in
+                the generic adapter.
+
+        Returns:
+            Triage summary with generic notes and selected-asset metadata.
+        """
         notes = (
             "Generic adapter used: no dataset-specific ranking policy applied.",
             "Assets were selected only by config filters and optional asset limit.",
@@ -46,6 +74,14 @@ class GenericDatasetAdapter:
         )
 
     def render_triage_markdown(self, triage: TriageResult) -> str:
+        """Render a generic triage report as Markdown.
+
+        Args:
+            triage: Triage result to render.
+
+        Returns:
+            Markdown document listing notes and selected asset paths.
+        """
         lines = [
             f"# Triage Summary: DANDI {triage.dandiset_id}",
             "",
@@ -76,6 +112,17 @@ _ADAPTERS = {
 
 
 def get_dataset_adapter(adapter_id: str):
+    """Return a registered dataset adapter by identifier.
+
+    Args:
+        adapter_id: Adapter key such as `"generic"` or `"dataset_000718"`.
+
+    Returns:
+        Adapter instance implementing the dataset adapter protocol.
+
+    Raises:
+        ValueError: If `adapter_id` is not registered.
+    """
     if adapter_id not in _ADAPTERS:
         raise ValueError(
             f"Unknown dataset adapter `{adapter_id}`. "
@@ -85,4 +132,9 @@ def get_dataset_adapter(adapter_id: str):
 
 
 def known_adapters() -> tuple[str, ...]:
+    """List adapter identifiers available in this installation.
+
+    Returns:
+        Sorted tuple of registered adapter IDs.
+    """
     return tuple(sorted(_ADAPTERS))

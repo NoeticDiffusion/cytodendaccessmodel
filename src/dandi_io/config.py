@@ -16,6 +16,8 @@ from dandi_io.contracts import (
 
 
 DEFAULT_DANDI_CONFIG: dict[str, Any] = {
+    # Base schema for YAML configs. Dataset-specific files override these
+    # blocks before being coerced into DandiIngestionConfig contracts.
     "dataset": {
         "config_id": "base",
         "adapter": "generic",
@@ -46,6 +48,19 @@ DEFAULT_DANDI_CONFIG: dict[str, Any] = {
 
 
 def load_yaml_config(path: str | Path) -> dict[str, Any]:
+    """Load a YAML configuration file as a mapping.
+
+    Args:
+        path: Path to the YAML file.
+
+    Returns:
+        Parsed YAML content. Empty files are treated as an empty mapping.
+
+    Raises:
+        ValueError: If the YAML root is not a mapping.
+        OSError: If the file cannot be opened.
+        yaml.YAMLError: If the file contains invalid YAML.
+    """
     config_path = Path(path)
     with config_path.open("r", encoding="utf-8") as handle:
         data = yaml.safe_load(handle) or {}
@@ -55,6 +70,18 @@ def load_yaml_config(path: str | Path) -> dict[str, Any]:
 
 
 def deep_merge(base: dict[str, Any], override: dict[str, Any]) -> dict[str, Any]:
+    """Recursively merge an override mapping into a base mapping.
+
+    Nested dictionaries are merged recursively. Non-dictionary values replace
+    the corresponding base value.
+
+    Args:
+        base: Default mapping.
+        override: Mapping with user-provided values.
+
+    Returns:
+        A new merged dictionary. The input mappings are not modified.
+    """
     merged = dict(base)
     for key, value in override.items():
         if isinstance(value, dict) and isinstance(merged.get(key), dict):
@@ -65,6 +92,22 @@ def deep_merge(base: dict[str, Any], override: dict[str, Any]) -> dict[str, Any]
 
 
 def resolve_dandi_config(path: str | Path) -> tuple[DandiIngestionConfig, Path]:
+    """Resolve a DANDI YAML config into typed ingestion contracts.
+
+    The resolver loads the user YAML file, merges it with
+    `DEFAULT_DANDI_CONFIG`, and coerces the result into a
+    `DandiIngestionConfig`.
+
+    Args:
+        path: Path to a dataset YAML file.
+
+    Returns:
+        A tuple containing the typed config and the normalized config path.
+
+    Raises:
+        ValueError: If required fields are missing or malformed.
+        OSError: If the YAML file cannot be opened.
+    """
     config_path = Path(path)
     loaded = load_yaml_config(config_path)
     merged = deep_merge(DEFAULT_DANDI_CONFIG, loaded)
@@ -171,6 +214,15 @@ def _coerce_config(data: dict[str, Any]) -> DandiIngestionConfig:
 
 
 def ensure_storage_roots(config: DandiIngestionConfig) -> None:
+    """Create all directories needed by a DANDI ingestion run.
+
+    Args:
+        config: Typed ingestion config whose storage and output paths should be
+            materialized.
+
+    Raises:
+        OSError: If any directory cannot be created.
+    """
     config.storage.cache_root.mkdir(parents=True, exist_ok=True)
     config.storage.raw_root.mkdir(parents=True, exist_ok=True)
     config.storage.manifest_root.mkdir(parents=True, exist_ok=True)
