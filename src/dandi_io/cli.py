@@ -15,6 +15,18 @@ from dandi_io.registry import get_dataset_adapter
 
 
 def main(argv: list[str] | None = None) -> int:
+    """Run the DANDI ingestion command-line interface.
+
+    Args:
+        argv: Optional argument vector. When omitted, arguments are read from
+            `sys.argv`.
+
+    Returns:
+        Process-style exit code. Successful subcommands return `0`.
+
+    Raises:
+        ValueError: If an unsupported subcommand is somehow selected.
+    """
     parser = build_parser()
     args = parser.parse_args(argv)
 
@@ -72,6 +84,12 @@ def main(argv: list[str] | None = None) -> int:
 
 
 def build_parser() -> argparse.ArgumentParser:
+    """Build the argument parser for the DANDI ingestion CLI.
+
+    Returns:
+        Configured `argparse.ArgumentParser` with `list`, `download`, and
+        `probe` subcommands.
+    """
     parser = argparse.ArgumentParser(description="Generic DANDI listing, probing, and download workflow.")
     subparsers = parser.add_subparsers(dest="command", required=True)
     for name in ("list", "download", "probe"):

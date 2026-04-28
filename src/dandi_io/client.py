@@ -14,9 +14,31 @@ _SESSION_PATTERN = re.compile(r"ses-([^/]+)")
 
 
 class DandiClient:
-    """Small wrapper around the official DANDI client plus CLI download workflow."""
+    """Small wrapper around the official DANDI API and file download workflow.
+
+    The client is intentionally narrow: it lists DANDI assets as local
+    `AssetRecord` contracts and downloads records that already expose a direct
+    download URL. Repository experiment scripts use the official `dandi`
+    command-line tool for large reviewer downloads, while this class supports
+    metadata-driven ingestion and small programmatic workflows.
+    """
 
     def list_assets(self, dandiset_id: str, version: str = "draft") -> list[AssetRecord]:
+        """List assets for a DANDI dataset version.
+
+        Args:
+            dandiset_id: DANDI identifier without the `DANDI:` prefix, for
+                example `"000718"`.
+            version: Dandiset version to inspect. Use `"draft"` for draft
+                datasets or a published version string.
+
+        Returns:
+            Asset records sorted by their DANDI-relative path.
+
+        Raises:
+            RuntimeError: If the optional `dandi` package is unavailable.
+            ValueError: If the DANDI API returns an asset without a path.
+        """
         dandi_api_client = _require_dandi_api_client()
         records: list[AssetRecord] = []
         with dandi_api_client() as client:
@@ -32,6 +54,21 @@ class DandiClient:
         *,
         output_root: Path,
     ) -> list[Path]:
+        """Download assets that are not already present under a raw-data root.
+
+        Args:
+            records: Asset records to download or confirm locally.
+            output_root: Local root used with `AssetRecord.local_path()`.
+
+        Returns:
+            Local paths for all requested assets, including files that already
+            existed before the call.
+
+        Raises:
+            RuntimeError: If a record does not contain a direct download URL.
+            OSError: If the target directory cannot be created or the file
+                cannot be written.
+        """
         output_root.mkdir(parents=True, exist_ok=True)
         downloaded_paths: list[Path] = []
         for record in records:
@@ -45,6 +82,15 @@ class DandiClient:
         return downloaded_paths
 
     def asset_query_url(self, record: AssetRecord) -> str:
+        """Build the DANDI API query URL for a single asset path.
+
+        Args:
+            record: Asset record whose path, dataset ID, and version should be
+                encoded into the query.
+
+        Returns:
+            DANDI API URL using the `assets/?path=...` endpoint.
+        """
         quoted_path = quote(record.path, safe="/")
         return (
             "https://api.dandiarchive.org/api/dandisets/"

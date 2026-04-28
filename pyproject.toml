@@ -24,7 +24,8 @@ classifiers = [
 
 [project.optional-dependencies]
 dev = ["pytest"]
-docs = ["pymupdf"]
+docs = ["sphinx", "myst-parser", "sphinx-autodoc-typehints", "furo"]
+article = ["pymupdf"]
 viz = ["matplotlib"]
 
 [tool.setuptools]

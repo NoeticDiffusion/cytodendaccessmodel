@@ -17,6 +17,11 @@ from dandi_io.registry import get_dataset_adapter, known_adapters
 
 
 def main() -> int:
+    """Run the package CLI entry point.
+
+    Returns:
+        Process-style exit code from `dandi_io.cli.main`.
+    """
     from dandi_io.cli import main as cli_main
 
     return cli_main()

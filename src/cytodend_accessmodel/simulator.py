@@ -248,9 +248,10 @@ class CytodendAccessModelSimulator:
         """Runs the "offline" consolidation process to update slow structural state.
 
         This process follows two main passes:
-        1. Update translation readiness (P_b) based on replay and sleep.
-        2. Update structural accessibility (M_b) based on eligibility (E_b)
-           and readiness (P_b).
+
+        - Update translation readiness (P_b) based on replay and sleep.
+        - Update structural accessibility (M_b) based on eligibility (E_b)
+          and readiness (P_b).
 
         Args:
             window: Parameters defining the consolidation period.
