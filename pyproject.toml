@@ -3,7 +3,7 @@ requires = ["setuptools>=68"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "asomemm"
+name = "cytodendaccessmodel"
 version = "0.1.0"
 description = "Executable memory scaffold and open-data tooling for the cytoskeletal-dendritic key-lock project."
 readme = {file = "README.md", content-type = "text/markdown"}

@@ -17,7 +17,7 @@ src/cytodend_accessmodel/   # associative-memory simulator and contracts
 src/dandi_analysis/         # dataset-specific analysis helpers (000336, 000718, 001710; 000871 legacy)
 src/dandi_io/               # generic DANDI listing, downloading, and probing CLI
 experiments/                # runnable experiment scripts
-configs/                    # YAML configuration files (benchmark and DANDI datasets)
+configs/                    # YAML configuration files for DANDI datasets
 tests/                      # pytest test suite
 article/                    # manuscript source, figures, bibliography, and PDFs
 data/                       # local data root (not tracked by git — see RUN.md)
@@ -45,9 +45,6 @@ Core dependencies declared in `pyproject.toml`:
 
 Optional extras: `dev` adds `pytest`, `viz` adds `matplotlib`.
 Use `docs` for Sphinx/ReadTheDocs builds and `article` for PDF/document-processing helpers.
-
-> The installable project name in `pyproject.toml` is `asomemm` (legacy
-> identifier kept for backward compatibility with earlier experiment logs).
 
 ---
 

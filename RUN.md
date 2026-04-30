@@ -8,6 +8,11 @@ Use `CLAIMS_TO_EXPERIMENTS.md` as the claim map while running this guide. Use
 `OUTPUTS.md` when you need to know where a script writes reviewer-facing
 artifacts.
 
+**Disk-space warning:** the no-data simulator workflow is small, but a full
+open-data reproduction requires downloading large third-party DANDI assets. Plan
+for approximately **180-200 GB** of free disk space before starting the Level 2
+DANDI downloads.
+
 Reviewer levels:
 
 - **Level 0 - sanity checks:** install, import/test checks, seed validation, and
@@ -20,9 +25,7 @@ Reviewer levels:
   scripts, figure regeneration, and integrity checks.
 
 Python `>=3.10` is required. The simulator and DANDI analyses are CPU-sufficient;
-CUDA is not required. The DANDI `001710` bundle is the main disk/time cost
-(`~139` NWB files; plan for several GB and longer wall time than the simulator
-suite).
+CUDA is not required.
 
 ---
 
@@ -49,7 +52,11 @@ python experiments/exp_seed_validation.py
 ## Level 2 Setup - Download DANDI Data
 
 The manuscript open-data claims require three DANDI datasets: `000718`,
-`000336`, and `001710`. The expected layout after download is:
+`000336`, and `001710`. A full local download can occupy approximately
+**180-200 GB** across all required NWB files, with `001710` contributing many
+files and `000718` contributing several multi-GB NWB files. Confirm available
+disk space before running the commands below. The expected layout after
+download is:
 
 ```
 data/dandi/raw/
@@ -274,18 +281,6 @@ python -m dandi_analysis.visualisation.cli --include-legacy-000871
 ```bash
 pytest
 ```
-
----
-
-## Level 3 - Integrity Check
-
-```bash
-python experiments/integrity_check_article2.py
-```
-
-This check is a secondary integrity gate for older article/table harmonization.
-Treat failures as a prompt to inspect the reported deltas rather than as a
-replacement for the claim map in `CLAIMS_TO_EXPERIMENTS.md`.
 
 ---
 
