@@ -13,6 +13,14 @@ cytoskeletal accessibility field. The biological hypotheses remain falsifiable
 targets for future branch-resolved perturbation experiments, while the code here
 reproduces the downstream signatures reported in the article.
 
+## Data Download Size
+
+The no-data simulator claims require no DANDI download. The full open-data
+reproduction for DANDI `000718`, `000336`, and `001710` is much larger: reviewers
+should plan for approximately **180-200 GB** of free disk space before starting
+the Level 2 downloads in `RUN.md`. If disk space is limited, audit one dataset
+claim at a time rather than downloading all open-data assets at once.
+
 ## Manuscript Claim Map
 
 | Manuscript area | Claim or signature | Primary commands | Required data | Expected reviewer-facing output | Figure/table link | Reviewer verdict |

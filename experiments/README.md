@@ -12,7 +12,6 @@ Rules:
 - keep reviewer-facing scripts deterministic where possible and document their
   outputs in `OUTPUTS.md`
 
-The installable project name is still `asomemm` for legacy compatibility, but
-the current source packages used by these experiments are the three packages
+The current source packages used by these experiments are the three packages
 listed above. See `CLAIMS_TO_EXPERIMENTS.md` for the article-claim mapping and
 `RUN.md` for the canonical run order.

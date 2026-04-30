@@ -10,9 +10,8 @@ experiment entry points.
 
 .. important::
 
-   The distribution name is ``asomemm`` for legacy compatibility, while the
-   import packages are ``cytodend_accessmodel``, ``dandi_analysis``, and
-   ``dandi_io``.
+   The distribution name is ``cytodendaccessmodel``. The import packages are
+   ``cytodend_accessmodel``, ``dandi_analysis``, and ``dandi_io``.
 
 .. toctree::
    :maxdepth: 2
