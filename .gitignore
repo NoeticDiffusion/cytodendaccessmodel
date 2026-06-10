@@ -215,3 +215,5 @@ __marimo__/
 .research/
 .venv/
 Agent/
+# DANDI raw data excluded (to big to store in repo)
+data/dandi/raw/
