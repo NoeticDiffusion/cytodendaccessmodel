@@ -9,7 +9,7 @@
 
 == Scope
 
-The results reported in Table 1 and in the Executable Instantiation section of the main text were produced by a branch-resolved Python simulator (`cytodend_keylock`) whose source code and experiment scripts are maintained in the public `cytodendaccessmodel` repository and archived in the manuscript-matched Zenodo snapshot (DOI `10.5281/zenodo.19498499`). This appendix documents the canonical parameter set, the network architecture, the encoding and consolidation protocol, and the four comparator baselines used for claim sharpening. Reviewers can reproduce all numerical results by running the scripts listed in `S3 Appendix`, specifically `experiments/exp001_minimal_branch_linking.py` through `experiments/exp015_comparator_baselines.py`.
+The results reported in Table 1 and in the Executable Instantiation section of the main text were produced by a branch-resolved Python simulator (`cytodend_keylock`) whose source code and experiment scripts are maintained in the public `cytodendaccessmodel` repository and archived in the manuscript-matched Zenodo snapshot (DOI `10.5281/zenodo.17686203`). This appendix documents the canonical parameter set, the network architecture, the encoding and consolidation protocol, and the four comparator baselines used for claim sharpening. Reviewers can reproduce all numerical results by running the scripts listed in `S3 Appendix`, specifically `experiments/exp001_minimal_branch_linking.py` through `experiments/exp015_comparator_baselines.py`.
 
 == Network Architecture
 
@@ -111,5 +111,31 @@ The signature thresholds used to define a directional pass are:
 == Initial Conditions and Stochastic Reproducibility
 
 All deterministic experiments use `structural_noise = 0.0` and therefore produce identical results on repeated runs without a random seed. The random-drift comparator baseline (`random_slow_drift`) uses `random.seed(42)` at the start of `exp015_comparator_baselines.py`. Robustness sweeps across noise levels and initial structural states are reported in `experiments/exp004_robustness.py` and `experiments/exp_seed_validation.py`; these confirm that the directional pass rates on the five protected claims reach 100% across the tested parameter variation range.
+
+== Parameter variation and sensitivity analysis
+
+To show that the simulator is not a knife-edge construction, we also ran a reviewer-facing one-at-a-time sweep over six parameter families in `experiments/exp004_robustness.py`. This package uses `10` stochastic seeds per parameter value and keeps a small background structural noise term (`structural_noise = 0.005`) active so that the robustness check samples genuinely different trajectories rather than repeated deterministic copies. The tracked metrics span the same executable logic used in the article: overlap advantage, linking growth, context separation, context-gap widening after consolidation, timing sensitivity, and replay dependence.
+
+#table(
+  columns: (auto, auto, auto, auto),
+  inset: 6pt,
+  stroke: 0.5pt + black,
+  align: (left, left, center, left),
+  table.header(
+    [*Sweep family*], [*Tested values*], [*Minimum pass rate*], [*Interpretation*],
+  ),
+  [`structural_lr`], [`0.08`, `0.12`, `0.20`, `0.28`, `0.35`], [`100%`], [all six metrics preserve direction across a ~4x write-rate range],
+  [`replay_gain`], [`0.5`, `0.8`, `1.2`, `1.6`, `2.0`], [`100%`], [replay dependence and linking signatures remain intact across a broad replay-strength sweep],
+  [`eligibility_decay`], [`0.05`, `0.08`, `0.10`, `0.15`, `0.20`], [`100%`], [protected claims survive shorter and longer effective tag windows],
+  [`structural_noise`], [`0.0`, `0.005`, `0.010`, `0.015`, `0.020`], [`100%`], [directional claims survive stochastic structural perturbation],
+  [`gap`], [`0`, `4`, `8`, `12`, `16`], [`60%` at `0`; `100%` for all `> 0`], [the only weakened entry is the degenerate `gap = 0` case, where the timing comparison is definitionally absent],
+  [`ctx_bias_scale`], [`0.3`, `0.5`, `0.7`, `0.9`, `1.1`], [`100%`], [context-related metrics remain positive even under weak contextual bias],
+)
+
+#par(first-line-indent: 0pt)[
+  #emph[Table S2-1. Reviewer-facing sensitivity summary for the executable model. Pass rate denotes the fraction of stochastic seeds for which the metric retained its predicted direction under the indicated sweep.]
+]
+
+These sweeps are complementary to, rather than replacements for, the deterministic reference runs in the main text. Their role is to show that the article's directional claims do not depend on a single hand-tuned parameter choice. The strongest caveat is also the most interpretable one: the timing metric weakens only when the comparison gap is set to zero, which removes the timing manipulation itself. Additional high-sensitivity seed validation under `structural_noise = 0.02` is reported in `experiments/exp_seed_validation.py`, where the protected claim panel again reaches full directional pass rates under the designated seed tiers.
 
 #bibliography("references_cytoskeletal_dendritic_accesibility_model.bib")

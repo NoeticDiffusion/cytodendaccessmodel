@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="430" viewBox="0 0 760 430" version="1.1">
+  <defs>
+    <style>
+      .title { font-family: Arial, Helvetica, sans-serif; font-size: 20px; font-weight: 700; fill: #000000; }
+      .heading { font-family: Arial, Helvetica, sans-serif; font-size: 14px; font-weight: 400; fill: #000000; }
+      .body { font-family: Arial, Helvetica, sans-serif; font-size: 13px; fill: #000000; }
+      .formula { font-family: "Times New Roman", Times, serif; font-size: 13px; fill: #000000; }
+      .note { font-family: Arial, Helvetica, sans-serif; font-size: 12px; fill: #000000; }
+      .box { fill: #ffffff; stroke: #000000; stroke-width: 1.7; }
+      .arrow { stroke: #000000; stroke-width: 1.8; fill: none; }
+    </style>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto" markerUnits="strokeWidth">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#1f77b4" stroke="#000000" stroke-width="0.8"/>
+    </marker>
+  </defs>
+
+  <rect x="0" y="0" width="760" height="430" fill="#ffffff"/>
+
+  <text x="380" y="34" text-anchor="middle" class="title">Figure 3. Minimal biological formalization</text>
+
+  <rect x="18" y="82" width="214" height="102" rx="10" ry="10" class="box"/>
+  <rect x="250" y="82" width="214" height="102" rx="10" ry="10" class="box"/>
+  <rect x="482" y="82" width="214" height="102" rx="10" ry="10" class="box"/>
+
+  <text x="125" y="102" text-anchor="middle" class="heading">FAST STATES</text>
+  <text x="357" y="102" text-anchor="middle" class="heading">SLOW STATES</text>
+  <text x="589" y="108" text-anchor="middle" class="heading">MEMORY READOUT</text>
+
+  <text x="50" y="130" class="formula">x_b(t): branch integration</text>
+  <text x="58" y="148" class="formula">s_i(t): spine access</text>
+  <text x="58" y="166" class="formula">A_b(t): effective access</text>
+
+  <text x="287" y="130" class="formula">M_b(t): structural bias</text>
+  <text x="293" y="148" class="formula">E_b(t): eligibility tag</text>
+  <text x="254" y="166" class="formula">P_b(t): capture resource (optional)</text>
+
+  <text x="486" y="134" class="formula">R_mu(t) = sum_b a^mu_b A_b(t) x_b(t)</text>
+  <text x="502" y="154" class="body">trace expression depends on</text>
+  <text x="548" y="170" class="body">accessible branches</text>
+
+  <line x1="232" y1="133" x2="246" y2="133" class="arrow" marker-end="url(#arrowhead)"/>
+  <line x1="464" y1="133" x2="478" y2="133" class="arrow" marker-end="url(#arrowhead)"/>
+
+  <rect x="44" y="242" width="270" height="90" rx="10" ry="10" class="box"/>
+  <rect x="400" y="242" width="244" height="90" rx="10" ry="10" class="box"/>
+
+  <text x="179" y="266" text-anchor="middle" class="heading">Fast factorization</text>
+  <text x="522" y="266" text-anchor="middle" class="heading">Slow update</text>
+
+  <text x="60" y="301" class="formula">A_b(t) = A_f(x_b, s_i, C) * A_s(M_b)</text>
+
+  <text x="401" y="294" class="formula">dM_b = eta E_b sigma(delta-theta) (1-M_b/M_max)</text>
+  <text x="466" y="315" class="formula">- lambda_M M_b + noise</text>
+
+  <line x1="150" y1="242" x2="122" y2="188" class="arrow" marker-end="url(#arrowhead)"/>
+  <line x1="520" y1="242" x2="356" y2="188" class="arrow" marker-end="url(#arrowhead)"/>
+
+  <text x="20" y="387" class="note">Interpretation: synapses do not disappear; rather, the relevant branch subset can become less accessible.</text>
+</svg>

@@ -15,6 +15,16 @@ The open-data results in the main text are intended as downstream signature test
 
 All author-generated code, scripts, configuration files, and manuscript-facing outputs associated with these pipelines are publicly available in the `cytodendaccessmodel` GitHub repository (`https://github.com/NoeticDiffusion/cytodendaccessmodel`) and in the manuscript-matched Zenodo snapshot (DOI `10.5281/zenodo.19498499`; `https://doi.org/10.5281/zenodo.19498499`). The code is released under the GNU General Public License v3.0 (`GPL-3.0`). Third-party neural data are not redistributed in this repository; they remain accessible from their original DANDI Archive records (`000718`, `000336`, `001710`), while the derived manuscript-facing outputs discussed here are written under `data/dandi/triage/000718`, `data/dandi/triage/000336`, and `data/dandi/triage/001710`.
 
+== Null constructions and empirical controls
+
+Because the open-data results are intended as downstream signature tests rather than direct observations of the latent variable $M_b$, the exact null architecture matters. The three dataset families therefore use explicit empirical nulls rather than a single generic asymptotic test.
+
+For DANDI `000718`, the primary session-level enrichment summary compares each detected offline event against ten duration-matched inter-event windows drawn from the same offline session. At the event level, the Preferential Reactivation Index also uses a size-matched random-core null (`null_n = 500`) so that "more active than expected" means more active than a random set of equally many registered units, not merely more active than zero. Specificity is then stressed by registration-shuffle controls that permute the registered offline unit identities while leaving event structure intact (`20` repeats in the main PRI script).
+
+For DANDI `000336`, the null is built within each analysis window by circularly shifting one imaging plane relative to the other (`n = 200` draws), preserving each plane's marginal activity and autocorrelation structure while breaking precise cross-plane alignment. Window-local null distributions are then aggregated with window-length weighting to produce the reported condition-level `z` versus null summaries.
+
+For DANDI `001710`, the main inferential step is a subject-level permutation null (`n_perms = 1000`). Subject summaries are pooled, reassigned without replacement while preserving the observed group sizes, and compared by the difference in group means. The reported empirical p-value is one-sided in the observed direction, reflecting the planned claim boundary (`SparseKO < comparator`) rather than a two-sided search for any deviation whatsoever.
+
 == DANDI `000718`: Offline core-unit enrichment pipeline
 
 The `000718` analysis targets a narrow question: are the units most central to a NeutralExposure ensemble preferentially reactivated during later high-synchrony offline events?
@@ -27,6 +37,8 @@ The retained pipeline is:
 4.  Computation of a session-level enrichment statistic for each event-ensemble pair: active core-unit fraction during the event minus the average active fraction across ten matched inter-event windows.
 
 Robustness checks include an activity-threshold sweep (`0.0`, `0.5`, `1.0 sigma`) and registration-shuffle controls. The result that survives these checks is modest but consistent: NeutralExposure-defined core units are somewhat more active during detected offline events than expected from matched inter-event baseline, yet much of the absolute signal remains attributable to the general population-burst character of those events.
+
+Operationally, that retained claim sits on top of two nested nulls. First, each event is contrasted against ten duration-matched inter-event windows from the same offline session. Second, the PRI score within each event is itself standardized against a size-matched random-core null (`null_n = 500`), and the full real-registration result is compared against `20` registration-shuffle repeats. The main-text claim is therefore not "events are active", but "real ensemble-core mappings are modestly more enriched than matched-window and shuffled-registration controls."
 
 #table(
   columns: (auto, auto, auto, auto),
@@ -55,6 +67,8 @@ The retained full-bundle pipeline is:
 4.  Compare observed cross-plane coupling against within-plane coupling and against within-window circular-shift nulls (`n = 200`).
 
 Under this conservative pipeline, spontaneous cross-plane coupling is above null in all three pairs (`z = 4.04` to `5.16`) and remains above null across all tested stimulus conditions. The stricter `cross < both within` criterion is fully met in the supplementary `ses-1245548523` cross-area pair, but only partially met in the two cross-depth pairs because one within-plane estimate is unusually weak or unusually strong. The retained claim is therefore bounded: the full bundle supports structured above-null inter-plane coupling across all analyzed bundle pairs and tested conditions, while only the supplementary cross-area pair supplies a clean bilateral access-constraint match.
+
+The crucial statistical point is that the `000336` null preserves single-plane temporal structure. Circular shifts are performed separately within each window and only then pooled with window-length weighting, so the `z` scores test whether the two planes align more strongly than expected from their own autocorrelation and rate structure alone, not merely whether the raw traces are non-flat.
 
 #table(
   columns: (auto, auto, auto, auto, auto),
@@ -88,6 +102,8 @@ The retained group-bundle pipeline is:
 Under this broad group-bundle pipeline, all `139` files were locally available and entered the QC sweep. Subject-level similarity summaries retained `23` subjects in total: `18` with full `6`-day coverage, `4` with `5` usable days, and `1` with `4` usable days. Split-half reliability remained high across groups, and the retained cross-day means were `0.3374` for Cre, `0.2926` for Ctrl, and `0.2623` for SparseKO. The broad retained claim is therefore stronger than in the original replication bundle: lower cross-day stabilization in SparseKO is now supported at the subject-group level rather than only by a single-animal bridge.
 
 A dedicated follow-on robustness run (`experiments/dandi_001710_08_robustness_and_nulls.py`) added four checks. First, the arm-label audit found `vr_trial_info` content but not a clean per-trial arm truth table, so arm counts remain a QC sanity check rather than a direct label-validation result. Second, the subject-level group null tests placed SparseKO below Cre but not cleanly below Ctrl. Third, the lag profile remained lower for SparseKO across lags `1` to `5`, arguing against the effect being driven by a single interval. Fourth, SparseKO channel comparison showed quantitative sensitivity rather than a qualitative reversal: channel `1` averaged somewhat higher cross-day stability and slightly stronger arm separation than channel `0`, while both channels remained high-reliability. The main-text use of `ch0` should therefore be understood as a predefined bookkeeping choice for one-channel-per-animal comparison, not as evidence that `ch0` is uniquely privileged biologically.
+
+The permutation null behind that claim is fully empirical. The observed group-mean difference is recalculated after `1000` label shuffles that preserve the original genotype group sizes, generating a null distribution of mean differences rather than relying on Gaussian assumptions at the subject level. This matters because the bundle is moderate in size and partially unbalanced (`7` SparseKO, `7` Cre, `9` Ctrl), so the permutation framework is the most transparent way to show that the SparseKO-versus-Cre separation is not a bookkeeping artifact.
 
 #table(
   columns: (auto, auto, auto, auto, auto, auto),

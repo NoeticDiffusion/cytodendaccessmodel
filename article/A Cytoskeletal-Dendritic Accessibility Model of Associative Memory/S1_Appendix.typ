@@ -33,6 +33,12 @@ The interpretation is:
 
 In this formulation, the hypothesis does not require that cytoskeletal variables store memory content directly. Instead, they modulate the accessibility structure over which memory traces are encoded and later retrieved. The quantity $R_mu$ should be read as pre-threshold recall support; a later nonlinear readout or recurrent completion stage may convert support into full pattern completion.
 
+== Phenomenological interpretation of the write terms
+
+Two terms in the slow update deserve explicit biological framing because they are phenomenological rather than molecule-specific. The delayed threshold $theta_delta$ should be read as a coarse write-enable condition: only when modulatory, biochemical, or replay-linked consolidation signals exceed a local threshold does recent eligibility get converted into a durable branch update. This could correspond, in compressed form, to saturation-like requirements on calcium/CaMKII signaling, synaptic-capture conditions, or other delayed plasticity-permissive gates rather than to a single directly measured concentration @Yagishita2014DopamineTiming.
+
+The capacity term $M_"max"$ plays a different role. It is not meant to imply a hard count of microtubules, spines, or proteins. Instead, it provides a bounded phenomenological surrogate for the fact that branch-local structural support is finite: transport resources, physical occupancy, local translation capacity, and active-matter-like nonequilibrium constraints all limit how much accessibility can be durably stabilized in one compartment before turnover and competition dominate @fodor2016 @needleman2017. In other words, $M_"max"$ is a reviewer-facing way to keep the model from smuggling in unlimited structural write capacity.
+
 == Factorized Accessibility View
 
 The central formal move in the paper is the factorization
