@@ -60,9 +60,9 @@ python -m dandi_analysis.visualisation.cli
 
 Primary figure outputs:
 
-- `.article/A Cytoskeletal-Dendritic Accessibility Model of Associative Memory/figures/figure_6_open_data_000718_enrichment.png`
-- `.article/A Cytoskeletal-Dendritic Accessibility Model of Associative Memory/figures/figure_7_open_data_000718_threshold_sweep.png`
-- `.article/A Cytoskeletal-Dendritic Accessibility Model of Associative Memory/figures/figure_s1_open_data_000718_robustness_heatmap.png`
+- `article/A branch-resolved cytoskeletal-dendritic accessibility model of associative memory/figures/figure_6_open_data_000718_enrichment.png`
+- `article/A branch-resolved cytoskeletal-dendritic accessibility model of associative memory/figures/figure_7_open_data_000718_threshold_sweep.png`
+- `article/A branch-resolved cytoskeletal-dendritic accessibility model of associative memory/figures/figure_s1_open_data_000718_robustness_heatmap.png`
 
 ## DANDI `000336`
 
@@ -81,8 +81,8 @@ Reviewer-facing outputs include:
 
 Primary figure outputs from `python -m dandi_analysis.visualisation.cli`:
 
-- `.article/A Cytoskeletal-Dendritic Accessibility Model of Associative Memory/figures/figure_8_open_data_000336_coupling_by_condition.png`
-- `.article/A Cytoskeletal-Dendritic Accessibility Model of Associative Memory/figures/figure_9_open_data_000336_replication.png`
+- `article/A branch-resolved cytoskeletal-dendritic accessibility model of associative memory/figures/figure_8_open_data_000336_coupling_by_condition.png`
+- `article/A branch-resolved cytoskeletal-dendritic accessibility model of associative memory/figures/figure_9_open_data_000336_replication.png`
 
 ## DANDI `001710`
 

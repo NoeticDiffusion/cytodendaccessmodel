@@ -12,6 +12,14 @@ TRIAGE_ROOT = REPO_ROOT / "data" / "dandi" / "triage"
 def _default_article_figures_root() -> Path:
     candidates = [
         REPO_ROOT
+        / "article"
+        / "A branch-resolved cytoskeletal-dendritic accessibility model of associative memory"
+        / "figures",
+        REPO_ROOT
+        / "article"
+        / "A Cytoskeletal-Dendritic Accessibility Model of Associative Memory"
+        / "figures",
+        REPO_ROOT
         / ".article"
         / "A Cytoskeletal-Dendritic Accessibility Model of Associative Memory"
         / "figures",

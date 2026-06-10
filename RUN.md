@@ -267,7 +267,7 @@ python -m dandi_analysis.visualisation.cli
 ```
 
 By default this renders the current manuscript figures for `000718` and `000336`
-under `.article/A Cytoskeletal-Dendritic Accessibility Model of Associative Memory/figures/`.
+under `article/A branch-resolved cytoskeletal-dendritic accessibility model of associative memory/figures/`.
 To also render legacy `000871` cross-plane figures, pass:
 
 ```bash

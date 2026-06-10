@@ -1,7 +1,7 @@
 # cytodendaccessmodel
 
 Companion code repository for the article
-*A Cytoskeletal-Dendritic Accessibility Model of Associative Memory*.
+*A branch-resolved cytoskeletal-dendritic accessibility model of associative memory*.
 
 The repository brings together the executable memory scaffold, DANDI open-data
 tooling, and experiment entry points so that the theoretical article, the
@@ -62,12 +62,24 @@ Run the first simulator experiment (no data required):
 python experiments/exp001_minimal_branch_linking.py
 ```
 
-Reviewer orientation:
+### Reviewer orientation
 
-- `CLAIMS_TO_EXPERIMENTS.md` maps article claims to commands, outputs, and
+The primary entry point for reviewers is the root-level Jupyter notebook:
+
+**`reviewer_branch_resolved_walkthrough.ipynb`** — open and run all cells from
+the repository root.  The notebook ships with pre-executed outputs so all key
+results are visible without running anything.  It covers:
+
+- Simulator primer and guided Level 1 reproduction
+- Artifact-status audit of all expected outputs
+- Optional DANDI open-data workflow (Levels 2–3)
+
+Supporting reference files:
+
+- `CLAIMS_TO_EXPERIMENTS.md` — maps article claims to commands, outputs, and
   manuscript figures/tables.
-- `RUN.md` gives the level-by-level reproduction workflow.
-- `OUTPUTS.md` lists where scripts write reviewer-facing artifacts.
+- `RUN.md` — level-by-level reproduction workflow (Levels 0–3).
+- `OUTPUTS.md` — lists where scripts write reviewer-facing artifacts.
 
 ---
 
