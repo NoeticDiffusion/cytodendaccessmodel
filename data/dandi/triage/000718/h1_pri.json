@@ -1,0 +1,242 @@
+[
+  {
+    "subject": "Ca-EEG3-4",
+    "pair_label": "OffD1",
+    "n_registered": 621,
+    "n_events": 32,
+    "registration": {
+      "session_a": "Ca-EEG3-4_NE",
+      "session_b": "Ca-EEG3-4_OffD1",
+      "n_rois_a": 851,
+      "n_rois_b": 711,
+      "n_candidates": 621,
+      "n_accepted": 621,
+      "fraction_a_matched": 0.73,
+      "fraction_b_matched": 0.873,
+      "mean_confidence": 0.797,
+      "mean_dice": 0.878,
+      "mean_centroid_dist_px": 3.06
+    },
+    "real": {
+      "methods": {
+        "nmf": {
+          "session_ne": "Ca-EEG3-4_NE",
+          "session_offline": "Ca-EEG3-4_OffD1",
+          "n_registered": 621,
+          "n_events": 32,
+          "n_ensembles": 8,
+          "top_frac": 0.15,
+          "activity_threshold": 0.0,
+          "null_n": 500,
+          "n_significant": 36,
+          "fraction_significant": 0.141,
+          "mean_z": 0.499,
+          "max_z": 8.338,
+          "total_scored_pairs": 256
+        },
+        "ica": {
+          "session_ne": "Ca-EEG3-4_NE",
+          "session_offline": "Ca-EEG3-4_OffD1",
+          "n_registered": 621,
+          "n_events": 32,
+          "n_ensembles": 8,
+          "top_frac": 0.15,
+          "activity_threshold": 0.0,
+          "null_n": 500,
+          "n_significant": 21,
+          "fraction_significant": 0.082,
+          "mean_z": 0.287,
+          "max_z": 3.491,
+          "total_scored_pairs": 256
+        },
+        "graph": {
+          "session_ne": "Ca-EEG3-4_NE",
+          "session_offline": "Ca-EEG3-4_OffD1",
+          "n_registered": 621,
+          "n_events": 32,
+          "n_ensembles": 8,
+          "top_frac": 0.15,
+          "activity_threshold": 0.0,
+          "null_n": 500,
+          "n_significant": 8,
+          "fraction_significant": 0.031,
+          "mean_z": -0.055,
+          "max_z": 3.5,
+          "total_scored_pairs": 256
+        }
+      },
+      "mean_frac": 0.085
+    },
+    "c1_reg_shuffle": {
+      "mean_frac": 0.031,
+      "std_frac": 0.009
+    },
+    "c3_event_shuffle": {
+      "mean_frac": 0.122,
+      "std_frac": 0.018
+    },
+    "c1_ok": true,
+    "c3_ok": false,
+    "verdict": "PARTIAL"
+  },
+  {
+    "subject": "Ca-EEG3-4",
+    "pair_label": "OffD2",
+    "n_registered": 686,
+    "n_events": 9,
+    "registration": {
+      "session_a": "Ca-EEG3-4_NE",
+      "session_b": "Ca-EEG3-4_OffD2",
+      "n_rois_a": 851,
+      "n_rois_b": 858,
+      "n_candidates": 686,
+      "n_accepted": 686,
+      "fraction_a_matched": 0.806,
+      "fraction_b_matched": 0.8,
+      "mean_confidence": 0.771,
+      "mean_dice": 0.871,
+      "mean_centroid_dist_px": 3.86
+    },
+    "real": {
+      "methods": {
+        "nmf": {
+          "session_ne": "Ca-EEG3-4_NE",
+          "session_offline": "Ca-EEG3-4_OffD2",
+          "n_registered": 686,
+          "n_events": 9,
+          "n_ensembles": 8,
+          "top_frac": 0.15,
+          "activity_threshold": 0.0,
+          "null_n": 500,
+          "n_significant": 12,
+          "fraction_significant": 0.167,
+          "mean_z": 0.433,
+          "max_z": 5.061,
+          "total_scored_pairs": 72
+        },
+        "ica": {
+          "session_ne": "Ca-EEG3-4_NE",
+          "session_offline": "Ca-EEG3-4_OffD2",
+          "n_registered": 686,
+          "n_events": 9,
+          "n_ensembles": 8,
+          "top_frac": 0.15,
+          "activity_threshold": 0.0,
+          "null_n": 500,
+          "n_significant": 9,
+          "fraction_significant": 0.125,
+          "mean_z": 0.128,
+          "max_z": 4.156,
+          "total_scored_pairs": 72
+        },
+        "graph": {
+          "session_ne": "Ca-EEG3-4_NE",
+          "session_offline": "Ca-EEG3-4_OffD2",
+          "n_registered": 686,
+          "n_events": 9,
+          "n_ensembles": 8,
+          "top_frac": 0.15,
+          "activity_threshold": 0.0,
+          "null_n": 500,
+          "n_significant": 4,
+          "fraction_significant": 0.056,
+          "mean_z": -0.157,
+          "max_z": 3.993,
+          "total_scored_pairs": 72
+        }
+      },
+      "mean_frac": 0.116
+    },
+    "c1_reg_shuffle": {
+      "mean_frac": 0.032,
+      "std_frac": 0.014
+    },
+    "c3_event_shuffle": {
+      "mean_frac": 0.106,
+      "std_frac": 0.034
+    },
+    "c1_ok": true,
+    "c3_ok": false,
+    "verdict": "PARTIAL"
+  },
+  {
+    "subject": "Ca-EEG2-1",
+    "pair_label": "OffD2",
+    "n_registered": 485,
+    "n_events": 14,
+    "registration": {
+      "session_a": "Ca-EEG2-1_NE",
+      "session_b": "Ca-EEG2-1_OffD2",
+      "n_rois_a": 623,
+      "n_rois_b": 625,
+      "n_candidates": 485,
+      "n_accepted": 485,
+      "fraction_a_matched": 0.778,
+      "fraction_b_matched": 0.776,
+      "mean_confidence": 0.748,
+      "mean_dice": 0.861,
+      "mean_centroid_dist_px": 4.19
+    },
+    "real": {
+      "methods": {
+        "nmf": {
+          "session_ne": "Ca-EEG2-1_NE",
+          "session_offline": "Ca-EEG2-1_OffD2",
+          "n_registered": 485,
+          "n_events": 14,
+          "n_ensembles": 8,
+          "top_frac": 0.15,
+          "activity_threshold": 0.0,
+          "null_n": 500,
+          "n_significant": 17,
+          "fraction_significant": 0.152,
+          "mean_z": 0.475,
+          "max_z": 5.323,
+          "total_scored_pairs": 112
+        },
+        "ica": {
+          "session_ne": "Ca-EEG2-1_NE",
+          "session_offline": "Ca-EEG2-1_OffD2",
+          "n_registered": 485,
+          "n_events": 14,
+          "n_ensembles": 8,
+          "top_frac": 0.15,
+          "activity_threshold": 0.0,
+          "null_n": 500,
+          "n_significant": 18,
+          "fraction_significant": 0.161,
+          "mean_z": 0.566,
+          "max_z": 6.277,
+          "total_scored_pairs": 112
+        },
+        "graph": {
+          "session_ne": "Ca-EEG2-1_NE",
+          "session_offline": "Ca-EEG2-1_OffD2",
+          "n_registered": 485,
+          "n_events": 14,
+          "n_ensembles": 8,
+          "top_frac": 0.15,
+          "activity_threshold": 0.0,
+          "null_n": 500,
+          "n_significant": 12,
+          "fraction_significant": 0.107,
+          "mean_z": 0.416,
+          "max_z": 4.106,
+          "total_scored_pairs": 112
+        }
+      },
+      "mean_frac": 0.14
+    },
+    "c1_reg_shuffle": {
+      "mean_frac": 0.029,
+      "std_frac": 0.01
+    },
+    "c3_event_shuffle": {
+      "mean_frac": 0.096,
+      "std_frac": 0.034
+    },
+    "c1_ok": true,
+    "c3_ok": false,
+    "verdict": "PARTIAL"
+  }
+]

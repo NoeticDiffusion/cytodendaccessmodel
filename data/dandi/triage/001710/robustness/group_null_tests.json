@@ -1,0 +1,42 @@
+[
+  {
+    "comparison": "SparseKO vs Cre",
+    "target_group": "SparseKO",
+    "other_group": "Cre",
+    "target_mean": 0.2623,
+    "other_mean": 0.3374,
+    "target_n_subjects": 7,
+    "other_n_subjects": 7,
+    "target_subjects": "SparseKO-1, SparseKO-2, SparseKO-3, SparseKO-4, SparseKO-5, SparseKO-6, SparseKO-7",
+    "other_subjects": "Cre-1, Cre-2, Cre-3, Cre-4, Cre-5, Cre-6, Cre-7",
+    "observed_diff": -0.0751,
+    "null_mean": -0.001014,
+    "null_std": 0.034464,
+    "z": -2.1495,
+    "p_empirical": 0.009,
+    "n_perms": 1000,
+    "effect_direction": "negative",
+    "note": "",
+    "claim": "SparseKO shows lower subject-level cross-day stability than Cre."
+  },
+  {
+    "comparison": "SparseKO vs Ctrl",
+    "target_group": "SparseKO",
+    "other_group": "Ctrl",
+    "target_mean": 0.2623,
+    "other_mean": 0.2926,
+    "target_n_subjects": 7,
+    "other_n_subjects": 9,
+    "target_subjects": "SparseKO-1, SparseKO-2, SparseKO-3, SparseKO-4, SparseKO-5, SparseKO-6, SparseKO-7",
+    "other_subjects": "Ctrl-1, Ctrl-2, Ctrl-3, Ctrl-4, Ctrl-5, Ctrl-6, Ctrl-7, Ctrl-8, Ctrl-9",
+    "observed_diff": -0.0303,
+    "null_mean": 0.000233,
+    "null_std": 0.023721,
+    "z": -1.2856,
+    "p_empirical": 0.099,
+    "n_perms": 1000,
+    "effect_direction": "negative",
+    "note": "",
+    "claim": "Directionally consistent: SparseKO lower than Ctrl, but not null-separated."
+  }
+]

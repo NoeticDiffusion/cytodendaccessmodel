@@ -1,0 +1,226 @@
+[
+  {
+    "signal_type": "deconvolved",
+    "threshold_sigma": 1.5,
+    "methods": {
+      "nmf": {
+        "n_events": 42,
+        "n_significant": 84,
+        "total_pairs": 336,
+        "fraction_significant": 0.25,
+        "max_norm_score": 6.673
+      },
+      "ica": {
+        "n_events": 42,
+        "n_significant": 105,
+        "total_pairs": 336,
+        "fraction_significant": 0.312,
+        "max_norm_score": 6.698
+      },
+      "graph": {
+        "n_events": 42,
+        "n_significant": 113,
+        "total_pairs": 336,
+        "fraction_significant": 0.336,
+        "max_norm_score": 8.298
+      }
+    },
+    "n_registered": 621
+  },
+  {
+    "signal_type": "deconvolved",
+    "threshold_sigma": 2.0,
+    "methods": {
+      "nmf": {
+        "n_events": 32,
+        "n_significant": 88,
+        "total_pairs": 256,
+        "fraction_significant": 0.344,
+        "max_norm_score": 7.279
+      },
+      "ica": {
+        "n_events": 32,
+        "n_significant": 104,
+        "total_pairs": 256,
+        "fraction_significant": 0.406,
+        "max_norm_score": 6.482
+      },
+      "graph": {
+        "n_events": 32,
+        "n_significant": 124,
+        "total_pairs": 256,
+        "fraction_significant": 0.484,
+        "max_norm_score": 7.407
+      }
+    },
+    "n_registered": 621
+  },
+  {
+    "signal_type": "deconvolved",
+    "threshold_sigma": 2.5,
+    "methods": {
+      "nmf": {
+        "n_events": 15,
+        "n_significant": 56,
+        "total_pairs": 120,
+        "fraction_significant": 0.467,
+        "max_norm_score": 7.867
+      },
+      "ica": {
+        "n_events": 15,
+        "n_significant": 84,
+        "total_pairs": 120,
+        "fraction_significant": 0.7,
+        "max_norm_score": 6.603
+      },
+      "graph": {
+        "n_events": 15,
+        "n_significant": 93,
+        "total_pairs": 120,
+        "fraction_significant": 0.775,
+        "max_norm_score": 7.066
+      }
+    },
+    "n_registered": 621
+  },
+  {
+    "signal_type": "deconvolved",
+    "threshold_sigma": 3.0,
+    "methods": {
+      "nmf": {
+        "n_events": 6,
+        "n_significant": 28,
+        "total_pairs": 48,
+        "fraction_significant": 0.583,
+        "max_norm_score": 6.813
+      },
+      "ica": {
+        "n_events": 6,
+        "n_significant": 35,
+        "total_pairs": 48,
+        "fraction_significant": 0.729,
+        "max_norm_score": 7.327
+      },
+      "graph": {
+        "n_events": 6,
+        "n_significant": 37,
+        "total_pairs": 48,
+        "fraction_significant": 0.771,
+        "max_norm_score": 6.738
+      }
+    },
+    "n_registered": 621
+  },
+  {
+    "signal_type": "denoised",
+    "threshold_sigma": 1.5,
+    "methods": {
+      "nmf": {
+        "n_events": 13,
+        "n_significant": 36,
+        "total_pairs": 104,
+        "fraction_significant": 0.346,
+        "max_norm_score": 4.163
+      },
+      "ica": {
+        "n_events": 13,
+        "n_significant": 39,
+        "total_pairs": 104,
+        "fraction_significant": 0.375,
+        "max_norm_score": 3.757
+      },
+      "graph": {
+        "n_events": 13,
+        "n_significant": 42,
+        "total_pairs": 104,
+        "fraction_significant": 0.404,
+        "max_norm_score": 3.805
+      }
+    },
+    "n_registered": 621
+  },
+  {
+    "signal_type": "denoised",
+    "threshold_sigma": 2.0,
+    "methods": {
+      "nmf": {
+        "n_events": 8,
+        "n_significant": 32,
+        "total_pairs": 64,
+        "fraction_significant": 0.5,
+        "max_norm_score": 3.932
+      },
+      "ica": {
+        "n_events": 8,
+        "n_significant": 37,
+        "total_pairs": 64,
+        "fraction_significant": 0.578,
+        "max_norm_score": 4.139
+      },
+      "graph": {
+        "n_events": 8,
+        "n_significant": 38,
+        "total_pairs": 64,
+        "fraction_significant": 0.594,
+        "max_norm_score": 3.924
+      }
+    },
+    "n_registered": 621
+  },
+  {
+    "signal_type": "denoised",
+    "threshold_sigma": 2.5,
+    "methods": {
+      "nmf": {
+        "n_events": 5,
+        "n_significant": 25,
+        "total_pairs": 40,
+        "fraction_significant": 0.625,
+        "max_norm_score": 3.869
+      },
+      "ica": {
+        "n_events": 5,
+        "n_significant": 33,
+        "total_pairs": 40,
+        "fraction_significant": 0.825,
+        "max_norm_score": 4.62
+      },
+      "graph": {
+        "n_events": 5,
+        "n_significant": 33,
+        "total_pairs": 40,
+        "fraction_significant": 0.825,
+        "max_norm_score": 3.937
+      }
+    },
+    "n_registered": 621
+  },
+  {
+    "signal_type": "denoised",
+    "threshold_sigma": 3.0,
+    "methods": {
+      "nmf": {
+        "n_events": 4,
+        "n_significant": 26,
+        "total_pairs": 32,
+        "fraction_significant": 0.812,
+        "max_norm_score": 4.349
+      },
+      "ica": {
+        "n_events": 4,
+        "n_significant": 29,
+        "total_pairs": 32,
+        "fraction_significant": 0.906,
+        "max_norm_score": 5.362
+      },
+      "graph": {
+        "n_events": 4,
+        "n_significant": 28,
+        "total_pairs": 32,
+        "fraction_significant": 0.875,
+        "max_norm_score": 4.762
+      }
+    },
+    "n_registered": 621
+  }
+]

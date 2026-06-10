@@ -1,0 +1,269 @@
+[
+  {
+    "subject": "Ca-EEG2-1",
+    "pair_label": "NE->OffD2",
+    "registration": {
+      "session_a": "Ca-EEG2-1_NE",
+      "session_b": "Ca-EEG2-1_offline_d2",
+      "n_rois_a": 623,
+      "n_rois_b": 625,
+      "n_candidates": 485,
+      "n_accepted": 485,
+      "fraction_a_matched": 0.778,
+      "fraction_b_matched": 0.776,
+      "mean_confidence": 0.748,
+      "mean_dice": 0.861,
+      "mean_centroid_dist_px": 4.19
+    },
+    "method_results": {
+      "deconvolved_nmf": {
+        "assembly": {
+          "method": "nmf",
+          "signal_type": "deconvolved",
+          "var_explained": 0.0954,
+          "reconstruction_error": 111.7698,
+          "stability": {
+            "mean_stability": 1.0,
+            "min_stability": 1.0,
+            "method": "nmf",
+            "n_restarts": 4
+          }
+        },
+        "h1_event": {
+          "n_events": 14,
+          "n_ensembles": 8,
+          "total_pairs": 112,
+          "n_significant": 22,
+          "fraction_significant": 0.196,
+          "max_norm_score": 8.66,
+          "threshold_sigma": 2.0
+        }
+      },
+      "deconvolved_ica": {
+        "assembly": {
+          "method": "ica",
+          "signal_type": "deconvolved",
+          "var_explained": 0.0731,
+          "reconstruction_error": 0.9627,
+          "stability": {
+            "mean_stability": 0.997,
+            "min_stability": 0.975,
+            "method": "ica",
+            "n_restarts": 4
+          }
+        },
+        "h1_event": {
+          "n_events": 14,
+          "n_ensembles": 8,
+          "total_pairs": 112,
+          "n_significant": 47,
+          "fraction_significant": 0.42,
+          "max_norm_score": 7.412,
+          "threshold_sigma": 2.0
+        }
+      },
+      "deconvolved_graph": {
+        "assembly": {
+          "method": "graph",
+          "signal_type": "deconvolved",
+          "var_explained": null,
+          "reconstruction_error": null,
+          "stability": {
+            "mean_stability": 0.929,
+            "min_stability": 0.552,
+            "method": "graph",
+            "n_restarts": 4
+          }
+        },
+        "h1_event": {
+          "n_events": 14,
+          "n_ensembles": 8,
+          "total_pairs": 112,
+          "n_significant": 60,
+          "fraction_significant": 0.536,
+          "max_norm_score": 5.69,
+          "threshold_sigma": 2.0
+        }
+      }
+    },
+    "stop_rule_verdict": "positive"
+  },
+  {
+    "subject": "Ca-EEG3-4",
+    "pair_label": "NE->OffD1",
+    "registration": {
+      "session_a": "Ca-EEG3-4_NE",
+      "session_b": "Ca-EEG3-4_offline_d1",
+      "n_rois_a": 851,
+      "n_rois_b": 711,
+      "n_candidates": 621,
+      "n_accepted": 621,
+      "fraction_a_matched": 0.73,
+      "fraction_b_matched": 0.873,
+      "mean_confidence": 0.797,
+      "mean_dice": 0.878,
+      "mean_centroid_dist_px": 3.06
+    },
+    "method_results": {
+      "deconvolved_nmf": {
+        "assembly": {
+          "method": "nmf",
+          "signal_type": "deconvolved",
+          "var_explained": 0.0964,
+          "reconstruction_error": 158.8863,
+          "stability": {
+            "mean_stability": 1.0,
+            "min_stability": 1.0,
+            "method": "nmf",
+            "n_restarts": 4
+          }
+        },
+        "h1_event": {
+          "n_events": 32,
+          "n_ensembles": 8,
+          "total_pairs": 256,
+          "n_significant": 88,
+          "fraction_significant": 0.344,
+          "max_norm_score": 7.279,
+          "threshold_sigma": 2.0
+        }
+      },
+      "deconvolved_ica": {
+        "assembly": {
+          "method": "ica",
+          "signal_type": "deconvolved",
+          "var_explained": 0.089,
+          "reconstruction_error": 0.9545,
+          "stability": {
+            "mean_stability": 0.996,
+            "min_stability": 0.963,
+            "method": "ica",
+            "n_restarts": 4
+          }
+        },
+        "h1_event": {
+          "n_events": 32,
+          "n_ensembles": 8,
+          "total_pairs": 256,
+          "n_significant": 104,
+          "fraction_significant": 0.406,
+          "max_norm_score": 6.482,
+          "threshold_sigma": 2.0
+        }
+      },
+      "deconvolved_graph": {
+        "assembly": {
+          "method": "graph",
+          "signal_type": "deconvolved",
+          "var_explained": null,
+          "reconstruction_error": null,
+          "stability": {
+            "mean_stability": 0.951,
+            "min_stability": 0.848,
+            "method": "graph",
+            "n_restarts": 4
+          }
+        },
+        "h1_event": {
+          "n_events": 32,
+          "n_ensembles": 8,
+          "total_pairs": 256,
+          "n_significant": 124,
+          "fraction_significant": 0.484,
+          "max_norm_score": 7.407,
+          "threshold_sigma": 2.0
+        }
+      }
+    },
+    "stop_rule_verdict": "positive"
+  },
+  {
+    "subject": "Ca-EEG3-4",
+    "pair_label": "NE->OffD2",
+    "registration": {
+      "session_a": "Ca-EEG3-4_NE",
+      "session_b": "Ca-EEG3-4_offline_d2",
+      "n_rois_a": 851,
+      "n_rois_b": 858,
+      "n_candidates": 686,
+      "n_accepted": 686,
+      "fraction_a_matched": 0.806,
+      "fraction_b_matched": 0.8,
+      "mean_confidence": 0.771,
+      "mean_dice": 0.871,
+      "mean_centroid_dist_px": 3.86
+    },
+    "method_results": {
+      "deconvolved_nmf": {
+        "assembly": {
+          "method": "nmf",
+          "signal_type": "deconvolved",
+          "var_explained": 0.0915,
+          "reconstruction_error": 164.9538,
+          "stability": {
+            "mean_stability": 1.0,
+            "min_stability": 1.0,
+            "method": "nmf",
+            "n_restarts": 4
+          }
+        },
+        "h1_event": {
+          "n_events": 9,
+          "n_ensembles": 8,
+          "total_pairs": 72,
+          "n_significant": 25,
+          "fraction_significant": 0.347,
+          "max_norm_score": 6.173,
+          "threshold_sigma": 2.0
+        }
+      },
+      "deconvolved_ica": {
+        "assembly": {
+          "method": "ica",
+          "signal_type": "deconvolved",
+          "var_explained": 0.0839,
+          "reconstruction_error": 0.9571,
+          "stability": {
+            "mean_stability": 1.0,
+            "min_stability": 0.998,
+            "method": "ica",
+            "n_restarts": 4
+          }
+        },
+        "h1_event": {
+          "n_events": 9,
+          "n_ensembles": 8,
+          "total_pairs": 72,
+          "n_significant": 31,
+          "fraction_significant": 0.431,
+          "max_norm_score": 4.967,
+          "threshold_sigma": 2.0
+        }
+      },
+      "deconvolved_graph": {
+        "assembly": {
+          "method": "graph",
+          "signal_type": "deconvolved",
+          "var_explained": null,
+          "reconstruction_error": null,
+          "stability": {
+            "mean_stability": 0.951,
+            "min_stability": 0.83,
+            "method": "graph",
+            "n_restarts": 4
+          }
+        },
+        "h1_event": {
+          "n_events": 9,
+          "n_ensembles": 8,
+          "total_pairs": 72,
+          "n_significant": 45,
+          "fraction_significant": 0.625,
+          "max_norm_score": 3.675,
+          "threshold_sigma": 2.0
+        }
+      }
+    },
+    "stop_rule_verdict": "positive"
+  }
+]

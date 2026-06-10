@@ -1,0 +1,226 @@
+{
+  "canonical_params": {
+    "structural_lr": 0.18,
+    "replay_gain": 0.8,
+    "eligibility_decay": 0.12,
+    "structural_decay": 0.005,
+    "structural_gain": 6.0
+  },
+  "mb_trajectory": [
+    {
+      "b0": 0.5,
+      "b1": 0.5,
+      "b2": 0.5,
+      "b3": 0.5
+    },
+    {
+      "b0": 0.6088045883768545,
+      "b1": 0.67483869061936,
+      "b2": 0.6390738582719642,
+      "b3": 0.4925374375
+    },
+    {
+      "b0": 0.6905157644308886,
+      "b1": 0.7600546209784163,
+      "b2": 0.7351467577946673,
+      "b3": 0.48518625467813287
+    },
+    {
+      "b0": 0.7306702464273246,
+      "b1": 0.7986072403763136,
+      "b2": 0.7791481601240312,
+      "b3": 0.47794478917877986
+    },
+    {
+      "b0": 0.7503130228907678,
+      "b1": 0.8160217138593158,
+      "b2": 0.799621820714898,
+      "b3": 0.4708114034571879
+    },
+    {
+      "b0": 0.758681380397311,
+      "b1": 0.8224392134312014,
+      "b2": 0.8079003863539038,
+      "b3": 0.463784484409164
+    },
+    {
+      "b0": 0.7603626477712389,
+      "b1": 0.8225398708815517,
+      "b2": 0.8092053463012997,
+      "b3": 0.45686244300629664
+    },
+    {
+      "b0": 0.7578664344308756,
+      "b1": 0.8187547326796961,
+      "b2": 0.8062409653988557,
+      "b3": 0.4500437139366223
+    },
+    {
+      "b0": 0.7526732094446859,
+      "b1": 0.8124713156515109,
+      "b2": 0.8005439695126502,
+      "b3": 0.44332675525065396
+    }
+  ],
+  "core_metrics": [
+    {
+      "condition": "healthy_3nights",
+      "mb_b0": 0.7306702464273246,
+      "mb_b1": 0.7986072403763136,
+      "mb_b2": 0.7791481601240312,
+      "linking": 0.6461304214396444,
+      "r_mu1": 1.4223076121196567,
+      "r_mu2": 1.424870164365527,
+      "ctx_correct": 1.4223076121196567,
+      "ctx_wrong": 0.16564678499212998
+    },
+    {
+      "condition": "immediate_joint_replay",
+      "mb_b1": 0.7986072403763136,
+      "linking": 0.6461304214396444,
+      "r_mu1": 1.4223076121196567,
+      "r_mu2": 1.424870164365527
+    },
+    {
+      "condition": "no_replay",
+      "mb_b1": 0.47794478917877986,
+      "linking": 0.3895250031807056,
+      "r_mu1": 1.360237771750148,
+      "r_mu2": 1.360237771750148
+    }
+  ],
+  "pathology": [
+    {
+      "condition": "healthy",
+      "mb_b0": 0.7306702464273246,
+      "mb_b1": 0.7986072403763136,
+      "mb_b2": 0.7791481601240312,
+      "linking": 0.6461304214396444,
+      "r_mu1": 1.4223076121196567,
+      "r_mu2": 1.424870164365527
+    },
+    {
+      "condition": "high_decay",
+      "mb_b0": 0.6685864265994031,
+      "mb_b1": 0.7349468513472729,
+      "mb_b2": 0.7176966061032705,
+      "linking": 0.5944240212726876,
+      "r_mu1": 1.4154728109998438,
+      "r_mu2": 1.4191975723439691
+    },
+    {
+      "condition": "focal_overlap_vuln",
+      "mb_b0": 0.7306702464273246,
+      "mb_b1": 0.7150818280947533,
+      "mb_b2": 0.7791481601240312,
+      "linking": 0.5857833110662172,
+      "r_mu1": 1.4191073448670428,
+      "r_mu2": 1.421669897112913
+    },
+    {
+      "condition": "competitive_budget",
+      "mb_b0": 0.6253129081009975,
+      "mb_b1": 0.7080863623482718,
+      "mb_b2": 0.6603583168120148,
+      "linking": 0.5706424638906589,
+      "r_mu1": 1.4099335090105314,
+      "r_mu2": 1.4134834673549108
+    }
+  ],
+  "rescue": [
+    {
+      "condition": "no_rescue",
+      "mb_b1_post_rescue": 0.5063097910412391,
+      "linking_post_rescue": 0.4289807384614903,
+      "r_mu1_post_rescue": 1.3949542899533258,
+      "linking_recovery_pct": -80.02720435995519,
+      "recall_recovery_pct": -167.46293979360723
+    },
+    {
+      "condition": "standard",
+      "mb_b1_post_rescue": 0.7220293905911748,
+      "linking_post_rescue": 0.5949712876246898,
+      "r_mu1_post_rescue": 1.4252160621895102,
+      "linking_recovery_pct": 57.58669452393496,
+      "recall_recovery_pct": 128.4390539911624
+    },
+    {
+      "condition": "high_drive",
+      "mb_b1_post_rescue": 0.8303989320009256,
+      "linking_post_rescue": 0.6777148547441216,
+      "r_mu1_post_rescue": 1.430608701139037,
+      "linking_recovery_pct": 126.18496675249827,
+      "recall_recovery_pct": 181.16870262087352
+    },
+    {
+      "condition": "overlap_targeted",
+      "mb_b1_post_rescue": 0.8262504046852971,
+      "linking_post_rescue": 0.6665225837967061,
+      "r_mu1_post_rescue": 1.4264153860908275,
+      "linking_recovery_pct": 116.90605268056262,
+      "recall_recovery_pct": 140.16613761414905
+    }
+  ],
+  "claims": [
+    {
+      "exp": "001",
+      "claim": "Branch-specific consolidation",
+      "evidence": "M_b writes branch-specifically; overlap branch strongest"
+    },
+    {
+      "exp": "002",
+      "claim": "Context-sensitive recall",
+      "evidence": "Correct context yields highest support; mismatch penalises"
+    },
+    {
+      "exp": "003",
+      "claim": "Timing and replay dependence",
+      "evidence": "Immediate joint replay > spaced > selective > no replay"
+    },
+    {
+      "exp": "004",
+      "claim": "Robustness",
+      "evidence": "6/6 core effects robust across param sweeps and 10 seeds"
+    },
+    {
+      "exp": "005",
+      "claim": "Pathology hierarchy",
+      "evidence": "Focal overlap damage most harmful; linking degrades first"
+    },
+    {
+      "exp": "006",
+      "claim": "Asymmetric consolidation",
+      "evidence": "Sustained replay frequency determines long-term asymmetry"
+    },
+    {
+      "exp": "007",
+      "claim": "Branch heterogeneity",
+      "evidence": "Core effects survive; decay-rate spectrum drives forgetting"
+    },
+    {
+      "exp": "008",
+      "claim": "Resource competition",
+      "evidence": "Near-ceiling recall resilient; linking more sensitive"
+    },
+    {
+      "exp": "009",
+      "claim": "Rescue of linking",
+      "evidence": "Overlap-targeted rescue selectively restores b1 and linking"
+    },
+    {
+      "exp": "010",
+      "claim": "Multi-trace scaling",
+      "evidence": "Linking scales with overlap weight; hub pathology is specific"
+    },
+    {
+      "exp": "011",
+      "claim": "Branch topology / spillover",
+      "evidence": "Neighbourhood co-strengthens; indirect linking emerges"
+    },
+    {
+      "exp": "012",
+      "claim": "Richer readout",
+      "evidence": "All qualitative effects survive softmax readout"
+    }
+  ]
+}

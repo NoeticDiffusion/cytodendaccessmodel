@@ -1,0 +1,399 @@
+{
+  "I:\\AAA_PYTHON_REPOS_BACKUP\\cytodendkeylock\\data\\dandi\\raw\\000718\\sub-Ca-EEG2-1\\sub-Ca-EEG2-1_ses-FC_image+ophys.nwb": {
+    "path": "I:\\AAA_PYTHON_REPOS_BACKUP\\cytodendkeylock\\data\\dandi\\raw\\000718\\sub-Ca-EEG2-1\\sub-Ca-EEG2-1_ses-FC_image+ophys.nwb",
+    "session_description": "Fear Conditioning session: after a baseline period of 2 min, mouse received three 2s foot shocks of 1.5, with an intershock interval of 1 min. Then, 30 s after the final shock, the mice were removed and returned to the vivarium. Context: overhead external light, external fan at medium level, box fan on, even grid floor, acetic acid 1pct scent",
+    "identifier": "9eb52676-f2ac-47ff-b6ff-9d3359aedc62",
+    "experimenter": "('Zaki, Yosif',)",
+    "institution": "Icahn School of Medicine at Mount Sinai",
+    "lab": "Cai",
+    "experiment_description": "Simultaneous calcium imaging with Miniscopes and EEG/EMG experiment during retrospective memory-linking behavioral paradigm, to test whether ensemble co-reactivation is sleep-state specific. Mice were exposed to the neutral context for 10 min to explore. During aversive encoding, after a baseline period of 2 min, mice received three 2 s foot shocks of either amplitude 0.25 mA (low-shock) or 1.5 mA (high-shock), with an intershock interval of 1 min. Then, 30 s after the final shock, the mice were removed and returned to the vivarium. On the next 3 days, the mice were tested in the previously experienced aversive and neutral contexts, as well as a completely novel context that they had not been exposed to previously, for 5 min each. The features of the neutral and novel contexts were counter-balanced and were made up of different olfactory, auditory, lighting and tactile cues. The aversive context was always the same with distinct cues from the neutral and novel contexts. In the low- versus high-shock experiments mice were tested in the aversive context first, followed by testing in the neutral and novel context counter-balanced; half of the mice received neutral recall and then novel-context exposure the next day, and the other half received novel-context exposure and then neutral recall.",
+    "session_start_time": "2021-10-14 10:11:24.777000-04:00",
+    "subject": {
+      "subject_id": "Ca_EEG2-1",
+      "species": "Mus musculus",
+      "sex": "M",
+      "age": "P12W/P18W"
+    },
+    "acquisitions": [
+      "OnePhotonSeries",
+      "Video Ca_EEG2-1_FC"
+    ],
+    "processing_keys": [
+      "behavior",
+      "ophys"
+    ],
+    "interval_names": [],
+    "imaging_planes": [
+      "ImagingPlane"
+    ],
+    "electrode_groups": [],
+    "devices": [
+      "Microscope"
+    ]
+  },
+  "I:\\AAA_PYTHON_REPOS_BACKUP\\cytodendkeylock\\data\\dandi\\raw\\000718\\sub-Ca-EEG2-1\\sub-Ca-EEG2-1_ses-NeutralExposure_image+ophys.nwb": {
+    "path": "I:\\AAA_PYTHON_REPOS_BACKUP\\cytodendkeylock\\data\\dandi\\raw\\000718\\sub-Ca-EEG2-1\\sub-Ca-EEG2-1_ses-NeutralExposure_image+ophys.nwb",
+    "session_description": "Neutral Exposure session: mouse was exposed to a neutral context for 10 min to explore. Context: overhead external light, external fan off, box fan on, smooth floor, white curve insert, simple green 5pct scent",
+    "identifier": "3fc3a1cf-e215-4013-9ab6-efc2591121a0",
+    "experimenter": "('Zaki, Yosif',)",
+    "institution": "Icahn School of Medicine at Mount Sinai",
+    "lab": "Cai",
+    "experiment_description": "Simultaneous calcium imaging with Miniscopes and EEG/EMG experiment during retrospective memory-linking behavioral paradigm, to test whether ensemble co-reactivation is sleep-state specific. Mice were exposed to the neutral context for 10 min to explore. During aversive encoding, after a baseline period of 2 min, mice received three 2 s foot shocks of either amplitude 0.25 mA (low-shock) or 1.5 mA (high-shock), with an intershock interval of 1 min. Then, 30 s after the final shock, the mice were removed and returned to the vivarium. On the next 3 days, the mice were tested in the previously experienced aversive and neutral contexts, as well as a completely novel context that they had not been exposed to previously, for 5 min each. The features of the neutral and novel contexts were counter-balanced and were made up of different olfactory, auditory, lighting and tactile cues. The aversive context was always the same with distinct cues from the neutral and novel contexts. In the low- versus high-shock experiments mice were tested in the aversive context first, followed by testing in the neutral and novel context counter-balanced; half of the mice received neutral recall and then novel-context exposure the next day, and the other half received novel-context exposure and then neutral recall.",
+    "session_start_time": "2021-10-12 10:44:18.744000-04:00",
+    "subject": {
+      "subject_id": "Ca_EEG2-1",
+      "species": "Mus musculus",
+      "sex": "M",
+      "age": "P12W/P18W"
+    },
+    "acquisitions": [
+      "OnePhotonSeries",
+      "Video Ca_EEG2-1_NeutralExposure"
+    ],
+    "processing_keys": [
+      "behavior",
+      "ophys"
+    ],
+    "interval_names": [],
+    "imaging_planes": [
+      "ImagingPlane"
+    ],
+    "electrode_groups": [],
+    "devices": [
+      "Microscope"
+    ]
+  },
+  "I:\\AAA_PYTHON_REPOS_BACKUP\\cytodendkeylock\\data\\dandi\\raw\\000718\\sub-Ca-EEG2-1\\sub-Ca-EEG2-1_ses-OfflineDay2Session1_ophys.nwb": {
+    "path": "I:\\AAA_PYTHON_REPOS_BACKUP\\cytodendkeylock\\data\\dandi\\raw\\000718\\sub-Ca-EEG2-1\\sub-Ca-EEG2-1_ses-OfflineDay2Session1_ophys.nwb",
+    "session_description": "After Neutral Exposure and Fear Conditioning sessions, mice were taken out of the testing chambers and immediately placed in their homecage (scope was not removed).The homecage was placed in a dark grey storage bin with a webcam on top of the bin, taped to a wooden plank, looking down into the homecage. Mouse behavior and calcium were recorded for an hour.",
+    "identifier": "4ccbfa08-2e3b-4c50-aadc-287cf823e68b",
+    "experimenter": "('Zaki, Yosif',)",
+    "institution": "Icahn School of Medicine at Mount Sinai",
+    "lab": "Cai",
+    "experiment_description": "Simultaneous calcium imaging with Miniscopes and EEG/EMG experiment during retrospective memory-linking behavioral paradigm, to test whether ensemble co-reactivation is sleep-state specific. Mice were exposed to the neutral context for 10 min to explore. During aversive encoding, after a baseline period of 2 min, mice received three 2 s foot shocks of either amplitude 0.25 mA (low-shock) or 1.5 mA (high-shock), with an intershock interval of 1 min. Then, 30 s after the final shock, the mice were removed and returned to the vivarium. On the next 3 days, the mice were tested in the previously experienced aversive and neutral contexts, as well as a completely novel context that they had not been exposed to previously, for 5 min each. The features of the neutral and novel contexts were counter-balanced and were made up of different olfactory, auditory, lighting and tactile cues. The aversive context was always the same with distinct cues from the neutral and novel contexts. In the low- versus high-shock experiments mice were tested in the aversive context first, followed by testing in the neutral and novel context counter-balanced; half of the mice received neutral recall and then novel-context exposure the next day, and the other half received novel-context exposure and then neutral recall.",
+    "session_start_time": "2021-10-14 09:24:27.677000-04:00",
+    "subject": {
+      "subject_id": "Ca_EEG2-1",
+      "species": "Mus musculus",
+      "sex": "M",
+      "age": "P12W/P18W"
+    },
+    "acquisitions": [
+      "ActivitySignal",
+      "EEGSignal",
+      "EMGSignal",
+      "OnePhotonSeries",
+      "TemperatureSignal"
+    ],
+    "processing_keys": [
+      "ophys",
+      "sleep"
+    ],
+    "interval_names": [],
+    "imaging_planes": [
+      "ImagingPlane"
+    ],
+    "electrode_groups": [],
+    "devices": [
+      "HD-X02, Data Science International",
+      "Microscope"
+    ]
+  },
+  "I:\\AAA_PYTHON_REPOS_BACKUP\\cytodendkeylock\\data\\dandi\\raw\\000718\\sub-Ca-EEG2-1\\sub-Ca-EEG2-1_ses-Recall1_image+ophys.nwb": {
+    "path": "I:\\AAA_PYTHON_REPOS_BACKUP\\cytodendkeylock\\data\\dandi\\raw\\000718\\sub-Ca-EEG2-1\\sub-Ca-EEG2-1_ses-Recall1_image+ophys.nwb",
+    "session_description": "First Recall session: mouse was placed in shock context for 5 min. Context: overhead external light, external fan at medium level, box fan on, even grid floor, acetic acid 1pct scent",
+    "identifier": "be8ee1ab-6138-4328-8584-863e1b096612",
+    "experimenter": "('Zaki, Yosif',)",
+    "institution": "Icahn School of Medicine at Mount Sinai",
+    "lab": "Cai",
+    "experiment_description": "Simultaneous calcium imaging with Miniscopes and EEG/EMG experiment during retrospective memory-linking behavioral paradigm, to test whether ensemble co-reactivation is sleep-state specific. Mice were exposed to the neutral context for 10 min to explore. During aversive encoding, after a baseline period of 2 min, mice received three 2 s foot shocks of either amplitude 0.25 mA (low-shock) or 1.5 mA (high-shock), with an intershock interval of 1 min. Then, 30 s after the final shock, the mice were removed and returned to the vivarium. On the next 3 days, the mice were tested in the previously experienced aversive and neutral contexts, as well as a completely novel context that they had not been exposed to previously, for 5 min each. The features of the neutral and novel contexts were counter-balanced and were made up of different olfactory, auditory, lighting and tactile cues. The aversive context was always the same with distinct cues from the neutral and novel contexts. In the low- versus high-shock experiments mice were tested in the aversive context first, followed by testing in the neutral and novel context counter-balanced; half of the mice received neutral recall and then novel-context exposure the next day, and the other half received novel-context exposure and then neutral recall.",
+    "session_start_time": "2021-10-15 10:33:19.999000-04:00",
+    "subject": {
+      "subject_id": "Ca_EEG2-1",
+      "species": "Mus musculus",
+      "sex": "M",
+      "age": "P12W/P18W"
+    },
+    "acquisitions": [
+      "OnePhotonSeries",
+      "Video Ca_EEG2-1_Recall1"
+    ],
+    "processing_keys": [
+      "behavior",
+      "ophys"
+    ],
+    "interval_names": [],
+    "imaging_planes": [
+      "ImagingPlane"
+    ],
+    "electrode_groups": [],
+    "devices": [
+      "Microscope"
+    ]
+  },
+  "I:\\AAA_PYTHON_REPOS_BACKUP\\cytodendkeylock\\data\\dandi\\raw\\000718\\sub-Ca-EEG2-1\\sub-Ca-EEG2-1_ses-Week.nwb": {
+    "path": "I:\\AAA_PYTHON_REPOS_BACKUP\\cytodendkeylock\\data\\dandi\\raw\\000718\\sub-Ca-EEG2-1\\sub-Ca-EEG2-1_ses-Week.nwb",
+    "session_description": "",
+    "identifier": "26ca7e3f-a838-4603-b0c7-f777cfb83943",
+    "experimenter": "('Zaki, Yosif',)",
+    "institution": "Icahn School of Medicine at Mount Sinai",
+    "lab": "Cai",
+    "experiment_description": "Simultaneous calcium imaging with Miniscopes and EEG/EMG experiment during retrospective memory-linking behavioral paradigm, to test whether ensemble co-reactivation is sleep-state specific. Mice were exposed to the neutral context for 10 min to explore. During aversive encoding, after a baseline period of 2 min, mice received three 2 s foot shocks of either amplitude 0.25 mA (low-shock) or 1.5 mA (high-shock), with an intershock interval of 1 min. Then, 30 s after the final shock, the mice were removed and returned to the vivarium. On the next 3 days, the mice were tested in the previously experienced aversive and neutral contexts, as well as a completely novel context that they had not been exposed to previously, for 5 min each. The features of the neutral and novel contexts were counter-balanced and were made up of different olfactory, auditory, lighting and tactile cues. The aversive context was always the same with distinct cues from the neutral and novel contexts. In the low- versus high-shock experiments mice were tested in the aversive context first, followed by testing in the neutral and novel context counter-balanced; half of the mice received neutral recall and then novel-context exposure the next day, and the other half received novel-context exposure and then neutral recall.",
+    "session_start_time": "2021-10-08 07:00:00+00:00",
+    "subject": {
+      "subject_id": "Ca_EEG2-1",
+      "species": "Mus musculus",
+      "sex": "M",
+      "age": "P12W/P18W"
+    },
+    "acquisitions": [
+      "ActivitySignal",
+      "EEGSignal",
+      "EMGSignal",
+      "TemperatureSignal"
+    ],
+    "processing_keys": [
+      "cell_registration"
+    ],
+    "interval_names": [
+      "epochs"
+    ],
+    "imaging_planes": [],
+    "electrode_groups": [],
+    "devices": [
+      "HD-X02, Data Science International"
+    ]
+  },
+  "I:\\AAA_PYTHON_REPOS_BACKUP\\cytodendkeylock\\data\\dandi\\raw\\000718\\sub-Ca-EEG3-4\\sub-Ca-EEG3-4_ses-FC_image+ophys.nwb": {
+    "path": "I:\\AAA_PYTHON_REPOS_BACKUP\\cytodendkeylock\\data\\dandi\\raw\\000718\\sub-Ca-EEG3-4\\sub-Ca-EEG3-4_ses-FC_image+ophys.nwb",
+    "session_description": "Fear Conditioning session: after a baseline period of 2 min, mouse received three 2s foot shocks of 0.25, with an intershock interval of 1 min. Then, 30 s after the final shock, the mice were removed and returned to the vivarium. Context: overhead external light, external fan at medium level, box fan on, even grid floor, acetic acid 1pct scent",
+    "identifier": "72b96b21-d9c9-45f0-bc84-53ee8de74c21",
+    "experimenter": "('Zaki, Yosif',)",
+    "institution": "Icahn School of Medicine at Mount Sinai",
+    "lab": "Cai",
+    "experiment_description": "Simultaneous calcium imaging with Miniscopes and EEG/EMG experiment during retrospective memory-linking behavioral paradigm, to test whether ensemble co-reactivation is sleep-state specific. Mice were exposed to the neutral context for 10 min to explore. During aversive encoding, after a baseline period of 2 min, mice received three 2 s foot shocks of either amplitude 0.25 mA (low-shock) or 1.5 mA (high-shock), with an intershock interval of 1 min. Then, 30 s after the final shock, the mice were removed and returned to the vivarium. On the next 3 days, the mice were tested in the previously experienced aversive and neutral contexts, as well as a completely novel context that they had not been exposed to previously, for 5 min each. The features of the neutral and novel contexts were counter-balanced and were made up of different olfactory, auditory, lighting and tactile cues. The aversive context was always the same with distinct cues from the neutral and novel contexts. In the low- versus high-shock experiments mice were tested in the aversive context first, followed by testing in the neutral and novel context counter-balanced; half of the mice received neutral recall and then novel-context exposure the next day, and the other half received novel-context exposure and then neutral recall.",
+    "session_start_time": "2022-09-19 09:18:41.001000-04:00",
+    "subject": {
+      "subject_id": "Ca_EEG3-4",
+      "species": "Mus musculus",
+      "sex": "M",
+      "age": "P12W/P18W"
+    },
+    "acquisitions": [
+      "OnePhotonSeries",
+      "Video Ca_EEG3-4_FC"
+    ],
+    "processing_keys": [
+      "behavior",
+      "ophys"
+    ],
+    "interval_names": [],
+    "imaging_planes": [
+      "ImagingPlane"
+    ],
+    "electrode_groups": [],
+    "devices": [
+      "Microscope"
+    ]
+  },
+  "I:\\AAA_PYTHON_REPOS_BACKUP\\cytodendkeylock\\data\\dandi\\raw\\000718\\sub-Ca-EEG3-4\\sub-Ca-EEG3-4_ses-NeutralExposure_image+ophys.nwb": {
+    "path": "I:\\AAA_PYTHON_REPOS_BACKUP\\cytodendkeylock\\data\\dandi\\raw\\000718\\sub-Ca-EEG3-4\\sub-Ca-EEG3-4_ses-NeutralExposure_image+ophys.nwb",
+    "session_description": "Neutral Exposure session: mouse was exposed to a neutral context for 10 min to explore. Context: overhead external light, external fan off, box fan on, smooth floor, white curve insert, simple green 5pct scent",
+    "identifier": "0d22997d-fc05-41a2-ab4e-ed341059945d",
+    "experimenter": "('Zaki, Yosif',)",
+    "institution": "Icahn School of Medicine at Mount Sinai",
+    "lab": "Cai",
+    "experiment_description": "Simultaneous calcium imaging with Miniscopes and EEG/EMG experiment during retrospective memory-linking behavioral paradigm, to test whether ensemble co-reactivation is sleep-state specific. Mice were exposed to the neutral context for 10 min to explore. During aversive encoding, after a baseline period of 2 min, mice received three 2 s foot shocks of either amplitude 0.25 mA (low-shock) or 1.5 mA (high-shock), with an intershock interval of 1 min. Then, 30 s after the final shock, the mice were removed and returned to the vivarium. On the next 3 days, the mice were tested in the previously experienced aversive and neutral contexts, as well as a completely novel context that they had not been exposed to previously, for 5 min each. The features of the neutral and novel contexts were counter-balanced and were made up of different olfactory, auditory, lighting and tactile cues. The aversive context was always the same with distinct cues from the neutral and novel contexts. In the low- versus high-shock experiments mice were tested in the aversive context first, followed by testing in the neutral and novel context counter-balanced; half of the mice received neutral recall and then novel-context exposure the next day, and the other half received novel-context exposure and then neutral recall.",
+    "session_start_time": "2022-09-17 09:23:03.095000-04:00",
+    "subject": {
+      "subject_id": "Ca_EEG3-4",
+      "species": "Mus musculus",
+      "sex": "M",
+      "age": "P12W/P18W"
+    },
+    "acquisitions": [
+      "OnePhotonSeries",
+      "Video Ca_EEG3-4_NeutralExposure"
+    ],
+    "processing_keys": [
+      "behavior",
+      "ophys"
+    ],
+    "interval_names": [],
+    "imaging_planes": [
+      "ImagingPlane"
+    ],
+    "electrode_groups": [],
+    "devices": [
+      "Microscope"
+    ]
+  },
+  "I:\\AAA_PYTHON_REPOS_BACKUP\\cytodendkeylock\\data\\dandi\\raw\\000718\\sub-Ca-EEG3-4\\sub-Ca-EEG3-4_ses-OfflineDay1Session1_ophys.nwb": {
+    "path": "I:\\AAA_PYTHON_REPOS_BACKUP\\cytodendkeylock\\data\\dandi\\raw\\000718\\sub-Ca-EEG3-4\\sub-Ca-EEG3-4_ses-OfflineDay1Session1_ophys.nwb",
+    "session_description": "After Neutral Exposure and Fear Conditioning sessions, mice were taken out of the testing chambers and immediately placed in their homecage (scope was not removed).The homecage was placed in a dark grey storage bin with a webcam on top of the bin, taped to a wooden plank, looking down into the homecage. Mouse behavior and calcium were recorded for an hour.",
+    "identifier": "43f7d461-ffcc-46bf-907a-40673a0f4993",
+    "experimenter": "('Zaki, Yosif',)",
+    "institution": "Icahn School of Medicine at Mount Sinai",
+    "lab": "Cai",
+    "experiment_description": "Simultaneous calcium imaging with Miniscopes and EEG/EMG experiment during retrospective memory-linking behavioral paradigm, to test whether ensemble co-reactivation is sleep-state specific. Mice were exposed to the neutral context for 10 min to explore. During aversive encoding, after a baseline period of 2 min, mice received three 2 s foot shocks of either amplitude 0.25 mA (low-shock) or 1.5 mA (high-shock), with an intershock interval of 1 min. Then, 30 s after the final shock, the mice were removed and returned to the vivarium. On the next 3 days, the mice were tested in the previously experienced aversive and neutral contexts, as well as a completely novel context that they had not been exposed to previously, for 5 min each. The features of the neutral and novel contexts were counter-balanced and were made up of different olfactory, auditory, lighting and tactile cues. The aversive context was always the same with distinct cues from the neutral and novel contexts. In the low- versus high-shock experiments mice were tested in the aversive context first, followed by testing in the neutral and novel context counter-balanced; half of the mice received neutral recall and then novel-context exposure the next day, and the other half received novel-context exposure and then neutral recall.",
+    "session_start_time": "2022-09-17 09:40:40.554000-04:00",
+    "subject": {
+      "subject_id": "Ca_EEG3-4",
+      "species": "Mus musculus",
+      "sex": "M",
+      "age": "P12W/P18W"
+    },
+    "acquisitions": [
+      "ActivitySignal",
+      "EEGSignal",
+      "EMGSignal",
+      "OnePhotonSeries",
+      "TemperatureSignal"
+    ],
+    "processing_keys": [
+      "ophys",
+      "sleep"
+    ],
+    "interval_names": [],
+    "imaging_planes": [
+      "ImagingPlane"
+    ],
+    "electrode_groups": [],
+    "devices": [
+      "HD-X02, Data Science International",
+      "Microscope"
+    ]
+  },
+  "I:\\AAA_PYTHON_REPOS_BACKUP\\cytodendkeylock\\data\\dandi\\raw\\000718\\sub-Ca-EEG3-4\\sub-Ca-EEG3-4_ses-OfflineDay2Session1_ophys.nwb": {
+    "path": "I:\\AAA_PYTHON_REPOS_BACKUP\\cytodendkeylock\\data\\dandi\\raw\\000718\\sub-Ca-EEG3-4\\sub-Ca-EEG3-4_ses-OfflineDay2Session1_ophys.nwb",
+    "session_description": "After Neutral Exposure and Fear Conditioning sessions, mice were taken out of the testing chambers and immediately placed in their homecage (scope was not removed).The homecage was placed in a dark grey storage bin with a webcam on top of the bin, taped to a wooden plank, looking down into the homecage. Mouse behavior and calcium were recorded for an hour.",
+    "identifier": "49d7ea8f-42a3-4dac-92f0-0794964b8cc2",
+    "experimenter": "('Zaki, Yosif',)",
+    "institution": "Icahn School of Medicine at Mount Sinai",
+    "lab": "Cai",
+    "experiment_description": "Simultaneous calcium imaging with Miniscopes and EEG/EMG experiment during retrospective memory-linking behavioral paradigm, to test whether ensemble co-reactivation is sleep-state specific. Mice were exposed to the neutral context for 10 min to explore. During aversive encoding, after a baseline period of 2 min, mice received three 2 s foot shocks of either amplitude 0.25 mA (low-shock) or 1.5 mA (high-shock), with an intershock interval of 1 min. Then, 30 s after the final shock, the mice were removed and returned to the vivarium. On the next 3 days, the mice were tested in the previously experienced aversive and neutral contexts, as well as a completely novel context that they had not been exposed to previously, for 5 min each. The features of the neutral and novel contexts were counter-balanced and were made up of different olfactory, auditory, lighting and tactile cues. The aversive context was always the same with distinct cues from the neutral and novel contexts. In the low- versus high-shock experiments mice were tested in the aversive context first, followed by testing in the neutral and novel context counter-balanced; half of the mice received neutral recall and then novel-context exposure the next day, and the other half received novel-context exposure and then neutral recall.",
+    "session_start_time": "2022-09-19 09:30:07.344000-04:00",
+    "subject": {
+      "subject_id": "Ca_EEG3-4",
+      "species": "Mus musculus",
+      "sex": "M",
+      "age": "P12W/P18W"
+    },
+    "acquisitions": [
+      "ActivitySignal",
+      "EEGSignal",
+      "EMGSignal",
+      "OnePhotonSeries",
+      "TemperatureSignal"
+    ],
+    "processing_keys": [
+      "ophys",
+      "sleep"
+    ],
+    "interval_names": [],
+    "imaging_planes": [
+      "ImagingPlane"
+    ],
+    "electrode_groups": [],
+    "devices": [
+      "HD-X02, Data Science International",
+      "Microscope"
+    ]
+  },
+  "I:\\AAA_PYTHON_REPOS_BACKUP\\cytodendkeylock\\data\\dandi\\raw\\000718\\sub-Ca-EEG3-4\\sub-Ca-EEG3-4_ses-Recall1_image+ophys.nwb": {
+    "path": "I:\\AAA_PYTHON_REPOS_BACKUP\\cytodendkeylock\\data\\dandi\\raw\\000718\\sub-Ca-EEG3-4\\sub-Ca-EEG3-4_ses-Recall1_image+ophys.nwb",
+    "session_description": "First Recall session: mouse was placed in shock context for 5 min. Context: overhead external light, external fan at medium level, box fan on, even grid floor, acetic acid 1pct scent",
+    "identifier": "3e2a975f-3bf9-458b-980e-5f6a114d2bab",
+    "experimenter": "('Zaki, Yosif',)",
+    "institution": "Icahn School of Medicine at Mount Sinai",
+    "lab": "Cai",
+    "experiment_description": "Simultaneous calcium imaging with Miniscopes and EEG/EMG experiment during retrospective memory-linking behavioral paradigm, to test whether ensemble co-reactivation is sleep-state specific. Mice were exposed to the neutral context for 10 min to explore. During aversive encoding, after a baseline period of 2 min, mice received three 2 s foot shocks of either amplitude 0.25 mA (low-shock) or 1.5 mA (high-shock), with an intershock interval of 1 min. Then, 30 s after the final shock, the mice were removed and returned to the vivarium. On the next 3 days, the mice were tested in the previously experienced aversive and neutral contexts, as well as a completely novel context that they had not been exposed to previously, for 5 min each. The features of the neutral and novel contexts were counter-balanced and were made up of different olfactory, auditory, lighting and tactile cues. The aversive context was always the same with distinct cues from the neutral and novel contexts. In the low- versus high-shock experiments mice were tested in the aversive context first, followed by testing in the neutral and novel context counter-balanced; half of the mice received neutral recall and then novel-context exposure the next day, and the other half received novel-context exposure and then neutral recall.",
+    "session_start_time": "2022-09-20 09:19:43.303000-04:00",
+    "subject": {
+      "subject_id": "Ca_EEG3-4",
+      "species": "Mus musculus",
+      "sex": "M",
+      "age": "P12W/P18W"
+    },
+    "acquisitions": [
+      "OnePhotonSeries",
+      "Video Ca_EEG3-4_Recall1"
+    ],
+    "processing_keys": [
+      "behavior",
+      "ophys"
+    ],
+    "interval_names": [],
+    "imaging_planes": [
+      "ImagingPlane"
+    ],
+    "electrode_groups": [],
+    "devices": [
+      "Microscope"
+    ]
+  },
+  "I:\\AAA_PYTHON_REPOS_BACKUP\\cytodendkeylock\\data\\dandi\\raw\\000718\\sub-Ca-EEG3-4\\sub-Ca-EEG3-4_ses-Recall2_image+ophys.nwb": {
+    "path": "I:\\AAA_PYTHON_REPOS_BACKUP\\cytodendkeylock\\data\\dandi\\raw\\000718\\sub-Ca-EEG3-4\\sub-Ca-EEG3-4_ses-Recall2_image+ophys.nwb",
+    "session_description": "Second Recall session: mouse was placed in Novel context for 5 min. Context: overhead external light, external fan off, box fan on, bath mat floor, A frame insert, ethanol 70pct scent",
+    "identifier": "1d8ab4f6-2709-46bc-b3c5-cb17b82eb2f6",
+    "experimenter": "('Zaki, Yosif',)",
+    "institution": "Icahn School of Medicine at Mount Sinai",
+    "lab": "Cai",
+    "experiment_description": "Simultaneous calcium imaging with Miniscopes and EEG/EMG experiment during retrospective memory-linking behavioral paradigm, to test whether ensemble co-reactivation is sleep-state specific. Mice were exposed to the neutral context for 10 min to explore. During aversive encoding, after a baseline period of 2 min, mice received three 2 s foot shocks of either amplitude 0.25 mA (low-shock) or 1.5 mA (high-shock), with an intershock interval of 1 min. Then, 30 s after the final shock, the mice were removed and returned to the vivarium. On the next 3 days, the mice were tested in the previously experienced aversive and neutral contexts, as well as a completely novel context that they had not been exposed to previously, for 5 min each. The features of the neutral and novel contexts were counter-balanced and were made up of different olfactory, auditory, lighting and tactile cues. The aversive context was always the same with distinct cues from the neutral and novel contexts. In the low- versus high-shock experiments mice were tested in the aversive context first, followed by testing in the neutral and novel context counter-balanced; half of the mice received neutral recall and then novel-context exposure the next day, and the other half received novel-context exposure and then neutral recall.",
+    "session_start_time": "2022-09-21 08:41:45.720000-04:00",
+    "subject": {
+      "subject_id": "Ca_EEG3-4",
+      "species": "Mus musculus",
+      "sex": "M",
+      "age": "P12W/P18W"
+    },
+    "acquisitions": [
+      "OnePhotonSeries",
+      "Video Ca_EEG3-4_Recall2"
+    ],
+    "processing_keys": [
+      "behavior",
+      "ophys"
+    ],
+    "interval_names": [],
+    "imaging_planes": [
+      "ImagingPlane"
+    ],
+    "electrode_groups": [],
+    "devices": [
+      "Microscope"
+    ]
+  },
+  "I:\\AAA_PYTHON_REPOS_BACKUP\\cytodendkeylock\\data\\dandi\\raw\\000718\\sub-Ca-EEG3-4\\sub-Ca-EEG3-4_ses-Recall3_image+ophys.nwb": {
+    "path": "I:\\AAA_PYTHON_REPOS_BACKUP\\cytodendkeylock\\data\\dandi\\raw\\000718\\sub-Ca-EEG3-4\\sub-Ca-EEG3-4_ses-Recall3_image+ophys.nwb",
+    "session_description": "Third Recall session: mouse was placed in Neutral context for 5 min. Context: overhead external light, external fan off, box fan on, smooth floor, white curve insert, simple green 5pct scent",
+    "identifier": "b1cd765f-5315-4e90-9626-233cb5f04445",
+    "experimenter": "('Zaki, Yosif',)",
+    "institution": "Icahn School of Medicine at Mount Sinai",
+    "lab": "Cai",
+    "experiment_description": "Simultaneous calcium imaging with Miniscopes and EEG/EMG experiment during retrospective memory-linking behavioral paradigm, to test whether ensemble co-reactivation is sleep-state specific. Mice were exposed to the neutral context for 10 min to explore. During aversive encoding, after a baseline period of 2 min, mice received three 2 s foot shocks of either amplitude 0.25 mA (low-shock) or 1.5 mA (high-shock), with an intershock interval of 1 min. Then, 30 s after the final shock, the mice were removed and returned to the vivarium. On the next 3 days, the mice were tested in the previously experienced aversive and neutral contexts, as well as a completely novel context that they had not been exposed to previously, for 5 min each. The features of the neutral and novel contexts were counter-balanced and were made up of different olfactory, auditory, lighting and tactile cues. The aversive context was always the same with distinct cues from the neutral and novel contexts. In the low- versus high-shock experiments mice were tested in the aversive context first, followed by testing in the neutral and novel context counter-balanced; half of the mice received neutral recall and then novel-context exposure the next day, and the other half received novel-context exposure and then neutral recall.",
+    "session_start_time": "2022-09-22 08:40:12.644000-04:00",
+    "subject": {
+      "subject_id": "Ca_EEG3-4",
+      "species": "Mus musculus",
+      "sex": "M",
+      "age": "P12W/P18W"
+    },
+    "acquisitions": [
+      "OnePhotonSeries",
+      "Video Ca_EEG3-4_Recall3"
+    ],
+    "processing_keys": [
+      "behavior",
+      "ophys"
+    ],
+    "interval_names": [],
+    "imaging_planes": [
+      "ImagingPlane"
+    ],
+    "electrode_groups": [],
+    "devices": [
+      "Microscope"
+    ]
+  }
+}

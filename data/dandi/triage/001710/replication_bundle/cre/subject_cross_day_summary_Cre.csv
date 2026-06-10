@@ -1,0 +1,8 @@
+group,subject_id,n_days,n_pairs,off_diagonal_mean
+Cre,Cre-1,6,15,0.4548
+Cre,Cre-2,6,15,0.3881
+Cre,Cre-3,6,15,0.2924
+Cre,Cre-4,6,15,0.3371
+Cre,Cre-5,6,15,0.2731
+Cre,Cre-6,6,15,0.3359
+Cre,Cre-7,5,10,0.2805

@@ -1,3 +1,14 @@
+"""Data contracts for the branch-resolved cytoskeletal-dendritic accessibility model.
+
+Defines the complete set of dataclass types used by the simulator: per-branch
+state (fast and slow variables), engram trace definitions, consolidation window
+and report structures, and recall-support summaries.  All classes are
+``slots=True`` dataclasses for performance, except ``ActivityMatrix`` which
+carries a numpy array payload.
+
+These contracts are the shared vocabulary between the simulator, experiment
+scripts, and downstream analysis modules.
+"""
 from __future__ import annotations
 
 from dataclasses import dataclass, field

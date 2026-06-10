@@ -21,6 +21,15 @@ from cytodend_accessmodel.simulator import CytodendAccessModelSimulator
 # ---------------------------------------------------------------------------
 # Default parameter sets (mirrors exp015_comparator_baselines.py)
 # ---------------------------------------------------------------------------
+# Note on parameter sets: this module uses BASE_PARAMS (structural_lr=0.15,
+# replay_gain=1.0) as its own baseline, which differs from both the exp001
+# demo set (structural_lr=0.20, replay_gain=1.2) and the exp013 canonical
+# set (structural_lr=0.18, replay_gain=0.80, structural_gain=6.0).  The
+# bridge exists to generate model-side linking and context-margin signatures
+# for comparison with empirical co-reactivation scores; its exact parameter
+# values are intentionally conservative rather than tied to either of those
+# two experiment-specific calibrations.
+# ---------------------------------------------------------------------------
 
 BASE_PARAMS = DynamicsParameters(
     fast_gain=2.0,

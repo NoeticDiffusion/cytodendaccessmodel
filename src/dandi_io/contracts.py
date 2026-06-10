@@ -1,3 +1,16 @@
+"""Data contracts for the DANDI I/O layer.
+
+Defines the dataclass and Protocol types shared by the client, config loader,
+registry, probe, download, and CLI modules:
+
+- ``AssetRecord``: a single DANDI asset entry as returned by the REST API.
+- ``DatasetSpec``, ``StorageSpec``, ``SelectionSpec``, ``ExecutionSpec``,
+  ``OutputSpec``, ``DandiIngestionConfig``: structured representation of a
+  YAML ingestion configuration.
+- ``ProbeSummary``: result of probing one local file for existence and size.
+- ``TriageResult``: outcome of dataset-specific triage logic.
+- ``DatasetAdapterProtocol``: structural typing contract for all dataset adapters.
+"""
 from __future__ import annotations
 
 from dataclasses import dataclass, field

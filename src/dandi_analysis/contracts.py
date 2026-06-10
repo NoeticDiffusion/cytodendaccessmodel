@@ -1,3 +1,14 @@
+"""Shared data contracts for the DANDI analysis layer.
+
+Defines the dataclass types that cross module boundaries in ``dandi_analysis``:
+NWB asset descriptors (``DiscoveredNwbAsset``, ``ReadyNwbAsset``), session
+index rows, offline window records, activity matrices, pairwise co-reactivation
+results, and QC issue records.
+
+These types are intentionally decoupled from dataset-specific logic so that
+inventory, readiness, and analysis modules can be composed without circular
+imports.
+"""
 from __future__ import annotations
 
 from dataclasses import dataclass, field

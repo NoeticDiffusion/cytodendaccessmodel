@@ -1,0 +1,2096 @@
+{
+  "I:\\AAA_PYTHON_REPOS_BACKUP\\cytodendkeylock\\data\\dandi\\raw\\000336\\sub-644972\\sub-644972_ses-1237338784-acq-1237809217_ophys.nwb": {
+    "path": "I:\\AAA_PYTHON_REPOS_BACKUP\\cytodendkeylock\\data\\dandi\\raw\\000336\\sub-644972\\sub-644972_ses-1237338784-acq-1237809217_ophys.nwb",
+    "session_description": "Ophys Session",
+    "identifier": "1237809217",
+    "institution": "Allen Institute for Brain Science",
+    "experiment_description": "ophys session",
+    "session_start_time": "2023-01-04 16:58:58.862000+00:00",
+    "subject": {
+      "subject_id": "644972",
+      "species": "Mus musculus",
+      "sex": "M",
+      "age": "P155.0D"
+    },
+    "acquisitions": [
+      "EyeTracking",
+      "v_in",
+      "v_sig"
+    ],
+    "processing_keys": [
+      "ophys",
+      "running",
+      "stimulus",
+      "stimulus_ophys"
+    ],
+    "interval_names": [
+      "fixed_gabors_presentations",
+      "gratings_presentations",
+      "movie_flower_fwd_presentations",
+      "movie_touch_of_evil_fwd_presentations",
+      "movie_worms_fwd_presentations",
+      "rotate_gabors_presentations",
+      "spontaneous_presentations"
+    ],
+    "imaging_planes": [
+      "imaging_plane_1"
+    ],
+    "electrode_groups": [],
+    "devices": [
+      "MESO.2"
+    ],
+    "imaging_plane_info": {
+      "imaging_plane_1": {
+        "description": "(512, 512) field of view in VISp at depth 20 um",
+        "imaging_rate": 10.0,
+        "indicator": "GCaMP6f",
+        "location": "VISp"
+      }
+    },
+    "roi_response_series": [
+      {
+        "interface": "corrected_fluorescence",
+        "name": "traces",
+        "shape": [
+          37517,
+          6
+        ]
+      },
+      {
+        "interface": "dff",
+        "name": "traces",
+        "shape": [
+          37517,
+          6
+        ]
+      },
+      {
+        "interface": "neuropil_trace",
+        "name": "traces",
+        "shape": [
+          37517,
+          6
+        ]
+      }
+    ],
+    "interval_tables": {
+      "fixed_gabors_presentations": {
+        "n_rows": 3000,
+        "columns": [
+          "start_time",
+          "stop_time",
+          "stimulus_name",
+          "stimulus_block",
+          "OriSurp",
+          "PosSizesAll",
+          "colors",
+          "contrs",
+          "depths",
+          "elementMask",
+          "elementTex",
+          "fieldDepth",
+          "fieldPos",
+          "fieldShape",
+          "fieldSize",
+          "nElements",
+          "opacities",
+          "oris",
+          "phases",
+          "rgbs",
+          "sfs",
+          "sizes",
+          "units",
+          "xys",
+          "stimulus_index",
+          "tags",
+          "timeseries"
+        ]
+      },
+      "gratings_presentations": {
+        "n_rows": 624,
+        "columns": [
+          "start_time",
+          "stop_time",
+          "stimulus_name",
+          "stimulus_block",
+          "units",
+          "stimulus_index",
+          "color",
+          "contrast",
+          "mask",
+          "opacity",
+          "ori",
+          "size",
+          "spatial_frequency",
+          "phase",
+          "tags",
+          "timeseries"
+        ]
+      },
+      "movie_flower_fwd_presentations": {
+        "n_rows": 16200,
+        "columns": [
+          "start_time",
+          "stop_time",
+          "stimulus_name",
+          "stimulus_block",
+          "units",
+          "stimulus_index",
+          "frame",
+          "color",
+          "contrast",
+          "opacity",
+          "ori",
+          "size",
+          "tags",
+          "timeseries"
+        ]
+      },
+      "movie_touch_of_evil_fwd_presentations": {
+        "n_rows": 16200,
+        "columns": [
+          "start_time",
+          "stop_time",
+          "stimulus_name",
+          "stimulus_block",
+          "units",
+          "stimulus_index",
+          "frame",
+          "color",
+          "contrast",
+          "opacity",
+          "ori",
+          "size",
+          "tags",
+          "timeseries"
+        ]
+      },
+      "movie_worms_fwd_presentations": {
+        "n_rows": 16200,
+        "columns": [
+          "start_time",
+          "stop_time",
+          "stimulus_name",
+          "stimulus_block",
+          "units",
+          "stimulus_index",
+          "frame",
+          "color",
+          "contrast",
+          "opacity",
+          "ori",
+          "size",
+          "tags",
+          "timeseries"
+        ]
+      },
+      "rotate_gabors_presentations": {
+        "n_rows": 3000,
+        "columns": [
+          "start_time",
+          "stop_time",
+          "stimulus_name",
+          "stimulus_block",
+          "OriSurp",
+          "PosSizesAll",
+          "colors",
+          "contrs",
+          "depths",
+          "elementMask",
+          "elementTex",
+          "fieldDepth",
+          "fieldPos",
+          "fieldShape",
+          "fieldSize",
+          "nElements",
+          "opacities",
+          "oris",
+          "phases",
+          "rgbs",
+          "sfs",
+          "sizes",
+          "units",
+          "xys",
+          "stimulus_index",
+          "tags",
+          "timeseries"
+        ]
+      },
+      "spontaneous_presentations": {
+        "n_rows": 183,
+        "columns": [
+          "start_time",
+          "stop_time",
+          "stimulus_name",
+          "tags",
+          "timeseries"
+        ]
+      }
+    }
+  },
+  "I:\\AAA_PYTHON_REPOS_BACKUP\\cytodendkeylock\\data\\dandi\\raw\\000336\\sub-644972\\sub-644972_ses-1237338784-acq-1237809219_ophys.nwb": {
+    "path": "I:\\AAA_PYTHON_REPOS_BACKUP\\cytodendkeylock\\data\\dandi\\raw\\000336\\sub-644972\\sub-644972_ses-1237338784-acq-1237809219_ophys.nwb",
+    "session_description": "Ophys Session",
+    "identifier": "1237809219",
+    "institution": "Allen Institute for Brain Science",
+    "experiment_description": "ophys session",
+    "session_start_time": "2023-01-04 16:58:58.862000+00:00",
+    "subject": {
+      "subject_id": "644972",
+      "species": "Mus musculus",
+      "sex": "M",
+      "age": "P155.0D"
+    },
+    "acquisitions": [
+      "EyeTracking",
+      "v_in",
+      "v_sig"
+    ],
+    "processing_keys": [
+      "ophys",
+      "running",
+      "stimulus",
+      "stimulus_ophys"
+    ],
+    "interval_names": [
+      "fixed_gabors_presentations",
+      "gratings_presentations",
+      "movie_flower_fwd_presentations",
+      "movie_touch_of_evil_fwd_presentations",
+      "movie_worms_fwd_presentations",
+      "rotate_gabors_presentations",
+      "spontaneous_presentations"
+    ],
+    "imaging_planes": [
+      "imaging_plane_1"
+    ],
+    "electrode_groups": [],
+    "devices": [
+      "MESO.2"
+    ],
+    "imaging_plane_info": {
+      "imaging_plane_1": {
+        "description": "(512, 512) field of view in VISp at depth 295 um",
+        "imaging_rate": 10.0,
+        "indicator": "GCaMP6f",
+        "location": "VISp"
+      }
+    },
+    "roi_response_series": [
+      {
+        "interface": "corrected_fluorescence",
+        "name": "traces",
+        "shape": [
+          37517,
+          62
+        ]
+      },
+      {
+        "interface": "dff",
+        "name": "traces",
+        "shape": [
+          37517,
+          62
+        ]
+      },
+      {
+        "interface": "neuropil_trace",
+        "name": "traces",
+        "shape": [
+          37517,
+          62
+        ]
+      }
+    ],
+    "interval_tables": {
+      "fixed_gabors_presentations": {
+        "n_rows": 3000,
+        "columns": [
+          "start_time",
+          "stop_time",
+          "stimulus_name",
+          "stimulus_block",
+          "OriSurp",
+          "PosSizesAll",
+          "colors",
+          "contrs",
+          "depths",
+          "elementMask",
+          "elementTex",
+          "fieldDepth",
+          "fieldPos",
+          "fieldShape",
+          "fieldSize",
+          "nElements",
+          "opacities",
+          "oris",
+          "phases",
+          "rgbs",
+          "sfs",
+          "sizes",
+          "units",
+          "xys",
+          "stimulus_index",
+          "tags",
+          "timeseries"
+        ]
+      },
+      "gratings_presentations": {
+        "n_rows": 624,
+        "columns": [
+          "start_time",
+          "stop_time",
+          "stimulus_name",
+          "stimulus_block",
+          "units",
+          "stimulus_index",
+          "color",
+          "contrast",
+          "mask",
+          "opacity",
+          "ori",
+          "size",
+          "spatial_frequency",
+          "phase",
+          "tags",
+          "timeseries"
+        ]
+      },
+      "movie_flower_fwd_presentations": {
+        "n_rows": 16200,
+        "columns": [
+          "start_time",
+          "stop_time",
+          "stimulus_name",
+          "stimulus_block",
+          "units",
+          "stimulus_index",
+          "frame",
+          "color",
+          "contrast",
+          "opacity",
+          "ori",
+          "size",
+          "tags",
+          "timeseries"
+        ]
+      },
+      "movie_touch_of_evil_fwd_presentations": {
+        "n_rows": 16200,
+        "columns": [
+          "start_time",
+          "stop_time",
+          "stimulus_name",
+          "stimulus_block",
+          "units",
+          "stimulus_index",
+          "frame",
+          "color",
+          "contrast",
+          "opacity",
+          "ori",
+          "size",
+          "tags",
+          "timeseries"
+        ]
+      },
+      "movie_worms_fwd_presentations": {
+        "n_rows": 16200,
+        "columns": [
+          "start_time",
+          "stop_time",
+          "stimulus_name",
+          "stimulus_block",
+          "units",
+          "stimulus_index",
+          "frame",
+          "color",
+          "contrast",
+          "opacity",
+          "ori",
+          "size",
+          "tags",
+          "timeseries"
+        ]
+      },
+      "rotate_gabors_presentations": {
+        "n_rows": 3000,
+        "columns": [
+          "start_time",
+          "stop_time",
+          "stimulus_name",
+          "stimulus_block",
+          "OriSurp",
+          "PosSizesAll",
+          "colors",
+          "contrs",
+          "depths",
+          "elementMask",
+          "elementTex",
+          "fieldDepth",
+          "fieldPos",
+          "fieldShape",
+          "fieldSize",
+          "nElements",
+          "opacities",
+          "oris",
+          "phases",
+          "rgbs",
+          "sfs",
+          "sizes",
+          "units",
+          "xys",
+          "stimulus_index",
+          "tags",
+          "timeseries"
+        ]
+      },
+      "spontaneous_presentations": {
+        "n_rows": 183,
+        "columns": [
+          "start_time",
+          "stop_time",
+          "stimulus_name",
+          "tags",
+          "timeseries"
+        ]
+      }
+    }
+  },
+  "I:\\AAA_PYTHON_REPOS_BACKUP\\cytodendkeylock\\data\\dandi\\raw\\000336\\sub-656228\\sub-656228_ses-1245548523-acq-1245937727_ophys.nwb": {
+    "path": "I:\\AAA_PYTHON_REPOS_BACKUP\\cytodendkeylock\\data\\dandi\\raw\\000336\\sub-656228\\sub-656228_ses-1245548523-acq-1245937727_ophys.nwb",
+    "session_description": "Ophys Session",
+    "identifier": "1245937727",
+    "institution": "Allen Institute for Brain Science",
+    "experiment_description": "ophys session",
+    "session_start_time": "2023-02-07 21:50:38.477000+00:00",
+    "subject": {
+      "subject_id": "656228",
+      "species": "Mus musculus",
+      "sex": "M",
+      "age": "P102.0D"
+    },
+    "acquisitions": [
+      "EyeTracking",
+      "v_in",
+      "v_sig"
+    ],
+    "processing_keys": [
+      "ophys",
+      "running",
+      "stimulus",
+      "stimulus_ophys"
+    ],
+    "interval_names": [
+      "fixed_gabors_presentations",
+      "gratings_presentations",
+      "movie_flower_fwd_presentations",
+      "movie_flower_fwd_rev_presentations",
+      "movie_flower_rev_fwd_presentations",
+      "movie_flower_rev_presentations",
+      "movie_touch_of_evil_fwd_presentations",
+      "movie_touch_of_evil_fwd_rev_presentations",
+      "movie_touch_of_evil_rev_fwd_presentations",
+      "movie_touch_of_evil_rev_presentations",
+      "movie_worms_fwd_presentations",
+      "movie_worms_fwd_rev_presentations",
+      "movie_worms_rev_fwd_presentations",
+      "movie_worms_rev_presentations",
+      "rotate_gabors_presentations",
+      "spontaneous_presentations"
+    ],
+    "imaging_planes": [
+      "imaging_plane_1"
+    ],
+    "electrode_groups": [],
+    "devices": [
+      "MESO.2"
+    ],
+    "imaging_plane_info": {
+      "imaging_plane_1": {
+        "description": "(512, 512) field of view in VISp at depth 148 um",
+        "imaging_rate": 10.0,
+        "indicator": "GCaMP6f",
+        "location": "VISp"
+      }
+    },
+    "roi_response_series": [
+      {
+        "interface": "corrected_fluorescence",
+        "name": "traces",
+        "shape": [
+          37515,
+          53
+        ]
+      },
+      {
+        "interface": "dff",
+        "name": "traces",
+        "shape": [
+          37515,
+          53
+        ]
+      },
+      {
+        "interface": "neuropil_trace",
+        "name": "traces",
+        "shape": [
+          37515,
+          53
+        ]
+      }
+    ],
+    "interval_tables": {
+      "fixed_gabors_presentations": {
+        "n_rows": 3000,
+        "columns": [
+          "start_time",
+          "stop_time",
+          "stimulus_name",
+          "stimulus_block",
+          "units",
+          "stimulus_index",
+          "OriSurp",
+          "PosSizesAll",
+          "colors",
+          "contrs",
+          "depths",
+          "elementMask",
+          "elementTex",
+          "fieldDepth",
+          "fieldPos",
+          "fieldShape",
+          "fieldSize",
+          "nElements",
+          "opacities",
+          "oris",
+          "phases",
+          "rgbs",
+          "sfs",
+          "sizes",
+          "xys",
+          "tags",
+          "timeseries"
+        ]
+      },
+      "gratings_presentations": {
+        "n_rows": 624,
+        "columns": [
+          "start_time",
+          "stop_time",
+          "stimulus_name",
+          "stimulus_block",
+          "color",
+          "contrast",
+          "mask",
+          "opacity",
+          "ori",
+          "size",
+          "units",
+          "stimulus_index",
+          "spatial_frequency",
+          "phase",
+          "tags",
+          "timeseries"
+        ]
+      },
+      "movie_flower_fwd_presentations": {
+        "n_rows": 4050,
+        "columns": [
+          "start_time",
+          "stop_time",
+          "stimulus_name",
+          "stimulus_block",
+          "frame",
+          "color",
+          "contrast",
+          "opacity",
+          "ori",
+          "size",
+          "units",
+          "stimulus_index",
+          "tags",
+          "timeseries"
+        ]
+      },
+      "movie_flower_fwd_rev_presentations": {
+        "n_rows": 4050,
+        "columns": [
+          "start_time",
+          "stop_time",
+          "stimulus_name",
+          "stimulus_block",
+          "frame",
+          "color",
+          "contrast",
+          "opacity",
+          "ori",
+          "size",
+          "units",
+          "stimulus_index",
+          "tags",
+          "timeseries"
+        ]
+      },
+      "movie_flower_rev_fwd_presentations": {
+        "n_rows": 4050,
+        "columns": [
+          "start_time",
+          "stop_time",
+          "stimulus_name",
+          "stimulus_block",
+          "frame",
+          "color",
+          "contrast",
+          "opacity",
+          "ori",
+          "size",
+          "units",
+          "stimulus_index",
+          "tags",
+          "timeseries"
+        ]
+      },
+      "movie_flower_rev_presentations": {
+        "n_rows": 4050,
+        "columns": [
+          "start_time",
+          "stop_time",
+          "stimulus_name",
+          "stimulus_block",
+          "frame",
+          "color",
+          "contrast",
+          "opacity",
+          "ori",
+          "size",
+          "units",
+          "stimulus_index",
+          "tags",
+          "timeseries"
+        ]
+      },
+      "movie_touch_of_evil_fwd_presentations": {
+        "n_rows": 4050,
+        "columns": [
+          "start_time",
+          "stop_time",
+          "stimulus_name",
+          "stimulus_block",
+          "frame",
+          "color",
+          "contrast",
+          "opacity",
+          "ori",
+          "size",
+          "units",
+          "stimulus_index",
+          "tags",
+          "timeseries"
+        ]
+      },
+      "movie_touch_of_evil_fwd_rev_presentations": {
+        "n_rows": 4050,
+        "columns": [
+          "start_time",
+          "stop_time",
+          "stimulus_name",
+          "stimulus_block",
+          "frame",
+          "color",
+          "contrast",
+          "opacity",
+          "ori",
+          "size",
+          "units",
+          "stimulus_index",
+          "tags",
+          "timeseries"
+        ]
+      },
+      "movie_touch_of_evil_rev_fwd_presentations": {
+        "n_rows": 4050,
+        "columns": [
+          "start_time",
+          "stop_time",
+          "stimulus_name",
+          "stimulus_block",
+          "frame",
+          "color",
+          "contrast",
+          "opacity",
+          "ori",
+          "size",
+          "units",
+          "stimulus_index",
+          "tags",
+          "timeseries"
+        ]
+      },
+      "movie_touch_of_evil_rev_presentations": {
+        "n_rows": 4050,
+        "columns": [
+          "start_time",
+          "stop_time",
+          "stimulus_name",
+          "stimulus_block",
+          "frame",
+          "color",
+          "contrast",
+          "opacity",
+          "ori",
+          "size",
+          "units",
+          "stimulus_index",
+          "tags",
+          "timeseries"
+        ]
+      },
+      "movie_worms_fwd_presentations": {
+        "n_rows": 4050,
+        "columns": [
+          "start_time",
+          "stop_time",
+          "stimulus_name",
+          "stimulus_block",
+          "frame",
+          "color",
+          "contrast",
+          "opacity",
+          "ori",
+          "size",
+          "units",
+          "stimulus_index",
+          "tags",
+          "timeseries"
+        ]
+      },
+      "movie_worms_fwd_rev_presentations": {
+        "n_rows": 4050,
+        "columns": [
+          "start_time",
+          "stop_time",
+          "stimulus_name",
+          "stimulus_block",
+          "frame",
+          "color",
+          "contrast",
+          "opacity",
+          "ori",
+          "size",
+          "units",
+          "stimulus_index",
+          "tags",
+          "timeseries"
+        ]
+      },
+      "movie_worms_rev_fwd_presentations": {
+        "n_rows": 4050,
+        "columns": [
+          "start_time",
+          "stop_time",
+          "stimulus_name",
+          "stimulus_block",
+          "frame",
+          "color",
+          "contrast",
+          "opacity",
+          "ori",
+          "size",
+          "units",
+          "stimulus_index",
+          "tags",
+          "timeseries"
+        ]
+      },
+      "movie_worms_rev_presentations": {
+        "n_rows": 4050,
+        "columns": [
+          "start_time",
+          "stop_time",
+          "stimulus_name",
+          "stimulus_block",
+          "frame",
+          "color",
+          "contrast",
+          "opacity",
+          "ori",
+          "size",
+          "units",
+          "stimulus_index",
+          "tags",
+          "timeseries"
+        ]
+      },
+      "rotate_gabors_presentations": {
+        "n_rows": 3000,
+        "columns": [
+          "start_time",
+          "stop_time",
+          "stimulus_name",
+          "stimulus_block",
+          "units",
+          "stimulus_index",
+          "OriSurp",
+          "PosSizesAll",
+          "colors",
+          "contrs",
+          "depths",
+          "elementMask",
+          "elementTex",
+          "fieldDepth",
+          "fieldPos",
+          "fieldShape",
+          "fieldSize",
+          "nElements",
+          "opacities",
+          "oris",
+          "phases",
+          "rgbs",
+          "sfs",
+          "sizes",
+          "xys",
+          "tags",
+          "timeseries"
+        ]
+      },
+      "spontaneous_presentations": {
+        "n_rows": 183,
+        "columns": [
+          "start_time",
+          "stop_time",
+          "stimulus_name",
+          "tags",
+          "timeseries"
+        ]
+      }
+    }
+  },
+  "I:\\AAA_PYTHON_REPOS_BACKUP\\cytodendkeylock\\data\\dandi\\raw\\000336\\sub-656228\\sub-656228_ses-1245548523-acq-1245937736_ophys.nwb": {
+    "path": "I:\\AAA_PYTHON_REPOS_BACKUP\\cytodendkeylock\\data\\dandi\\raw\\000336\\sub-656228\\sub-656228_ses-1245548523-acq-1245937736_ophys.nwb",
+    "session_description": "Ophys Session",
+    "identifier": "1245937736",
+    "institution": "Allen Institute for Brain Science",
+    "experiment_description": "ophys session",
+    "session_start_time": "2023-02-07 21:50:38.477000+00:00",
+    "subject": {
+      "subject_id": "656228",
+      "species": "Mus musculus",
+      "sex": "M",
+      "age": "P102.0D"
+    },
+    "acquisitions": [
+      "EyeTracking",
+      "v_in",
+      "v_sig"
+    ],
+    "processing_keys": [
+      "ophys",
+      "running",
+      "stimulus",
+      "stimulus_ophys"
+    ],
+    "interval_names": [
+      "fixed_gabors_presentations",
+      "gratings_presentations",
+      "movie_flower_fwd_presentations",
+      "movie_flower_fwd_rev_presentations",
+      "movie_flower_rev_fwd_presentations",
+      "movie_flower_rev_presentations",
+      "movie_touch_of_evil_fwd_presentations",
+      "movie_touch_of_evil_fwd_rev_presentations",
+      "movie_touch_of_evil_rev_fwd_presentations",
+      "movie_touch_of_evil_rev_presentations",
+      "movie_worms_fwd_presentations",
+      "movie_worms_fwd_rev_presentations",
+      "movie_worms_rev_fwd_presentations",
+      "movie_worms_rev_presentations",
+      "rotate_gabors_presentations",
+      "spontaneous_presentations"
+    ],
+    "imaging_planes": [
+      "imaging_plane_1"
+    ],
+    "electrode_groups": [],
+    "devices": [
+      "MESO.2"
+    ],
+    "imaging_plane_info": {
+      "imaging_plane_1": {
+        "description": "(512, 512) field of view in VISpm at depth 144 um",
+        "imaging_rate": 10.0,
+        "indicator": "GCaMP6f",
+        "location": "VISpm"
+      }
+    },
+    "roi_response_series": [
+      {
+        "interface": "corrected_fluorescence",
+        "name": "traces",
+        "shape": [
+          37515,
+          27
+        ]
+      },
+      {
+        "interface": "dff",
+        "name": "traces",
+        "shape": [
+          37515,
+          27
+        ]
+      },
+      {
+        "interface": "neuropil_trace",
+        "name": "traces",
+        "shape": [
+          37515,
+          27
+        ]
+      }
+    ],
+    "interval_tables": {
+      "fixed_gabors_presentations": {
+        "n_rows": 3000,
+        "columns": [
+          "start_time",
+          "stop_time",
+          "stimulus_name",
+          "stimulus_block",
+          "units",
+          "stimulus_index",
+          "OriSurp",
+          "PosSizesAll",
+          "colors",
+          "contrs",
+          "depths",
+          "elementMask",
+          "elementTex",
+          "fieldDepth",
+          "fieldPos",
+          "fieldShape",
+          "fieldSize",
+          "nElements",
+          "opacities",
+          "oris",
+          "phases",
+          "rgbs",
+          "sfs",
+          "sizes",
+          "xys",
+          "tags",
+          "timeseries"
+        ]
+      },
+      "gratings_presentations": {
+        "n_rows": 624,
+        "columns": [
+          "start_time",
+          "stop_time",
+          "stimulus_name",
+          "stimulus_block",
+          "color",
+          "contrast",
+          "mask",
+          "opacity",
+          "ori",
+          "size",
+          "units",
+          "stimulus_index",
+          "spatial_frequency",
+          "phase",
+          "tags",
+          "timeseries"
+        ]
+      },
+      "movie_flower_fwd_presentations": {
+        "n_rows": 4050,
+        "columns": [
+          "start_time",
+          "stop_time",
+          "stimulus_name",
+          "stimulus_block",
+          "frame",
+          "color",
+          "contrast",
+          "opacity",
+          "ori",
+          "size",
+          "units",
+          "stimulus_index",
+          "tags",
+          "timeseries"
+        ]
+      },
+      "movie_flower_fwd_rev_presentations": {
+        "n_rows": 4050,
+        "columns": [
+          "start_time",
+          "stop_time",
+          "stimulus_name",
+          "stimulus_block",
+          "frame",
+          "color",
+          "contrast",
+          "opacity",
+          "ori",
+          "size",
+          "units",
+          "stimulus_index",
+          "tags",
+          "timeseries"
+        ]
+      },
+      "movie_flower_rev_fwd_presentations": {
+        "n_rows": 4050,
+        "columns": [
+          "start_time",
+          "stop_time",
+          "stimulus_name",
+          "stimulus_block",
+          "frame",
+          "color",
+          "contrast",
+          "opacity",
+          "ori",
+          "size",
+          "units",
+          "stimulus_index",
+          "tags",
+          "timeseries"
+        ]
+      },
+      "movie_flower_rev_presentations": {
+        "n_rows": 4050,
+        "columns": [
+          "start_time",
+          "stop_time",
+          "stimulus_name",
+          "stimulus_block",
+          "frame",
+          "color",
+          "contrast",
+          "opacity",
+          "ori",
+          "size",
+          "units",
+          "stimulus_index",
+          "tags",
+          "timeseries"
+        ]
+      },
+      "movie_touch_of_evil_fwd_presentations": {
+        "n_rows": 4050,
+        "columns": [
+          "start_time",
+          "stop_time",
+          "stimulus_name",
+          "stimulus_block",
+          "frame",
+          "color",
+          "contrast",
+          "opacity",
+          "ori",
+          "size",
+          "units",
+          "stimulus_index",
+          "tags",
+          "timeseries"
+        ]
+      },
+      "movie_touch_of_evil_fwd_rev_presentations": {
+        "n_rows": 4050,
+        "columns": [
+          "start_time",
+          "stop_time",
+          "stimulus_name",
+          "stimulus_block",
+          "frame",
+          "color",
+          "contrast",
+          "opacity",
+          "ori",
+          "size",
+          "units",
+          "stimulus_index",
+          "tags",
+          "timeseries"
+        ]
+      },
+      "movie_touch_of_evil_rev_fwd_presentations": {
+        "n_rows": 4050,
+        "columns": [
+          "start_time",
+          "stop_time",
+          "stimulus_name",
+          "stimulus_block",
+          "frame",
+          "color",
+          "contrast",
+          "opacity",
+          "ori",
+          "size",
+          "units",
+          "stimulus_index",
+          "tags",
+          "timeseries"
+        ]
+      },
+      "movie_touch_of_evil_rev_presentations": {
+        "n_rows": 4050,
+        "columns": [
+          "start_time",
+          "stop_time",
+          "stimulus_name",
+          "stimulus_block",
+          "frame",
+          "color",
+          "contrast",
+          "opacity",
+          "ori",
+          "size",
+          "units",
+          "stimulus_index",
+          "tags",
+          "timeseries"
+        ]
+      },
+      "movie_worms_fwd_presentations": {
+        "n_rows": 4050,
+        "columns": [
+          "start_time",
+          "stop_time",
+          "stimulus_name",
+          "stimulus_block",
+          "frame",
+          "color",
+          "contrast",
+          "opacity",
+          "ori",
+          "size",
+          "units",
+          "stimulus_index",
+          "tags",
+          "timeseries"
+        ]
+      },
+      "movie_worms_fwd_rev_presentations": {
+        "n_rows": 4050,
+        "columns": [
+          "start_time",
+          "stop_time",
+          "stimulus_name",
+          "stimulus_block",
+          "frame",
+          "color",
+          "contrast",
+          "opacity",
+          "ori",
+          "size",
+          "units",
+          "stimulus_index",
+          "tags",
+          "timeseries"
+        ]
+      },
+      "movie_worms_rev_fwd_presentations": {
+        "n_rows": 4050,
+        "columns": [
+          "start_time",
+          "stop_time",
+          "stimulus_name",
+          "stimulus_block",
+          "frame",
+          "color",
+          "contrast",
+          "opacity",
+          "ori",
+          "size",
+          "units",
+          "stimulus_index",
+          "tags",
+          "timeseries"
+        ]
+      },
+      "movie_worms_rev_presentations": {
+        "n_rows": 4050,
+        "columns": [
+          "start_time",
+          "stop_time",
+          "stimulus_name",
+          "stimulus_block",
+          "frame",
+          "color",
+          "contrast",
+          "opacity",
+          "ori",
+          "size",
+          "units",
+          "stimulus_index",
+          "tags",
+          "timeseries"
+        ]
+      },
+      "rotate_gabors_presentations": {
+        "n_rows": 3000,
+        "columns": [
+          "start_time",
+          "stop_time",
+          "stimulus_name",
+          "stimulus_block",
+          "units",
+          "stimulus_index",
+          "OriSurp",
+          "PosSizesAll",
+          "colors",
+          "contrs",
+          "depths",
+          "elementMask",
+          "elementTex",
+          "fieldDepth",
+          "fieldPos",
+          "fieldShape",
+          "fieldSize",
+          "nElements",
+          "opacities",
+          "oris",
+          "phases",
+          "rgbs",
+          "sfs",
+          "sizes",
+          "xys",
+          "tags",
+          "timeseries"
+        ]
+      },
+      "spontaneous_presentations": {
+        "n_rows": 183,
+        "columns": [
+          "start_time",
+          "stop_time",
+          "stimulus_name",
+          "tags",
+          "timeseries"
+        ]
+      }
+    }
+  },
+  "I:\\AAA_PYTHON_REPOS_BACKUP\\cytodendkeylock\\data\\dandi\\raw\\000336\\sub-656228\\sub-656228_ses-1247233186-acq-1247385128_ophys.nwb": {
+    "path": "I:\\AAA_PYTHON_REPOS_BACKUP\\cytodendkeylock\\data\\dandi\\raw\\000336\\sub-656228\\sub-656228_ses-1247233186-acq-1247385128_ophys.nwb",
+    "session_description": "Ophys Session",
+    "identifier": "1247385128",
+    "institution": "Allen Institute for Brain Science",
+    "experiment_description": "ophys session",
+    "session_start_time": "2023-02-14 21:44:00.768000+00:00",
+    "subject": {
+      "subject_id": "656228",
+      "species": "Mus musculus",
+      "sex": "M",
+      "age": "P109.0D"
+    },
+    "acquisitions": [
+      "EyeTracking",
+      "v_in",
+      "v_sig"
+    ],
+    "processing_keys": [
+      "ophys",
+      "running",
+      "stimulus",
+      "stimulus_ophys"
+    ],
+    "interval_names": [
+      "fixed_gabors_presentations",
+      "gratings_presentations",
+      "movie_flower_fwd_presentations",
+      "movie_flower_fwd_rev_presentations",
+      "movie_flower_rev_fwd_presentations",
+      "movie_flower_rev_presentations",
+      "movie_touch_of_evil_fwd_presentations",
+      "movie_touch_of_evil_fwd_rev_presentations",
+      "movie_touch_of_evil_rev_fwd_presentations",
+      "movie_touch_of_evil_rev_presentations",
+      "movie_worms_fwd_presentations",
+      "movie_worms_fwd_rev_presentations",
+      "movie_worms_rev_fwd_presentations",
+      "movie_worms_rev_presentations",
+      "rotate_gabors_presentations",
+      "spontaneous_presentations"
+    ],
+    "imaging_planes": [
+      "imaging_plane_1"
+    ],
+    "electrode_groups": [],
+    "devices": [
+      "MESO.2"
+    ],
+    "imaging_plane_info": {
+      "imaging_plane_1": {
+        "description": "(512, 512) field of view in VISp at depth 42 um",
+        "imaging_rate": 10.0,
+        "indicator": "GCaMP6f",
+        "location": "VISp"
+      }
+    },
+    "roi_response_series": [
+      {
+        "interface": "corrected_fluorescence",
+        "name": "traces",
+        "shape": [
+          37515,
+          4
+        ]
+      },
+      {
+        "interface": "dff",
+        "name": "traces",
+        "shape": [
+          37515,
+          4
+        ]
+      },
+      {
+        "interface": "neuropil_trace",
+        "name": "traces",
+        "shape": [
+          37515,
+          4
+        ]
+      }
+    ],
+    "interval_tables": {
+      "fixed_gabors_presentations": {
+        "n_rows": 3000,
+        "columns": [
+          "start_time",
+          "stop_time",
+          "stimulus_name",
+          "stimulus_block",
+          "OriSurp",
+          "PosSizesAll",
+          "colors",
+          "contrs",
+          "depths",
+          "elementMask",
+          "elementTex",
+          "fieldDepth",
+          "fieldPos",
+          "fieldShape",
+          "fieldSize",
+          "nElements",
+          "opacities",
+          "oris",
+          "phases",
+          "rgbs",
+          "sfs",
+          "sizes",
+          "units",
+          "xys",
+          "stimulus_index",
+          "tags",
+          "timeseries"
+        ]
+      },
+      "gratings_presentations": {
+        "n_rows": 624,
+        "columns": [
+          "start_time",
+          "stop_time",
+          "stimulus_name",
+          "stimulus_block",
+          "units",
+          "stimulus_index",
+          "color",
+          "contrast",
+          "mask",
+          "opacity",
+          "ori",
+          "size",
+          "spatial_frequency",
+          "phase",
+          "tags",
+          "timeseries"
+        ]
+      },
+      "movie_flower_fwd_presentations": {
+        "n_rows": 4050,
+        "columns": [
+          "start_time",
+          "stop_time",
+          "stimulus_name",
+          "stimulus_block",
+          "units",
+          "stimulus_index",
+          "frame",
+          "color",
+          "contrast",
+          "opacity",
+          "ori",
+          "size",
+          "tags",
+          "timeseries"
+        ]
+      },
+      "movie_flower_fwd_rev_presentations": {
+        "n_rows": 4050,
+        "columns": [
+          "start_time",
+          "stop_time",
+          "stimulus_name",
+          "stimulus_block",
+          "units",
+          "stimulus_index",
+          "frame",
+          "color",
+          "contrast",
+          "opacity",
+          "ori",
+          "size",
+          "tags",
+          "timeseries"
+        ]
+      },
+      "movie_flower_rev_fwd_presentations": {
+        "n_rows": 4050,
+        "columns": [
+          "start_time",
+          "stop_time",
+          "stimulus_name",
+          "stimulus_block",
+          "units",
+          "stimulus_index",
+          "frame",
+          "color",
+          "contrast",
+          "opacity",
+          "ori",
+          "size",
+          "tags",
+          "timeseries"
+        ]
+      },
+      "movie_flower_rev_presentations": {
+        "n_rows": 4050,
+        "columns": [
+          "start_time",
+          "stop_time",
+          "stimulus_name",
+          "stimulus_block",
+          "units",
+          "stimulus_index",
+          "frame",
+          "color",
+          "contrast",
+          "opacity",
+          "ori",
+          "size",
+          "tags",
+          "timeseries"
+        ]
+      },
+      "movie_touch_of_evil_fwd_presentations": {
+        "n_rows": 4050,
+        "columns": [
+          "start_time",
+          "stop_time",
+          "stimulus_name",
+          "stimulus_block",
+          "units",
+          "stimulus_index",
+          "frame",
+          "color",
+          "contrast",
+          "opacity",
+          "ori",
+          "size",
+          "tags",
+          "timeseries"
+        ]
+      },
+      "movie_touch_of_evil_fwd_rev_presentations": {
+        "n_rows": 4050,
+        "columns": [
+          "start_time",
+          "stop_time",
+          "stimulus_name",
+          "stimulus_block",
+          "units",
+          "stimulus_index",
+          "frame",
+          "color",
+          "contrast",
+          "opacity",
+          "ori",
+          "size",
+          "tags",
+          "timeseries"
+        ]
+      },
+      "movie_touch_of_evil_rev_fwd_presentations": {
+        "n_rows": 4050,
+        "columns": [
+          "start_time",
+          "stop_time",
+          "stimulus_name",
+          "stimulus_block",
+          "units",
+          "stimulus_index",
+          "frame",
+          "color",
+          "contrast",
+          "opacity",
+          "ori",
+          "size",
+          "tags",
+          "timeseries"
+        ]
+      },
+      "movie_touch_of_evil_rev_presentations": {
+        "n_rows": 4050,
+        "columns": [
+          "start_time",
+          "stop_time",
+          "stimulus_name",
+          "stimulus_block",
+          "units",
+          "stimulus_index",
+          "frame",
+          "color",
+          "contrast",
+          "opacity",
+          "ori",
+          "size",
+          "tags",
+          "timeseries"
+        ]
+      },
+      "movie_worms_fwd_presentations": {
+        "n_rows": 4050,
+        "columns": [
+          "start_time",
+          "stop_time",
+          "stimulus_name",
+          "stimulus_block",
+          "units",
+          "stimulus_index",
+          "frame",
+          "color",
+          "contrast",
+          "opacity",
+          "ori",
+          "size",
+          "tags",
+          "timeseries"
+        ]
+      },
+      "movie_worms_fwd_rev_presentations": {
+        "n_rows": 4050,
+        "columns": [
+          "start_time",
+          "stop_time",
+          "stimulus_name",
+          "stimulus_block",
+          "units",
+          "stimulus_index",
+          "frame",
+          "color",
+          "contrast",
+          "opacity",
+          "ori",
+          "size",
+          "tags",
+          "timeseries"
+        ]
+      },
+      "movie_worms_rev_fwd_presentations": {
+        "n_rows": 4050,
+        "columns": [
+          "start_time",
+          "stop_time",
+          "stimulus_name",
+          "stimulus_block",
+          "units",
+          "stimulus_index",
+          "frame",
+          "color",
+          "contrast",
+          "opacity",
+          "ori",
+          "size",
+          "tags",
+          "timeseries"
+        ]
+      },
+      "movie_worms_rev_presentations": {
+        "n_rows": 4050,
+        "columns": [
+          "start_time",
+          "stop_time",
+          "stimulus_name",
+          "stimulus_block",
+          "units",
+          "stimulus_index",
+          "frame",
+          "color",
+          "contrast",
+          "opacity",
+          "ori",
+          "size",
+          "tags",
+          "timeseries"
+        ]
+      },
+      "rotate_gabors_presentations": {
+        "n_rows": 3000,
+        "columns": [
+          "start_time",
+          "stop_time",
+          "stimulus_name",
+          "stimulus_block",
+          "OriSurp",
+          "PosSizesAll",
+          "colors",
+          "contrs",
+          "depths",
+          "elementMask",
+          "elementTex",
+          "fieldDepth",
+          "fieldPos",
+          "fieldShape",
+          "fieldSize",
+          "nElements",
+          "opacities",
+          "oris",
+          "phases",
+          "rgbs",
+          "sfs",
+          "sizes",
+          "units",
+          "xys",
+          "stimulus_index",
+          "tags",
+          "timeseries"
+        ]
+      },
+      "spontaneous_presentations": {
+        "n_rows": 183,
+        "columns": [
+          "start_time",
+          "stop_time",
+          "stimulus_name",
+          "tags",
+          "timeseries"
+        ]
+      }
+    }
+  },
+  "I:\\AAA_PYTHON_REPOS_BACKUP\\cytodendkeylock\\data\\dandi\\raw\\000336\\sub-656228\\sub-656228_ses-1247233186-acq-1247385130_ophys.nwb": {
+    "path": "I:\\AAA_PYTHON_REPOS_BACKUP\\cytodendkeylock\\data\\dandi\\raw\\000336\\sub-656228\\sub-656228_ses-1247233186-acq-1247385130_ophys.nwb",
+    "session_description": "Ophys Session",
+    "identifier": "1247385130",
+    "institution": "Allen Institute for Brain Science",
+    "experiment_description": "ophys session",
+    "session_start_time": "2023-02-14 21:44:00.768000+00:00",
+    "subject": {
+      "subject_id": "656228",
+      "species": "Mus musculus",
+      "sex": "M",
+      "age": "P109.0D"
+    },
+    "acquisitions": [
+      "EyeTracking",
+      "v_in",
+      "v_sig"
+    ],
+    "processing_keys": [
+      "ophys",
+      "running",
+      "stimulus",
+      "stimulus_ophys"
+    ],
+    "interval_names": [
+      "fixed_gabors_presentations",
+      "gratings_presentations",
+      "movie_flower_fwd_presentations",
+      "movie_flower_fwd_rev_presentations",
+      "movie_flower_rev_fwd_presentations",
+      "movie_flower_rev_presentations",
+      "movie_touch_of_evil_fwd_presentations",
+      "movie_touch_of_evil_fwd_rev_presentations",
+      "movie_touch_of_evil_rev_fwd_presentations",
+      "movie_touch_of_evil_rev_presentations",
+      "movie_worms_fwd_presentations",
+      "movie_worms_fwd_rev_presentations",
+      "movie_worms_rev_fwd_presentations",
+      "movie_worms_rev_presentations",
+      "rotate_gabors_presentations",
+      "spontaneous_presentations"
+    ],
+    "imaging_planes": [
+      "imaging_plane_1"
+    ],
+    "electrode_groups": [],
+    "devices": [
+      "MESO.2"
+    ],
+    "imaging_plane_info": {
+      "imaging_plane_1": {
+        "description": "(512, 512) field of view in VISp at depth 152 um",
+        "imaging_rate": 10.0,
+        "indicator": "GCaMP6f",
+        "location": "VISp"
+      }
+    },
+    "roi_response_series": [
+      {
+        "interface": "corrected_fluorescence",
+        "name": "traces",
+        "shape": [
+          37515,
+          25
+        ]
+      },
+      {
+        "interface": "dff",
+        "name": "traces",
+        "shape": [
+          37515,
+          25
+        ]
+      },
+      {
+        "interface": "neuropil_trace",
+        "name": "traces",
+        "shape": [
+          37515,
+          25
+        ]
+      }
+    ],
+    "interval_tables": {
+      "fixed_gabors_presentations": {
+        "n_rows": 3000,
+        "columns": [
+          "start_time",
+          "stop_time",
+          "stimulus_name",
+          "stimulus_block",
+          "OriSurp",
+          "PosSizesAll",
+          "colors",
+          "contrs",
+          "depths",
+          "elementMask",
+          "elementTex",
+          "fieldDepth",
+          "fieldPos",
+          "fieldShape",
+          "fieldSize",
+          "nElements",
+          "opacities",
+          "oris",
+          "phases",
+          "rgbs",
+          "sfs",
+          "sizes",
+          "units",
+          "xys",
+          "stimulus_index",
+          "tags",
+          "timeseries"
+        ]
+      },
+      "gratings_presentations": {
+        "n_rows": 624,
+        "columns": [
+          "start_time",
+          "stop_time",
+          "stimulus_name",
+          "stimulus_block",
+          "units",
+          "stimulus_index",
+          "color",
+          "contrast",
+          "mask",
+          "opacity",
+          "ori",
+          "size",
+          "spatial_frequency",
+          "phase",
+          "tags",
+          "timeseries"
+        ]
+      },
+      "movie_flower_fwd_presentations": {
+        "n_rows": 4050,
+        "columns": [
+          "start_time",
+          "stop_time",
+          "stimulus_name",
+          "stimulus_block",
+          "units",
+          "stimulus_index",
+          "frame",
+          "color",
+          "contrast",
+          "opacity",
+          "ori",
+          "size",
+          "tags",
+          "timeseries"
+        ]
+      },
+      "movie_flower_fwd_rev_presentations": {
+        "n_rows": 4050,
+        "columns": [
+          "start_time",
+          "stop_time",
+          "stimulus_name",
+          "stimulus_block",
+          "units",
+          "stimulus_index",
+          "frame",
+          "color",
+          "contrast",
+          "opacity",
+          "ori",
+          "size",
+          "tags",
+          "timeseries"
+        ]
+      },
+      "movie_flower_rev_fwd_presentations": {
+        "n_rows": 4050,
+        "columns": [
+          "start_time",
+          "stop_time",
+          "stimulus_name",
+          "stimulus_block",
+          "units",
+          "stimulus_index",
+          "frame",
+          "color",
+          "contrast",
+          "opacity",
+          "ori",
+          "size",
+          "tags",
+          "timeseries"
+        ]
+      },
+      "movie_flower_rev_presentations": {
+        "n_rows": 4050,
+        "columns": [
+          "start_time",
+          "stop_time",
+          "stimulus_name",
+          "stimulus_block",
+          "units",
+          "stimulus_index",
+          "frame",
+          "color",
+          "contrast",
+          "opacity",
+          "ori",
+          "size",
+          "tags",
+          "timeseries"
+        ]
+      },
+      "movie_touch_of_evil_fwd_presentations": {
+        "n_rows": 4050,
+        "columns": [
+          "start_time",
+          "stop_time",
+          "stimulus_name",
+          "stimulus_block",
+          "units",
+          "stimulus_index",
+          "frame",
+          "color",
+          "contrast",
+          "opacity",
+          "ori",
+          "size",
+          "tags",
+          "timeseries"
+        ]
+      },
+      "movie_touch_of_evil_fwd_rev_presentations": {
+        "n_rows": 4050,
+        "columns": [
+          "start_time",
+          "stop_time",
+          "stimulus_name",
+          "stimulus_block",
+          "units",
+          "stimulus_index",
+          "frame",
+          "color",
+          "contrast",
+          "opacity",
+          "ori",
+          "size",
+          "tags",
+          "timeseries"
+        ]
+      },
+      "movie_touch_of_evil_rev_fwd_presentations": {
+        "n_rows": 4050,
+        "columns": [
+          "start_time",
+          "stop_time",
+          "stimulus_name",
+          "stimulus_block",
+          "units",
+          "stimulus_index",
+          "frame",
+          "color",
+          "contrast",
+          "opacity",
+          "ori",
+          "size",
+          "tags",
+          "timeseries"
+        ]
+      },
+      "movie_touch_of_evil_rev_presentations": {
+        "n_rows": 4050,
+        "columns": [
+          "start_time",
+          "stop_time",
+          "stimulus_name",
+          "stimulus_block",
+          "units",
+          "stimulus_index",
+          "frame",
+          "color",
+          "contrast",
+          "opacity",
+          "ori",
+          "size",
+          "tags",
+          "timeseries"
+        ]
+      },
+      "movie_worms_fwd_presentations": {
+        "n_rows": 4050,
+        "columns": [
+          "start_time",
+          "stop_time",
+          "stimulus_name",
+          "stimulus_block",
+          "units",
+          "stimulus_index",
+          "frame",
+          "color",
+          "contrast",
+          "opacity",
+          "ori",
+          "size",
+          "tags",
+          "timeseries"
+        ]
+      },
+      "movie_worms_fwd_rev_presentations": {
+        "n_rows": 4050,
+        "columns": [
+          "start_time",
+          "stop_time",
+          "stimulus_name",
+          "stimulus_block",
+          "units",
+          "stimulus_index",
+          "frame",
+          "color",
+          "contrast",
+          "opacity",
+          "ori",
+          "size",
+          "tags",
+          "timeseries"
+        ]
+      },
+      "movie_worms_rev_fwd_presentations": {
+        "n_rows": 4050,
+        "columns": [
+          "start_time",
+          "stop_time",
+          "stimulus_name",
+          "stimulus_block",
+          "units",
+          "stimulus_index",
+          "frame",
+          "color",
+          "contrast",
+          "opacity",
+          "ori",
+          "size",
+          "tags",
+          "timeseries"
+        ]
+      },
+      "movie_worms_rev_presentations": {
+        "n_rows": 4050,
+        "columns": [
+          "start_time",
+          "stop_time",
+          "stimulus_name",
+          "stimulus_block",
+          "units",
+          "stimulus_index",
+          "frame",
+          "color",
+          "contrast",
+          "opacity",
+          "ori",
+          "size",
+          "tags",
+          "timeseries"
+        ]
+      },
+      "rotate_gabors_presentations": {
+        "n_rows": 3000,
+        "columns": [
+          "start_time",
+          "stop_time",
+          "stimulus_name",
+          "stimulus_block",
+          "OriSurp",
+          "PosSizesAll",
+          "colors",
+          "contrs",
+          "depths",
+          "elementMask",
+          "elementTex",
+          "fieldDepth",
+          "fieldPos",
+          "fieldShape",
+          "fieldSize",
+          "nElements",
+          "opacities",
+          "oris",
+          "phases",
+          "rgbs",
+          "sfs",
+          "sizes",
+          "units",
+          "xys",
+          "stimulus_index",
+          "tags",
+          "timeseries"
+        ]
+      },
+      "spontaneous_presentations": {
+        "n_rows": 183,
+        "columns": [
+          "start_time",
+          "stop_time",
+          "stimulus_name",
+          "tags",
+          "timeseries"
+        ]
+      }
+    }
+  }
+}

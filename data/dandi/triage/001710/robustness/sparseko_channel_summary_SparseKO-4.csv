@@ -1,0 +1,4 @@
+subject_id,channel,off_diagonal_mean,arm_separation_mean,split_half_mean
+SparseKO-4,ch0,0.3322,0.1893,0.9505
+SparseKO-4,ch1,0.4165,0.2926,0.977
+SparseKO-4,ch0-ch1,-0.0843,-0.1033,-0.0265

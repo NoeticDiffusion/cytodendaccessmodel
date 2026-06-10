@@ -1,0 +1,206 @@
+[
+  {
+    "subject": "Ca-EEG3-4",
+    "pair_label": "OffD1",
+    "n_registered": 621,
+    "n_events": 32,
+    "registration": {
+      "session_a": "Ca-EEG3-4_NE",
+      "session_b": "Ca-EEG3-4_OffD1",
+      "n_rois_a": 851,
+      "n_rois_b": 711,
+      "n_candidates": 621,
+      "n_accepted": 621,
+      "fraction_a_matched": 0.73,
+      "fraction_b_matched": 0.873,
+      "mean_confidence": 0.797,
+      "mean_dice": 0.878,
+      "mean_centroid_dist_px": 3.06
+    },
+    "real_by_threshold": {
+      "0.0": {
+        "session_ne": "Ca-EEG3-4_NE",
+        "session_offline": "Ca-EEG3-4_OffD1",
+        "n_registered": 621,
+        "n_events": 32,
+        "n_ensembles": 8,
+        "top_frac": 0.15,
+        "activity_threshold": 0.0,
+        "mean_enrichment": 0.0609,
+        "enrichment_z": 20.945,
+        "frac_positive": 0.953,
+        "n_scored_pairs": 256
+      },
+      "0.5": {
+        "session_ne": "Ca-EEG3-4_NE",
+        "session_offline": "Ca-EEG3-4_OffD1",
+        "n_registered": 621,
+        "n_events": 32,
+        "n_ensembles": 8,
+        "top_frac": 0.15,
+        "activity_threshold": 0.5,
+        "mean_enrichment": 0.0579,
+        "enrichment_z": 22.553,
+        "frac_positive": 0.953,
+        "n_scored_pairs": 256
+      },
+      "1.0": {
+        "session_ne": "Ca-EEG3-4_NE",
+        "session_offline": "Ca-EEG3-4_OffD1",
+        "n_registered": 621,
+        "n_events": 32,
+        "n_ensembles": 8,
+        "top_frac": 0.15,
+        "activity_threshold": 1.0,
+        "mean_enrichment": 0.0547,
+        "enrichment_z": 23.006,
+        "frac_positive": 0.953,
+        "n_scored_pairs": 256
+      }
+    },
+    "c1_reg_shuffle": {
+      "mean_enrichment": 0.0557,
+      "std_enrichment": 0.0024,
+      "n_reps": 15
+    },
+    "c1_ok": true,
+    "real_enrichment_z": 20.945,
+    "verdict": "ENRICHED"
+  },
+  {
+    "subject": "Ca-EEG3-4",
+    "pair_label": "OffD2",
+    "n_registered": 686,
+    "n_events": 9,
+    "registration": {
+      "session_a": "Ca-EEG3-4_NE",
+      "session_b": "Ca-EEG3-4_OffD2",
+      "n_rois_a": 851,
+      "n_rois_b": 858,
+      "n_candidates": 686,
+      "n_accepted": 686,
+      "fraction_a_matched": 0.806,
+      "fraction_b_matched": 0.8,
+      "mean_confidence": 0.771,
+      "mean_dice": 0.871,
+      "mean_centroid_dist_px": 3.86
+    },
+    "real_by_threshold": {
+      "0.0": {
+        "session_ne": "Ca-EEG3-4_NE",
+        "session_offline": "Ca-EEG3-4_OffD2",
+        "n_registered": 686,
+        "n_events": 9,
+        "n_ensembles": 8,
+        "top_frac": 0.15,
+        "activity_threshold": 0.0,
+        "mean_enrichment": 0.0535,
+        "enrichment_z": 10.928,
+        "frac_positive": 0.986,
+        "n_scored_pairs": 72
+      },
+      "0.5": {
+        "session_ne": "Ca-EEG3-4_NE",
+        "session_offline": "Ca-EEG3-4_OffD2",
+        "n_registered": 686,
+        "n_events": 9,
+        "n_ensembles": 8,
+        "top_frac": 0.15,
+        "activity_threshold": 0.5,
+        "mean_enrichment": 0.0536,
+        "enrichment_z": 11.444,
+        "frac_positive": 0.958,
+        "n_scored_pairs": 72
+      },
+      "1.0": {
+        "session_ne": "Ca-EEG3-4_NE",
+        "session_offline": "Ca-EEG3-4_OffD2",
+        "n_registered": 686,
+        "n_events": 9,
+        "n_ensembles": 8,
+        "top_frac": 0.15,
+        "activity_threshold": 1.0,
+        "mean_enrichment": 0.0511,
+        "enrichment_z": 10.986,
+        "frac_positive": 0.972,
+        "n_scored_pairs": 72
+      }
+    },
+    "c1_reg_shuffle": {
+      "mean_enrichment": 0.0471,
+      "std_enrichment": 0.0024,
+      "n_reps": 15
+    },
+    "c1_ok": true,
+    "real_enrichment_z": 10.928,
+    "verdict": "ENRICHED"
+  },
+  {
+    "subject": "Ca-EEG2-1",
+    "pair_label": "OffD2",
+    "n_registered": 485,
+    "n_events": 14,
+    "registration": {
+      "session_a": "Ca-EEG2-1_NE",
+      "session_b": "Ca-EEG2-1_OffD2",
+      "n_rois_a": 623,
+      "n_rois_b": 625,
+      "n_candidates": 485,
+      "n_accepted": 485,
+      "fraction_a_matched": 0.778,
+      "fraction_b_matched": 0.776,
+      "mean_confidence": 0.748,
+      "mean_dice": 0.861,
+      "mean_centroid_dist_px": 4.19
+    },
+    "real_by_threshold": {
+      "0.0": {
+        "session_ne": "Ca-EEG2-1_NE",
+        "session_offline": "Ca-EEG2-1_OffD2",
+        "n_registered": 485,
+        "n_events": 14,
+        "n_ensembles": 8,
+        "top_frac": 0.15,
+        "activity_threshold": 0.0,
+        "mean_enrichment": 0.0578,
+        "enrichment_z": 14.623,
+        "frac_positive": 0.92,
+        "n_scored_pairs": 112
+      },
+      "0.5": {
+        "session_ne": "Ca-EEG2-1_NE",
+        "session_offline": "Ca-EEG2-1_OffD2",
+        "n_registered": 485,
+        "n_events": 14,
+        "n_ensembles": 8,
+        "top_frac": 0.15,
+        "activity_threshold": 0.5,
+        "mean_enrichment": 0.0547,
+        "enrichment_z": 15.089,
+        "frac_positive": 0.92,
+        "n_scored_pairs": 112
+      },
+      "1.0": {
+        "session_ne": "Ca-EEG2-1_NE",
+        "session_offline": "Ca-EEG2-1_OffD2",
+        "n_registered": 485,
+        "n_events": 14,
+        "n_ensembles": 8,
+        "top_frac": 0.15,
+        "activity_threshold": 1.0,
+        "mean_enrichment": 0.0485,
+        "enrichment_z": 14.696,
+        "frac_positive": 0.938,
+        "n_scored_pairs": 112
+      }
+    },
+    "c1_reg_shuffle": {
+      "mean_enrichment": 0.0496,
+      "std_enrichment": 0.0025,
+      "n_reps": 15
+    },
+    "c1_ok": true,
+    "real_enrichment_z": 14.623,
+    "verdict": "ENRICHED"
+  }
+]

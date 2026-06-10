@@ -1,0 +1,4 @@
+comparison,sko_off_diag_mean,ctrl_off_diag_mean,sko_n_pairs,ctrl_n_pairs,observed_diff,null_mean,null_std,z,p_empirical,n_perms,effect_direction,note,claim
+SparseKO-7 vs Cre-1,0.2544,0.4548,30,30,-0.2003,0.000457,0.028723,-6.9896,0.0,1000,negative,,SparseKO shows significantly lower cross-day similarity (null-separated).
+SparseKO-7 vs Cre-2,0.2544,0.3881,30,30,-0.1337,0.00022,0.021935,-6.1054,0.0,1000,negative,,SparseKO shows significantly lower cross-day similarity (null-separated).
+SparseKO-7 vs Ctrl-9,0.2544,0.3348,30,30,-0.0803,-0.000172,0.016938,-4.7312,0.0,1000,negative,,SparseKO shows significantly lower cross-day similarity (null-separated).

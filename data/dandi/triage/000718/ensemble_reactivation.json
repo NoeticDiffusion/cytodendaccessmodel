@@ -1,0 +1,310 @@
+{
+  "n_sessions": 3,
+  "n_total_components": 24,
+  "n_significant_total": 0,
+  "mean_z_across_components": 0.198,
+  "cross_session": [
+    {
+      "encoding_session": "Ca-EEG3-4_OfflineDay1Session1",
+      "offline_session": "Ca-EEG3-4_OfflineDay2Session1",
+      "subject": "Ca-EEG3-4",
+      "n_shared_units": 604,
+      "n_components": 8,
+      "n_significant": 0,
+      "mean_z": -0.041,
+      "component_scores": [
+        {
+          "component": 0,
+          "z_score": 1.367,
+          "mean_activation": 6.779447
+        },
+        {
+          "component": 1,
+          "z_score": -2.287,
+          "mean_activation": 7.376907
+        },
+        {
+          "component": 2,
+          "z_score": 0.0,
+          "mean_activation": 3.565802
+        },
+        {
+          "component": 3,
+          "z_score": 1.0,
+          "mean_activation": 9.351716
+        },
+        {
+          "component": 4,
+          "z_score": 1.543,
+          "mean_activation": 9.469646
+        },
+        {
+          "component": 5,
+          "z_score": -1.213,
+          "mean_activation": 11.642935
+        },
+        {
+          "component": 6,
+          "z_score": -1.571,
+          "mean_activation": 10.577946
+        },
+        {
+          "component": 7,
+          "z_score": 0.835,
+          "mean_activation": 11.183119
+        }
+      ]
+    }
+  ],
+  "sessions": [
+    {
+      "session_id": "Ca-EEG2-1_OfflineDay2Session1",
+      "window_label": "sleep.SleepIntervals_25",
+      "window_duration_sec": 123.6,
+      "n_units": 538,
+      "n_components": 8,
+      "total_var_explained": 0.172,
+      "component_scores": [
+        {
+          "component": 0,
+          "z_score": -1.307,
+          "mean_activation": 9.538439,
+          "null_mean": 9.538439,
+          "null_std": 0.0,
+          "top_units_n": 20,
+          "explained_variance_ratio": 0.0327
+        },
+        {
+          "component": 1,
+          "z_score": 1.525,
+          "mean_activation": 17.21128,
+          "null_mean": 17.21128,
+          "null_std": 0.0,
+          "top_units_n": 28,
+          "explained_variance_ratio": 0.033
+        },
+        {
+          "component": 2,
+          "z_score": 1.443,
+          "mean_activation": 9.005754,
+          "null_mean": 9.005754,
+          "null_std": 0.0,
+          "top_units_n": 18,
+          "explained_variance_ratio": 0.0257
+        },
+        {
+          "component": 3,
+          "z_score": -0.994,
+          "mean_activation": 14.000211,
+          "null_mean": 14.000211,
+          "null_std": 0.0,
+          "top_units_n": 20,
+          "explained_variance_ratio": 0.0305
+        },
+        {
+          "component": 4,
+          "z_score": 1.103,
+          "mean_activation": 7.658492,
+          "null_mean": 7.658492,
+          "null_std": 0.0,
+          "top_units_n": 19,
+          "explained_variance_ratio": 0.0219
+        },
+        {
+          "component": 5,
+          "z_score": 1.436,
+          "mean_activation": 12.552045,
+          "null_mean": 12.552045,
+          "null_std": 0.0,
+          "top_units_n": 24,
+          "explained_variance_ratio": 0.0233
+        },
+        {
+          "component": 6,
+          "z_score": 1.265,
+          "mean_activation": 4.10785,
+          "null_mean": 4.10785,
+          "null_std": 0.0,
+          "top_units_n": 16,
+          "explained_variance_ratio": 0.0227
+        },
+        {
+          "component": 7,
+          "z_score": 0.0,
+          "mean_activation": 9.029347,
+          "null_mean": 9.029347,
+          "null_std": 0.0,
+          "top_units_n": 22,
+          "explained_variance_ratio": 0.0232
+        }
+      ],
+      "n_significant": 0
+    },
+    {
+      "session_id": "Ca-EEG3-4_OfflineDay1Session1",
+      "window_label": "sleep.SleepIntervals_12",
+      "window_duration_sec": 371.9,
+      "n_units": 700,
+      "n_components": 8,
+      "total_var_explained": 0.1042,
+      "component_scores": [
+        {
+          "component": 0,
+          "z_score": 0.669,
+          "mean_activation": 9.737706,
+          "null_mean": 9.737706,
+          "null_std": 0.0,
+          "top_units_n": 14,
+          "explained_variance_ratio": 0.0156
+        },
+        {
+          "component": 1,
+          "z_score": -0.939,
+          "mean_activation": 17.836446,
+          "null_mean": 17.836446,
+          "null_std": 0.0,
+          "top_units_n": 31,
+          "explained_variance_ratio": 0.0191
+        },
+        {
+          "component": 2,
+          "z_score": -1.39,
+          "mean_activation": 13.18675,
+          "null_mean": 13.18675,
+          "null_std": 0.0,
+          "top_units_n": 33,
+          "explained_variance_ratio": 0.0196
+        },
+        {
+          "component": 3,
+          "z_score": -0.801,
+          "mean_activation": 10.64997,
+          "null_mean": 10.64997,
+          "null_std": 0.0,
+          "top_units_n": 21,
+          "explained_variance_ratio": 0.0148
+        },
+        {
+          "component": 4,
+          "z_score": -0.542,
+          "mean_activation": 15.546611,
+          "null_mean": 15.546611,
+          "null_std": 0.0,
+          "top_units_n": 30,
+          "explained_variance_ratio": 0.0173
+        },
+        {
+          "component": 5,
+          "z_score": -1.378,
+          "mean_activation": 13.203351,
+          "null_mean": 13.203351,
+          "null_std": 0.0,
+          "top_units_n": 35,
+          "explained_variance_ratio": 0.0131
+        },
+        {
+          "component": 6,
+          "z_score": 0.0,
+          "mean_activation": 9.923162,
+          "null_mean": 9.923162,
+          "null_std": 0.0,
+          "top_units_n": 25,
+          "explained_variance_ratio": 0.0141
+        },
+        {
+          "component": 7,
+          "z_score": 1.057,
+          "mean_activation": 13.007362,
+          "null_mean": 13.007362,
+          "null_std": 0.0,
+          "top_units_n": 27,
+          "explained_variance_ratio": 0.0129
+        }
+      ],
+      "n_significant": 0
+    },
+    {
+      "session_id": "Ca-EEG3-4_OfflineDay2Session1",
+      "window_label": "sleep.SleepIntervals_1",
+      "window_duration_sec": 65.9,
+      "n_units": 740,
+      "n_components": 8,
+      "total_var_explained": 0.2012,
+      "component_scores": [
+        {
+          "component": 0,
+          "z_score": 1.571,
+          "mean_activation": 8.315453,
+          "null_mean": 8.315453,
+          "null_std": 0.0,
+          "top_units_n": 45,
+          "explained_variance_ratio": 0.0414
+        },
+        {
+          "component": 1,
+          "z_score": 0.915,
+          "mean_activation": 11.984643,
+          "null_mean": 11.984643,
+          "null_std": 0.0,
+          "top_units_n": 55,
+          "explained_variance_ratio": 0.0483
+        },
+        {
+          "component": 2,
+          "z_score": 0.877,
+          "mean_activation": 11.248418,
+          "null_mean": 11.248418,
+          "null_std": 0.0,
+          "top_units_n": 52,
+          "explained_variance_ratio": 0.051
+        },
+        {
+          "component": 3,
+          "z_score": -0.752,
+          "mean_activation": 9.749805,
+          "null_mean": 9.749805,
+          "null_std": 0.0,
+          "top_units_n": 79,
+          "explained_variance_ratio": 0.0337
+        },
+        {
+          "component": 4,
+          "z_score": 0.995,
+          "mean_activation": 8.883047,
+          "null_mean": 8.883047,
+          "null_std": 0.0,
+          "top_units_n": 45,
+          "explained_variance_ratio": 0.0419
+        },
+        {
+          "component": 5,
+          "z_score": 0.935,
+          "mean_activation": 12.832776,
+          "null_mean": 12.832776,
+          "null_std": 0.0,
+          "top_units_n": 53,
+          "explained_variance_ratio": 0.0358
+        },
+        {
+          "component": 6,
+          "z_score": -0.933,
+          "mean_activation": 23.204154,
+          "null_mean": 23.204154,
+          "null_std": 0.0,
+          "top_units_n": 49,
+          "explained_variance_ratio": 0.0325
+        },
+        {
+          "component": 7,
+          "z_score": 0.0,
+          "mean_activation": 7.365843,
+          "null_mean": 7.365843,
+          "null_std": 0.0,
+          "top_units_n": 37,
+          "explained_variance_ratio": 0.034
+        }
+      ],
+      "n_significant": 0
+    }
+  ]
+}

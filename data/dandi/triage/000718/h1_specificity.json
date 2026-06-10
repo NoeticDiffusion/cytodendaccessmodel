@@ -1,0 +1,90 @@
+{
+  "real": {
+    "methods": {
+      "nmf": {
+        "n_events": 32,
+        "n_significant": 88,
+        "total_pairs": 256,
+        "fraction_significant": 0.344,
+        "max_norm_score": 7.279
+      },
+      "ica": {
+        "n_events": 32,
+        "n_significant": 104,
+        "total_pairs": 256,
+        "fraction_significant": 0.406,
+        "max_norm_score": 6.482
+      },
+      "graph": {
+        "n_events": 32,
+        "n_significant": 124,
+        "total_pairs": 256,
+        "fraction_significant": 0.484,
+        "max_norm_score": 7.407
+      }
+    },
+    "mean_frac": 0.411,
+    "registration": {
+      "session_a": "NE_34",
+      "session_b": "OD_34",
+      "n_rois_a": 851,
+      "n_rois_b": 711,
+      "n_candidates": 621,
+      "n_accepted": 621,
+      "fraction_a_matched": 0.73,
+      "fraction_b_matched": 0.873,
+      "mean_confidence": 0.797,
+      "mean_dice": 0.878,
+      "mean_centroid_dist_px": 3.06
+    }
+  },
+  "c1_reg_shuffle": {
+    "mean_frac": 0.416,
+    "std_frac": 0.015,
+    "n_reps": 20
+  },
+  "c2_mismatch": {
+    "methods": {
+      "nmf": {
+        "n_events": 53,
+        "n_significant": 112,
+        "total_pairs": 424,
+        "fraction_significant": 0.264,
+        "max_norm_score": 14.713
+      },
+      "ica": {
+        "n_events": 53,
+        "n_significant": 173,
+        "total_pairs": 424,
+        "fraction_significant": 0.408,
+        "max_norm_score": 8.415
+      },
+      "graph": {
+        "n_events": 53,
+        "n_significant": 211,
+        "total_pairs": 424,
+        "fraction_significant": 0.498,
+        "max_norm_score": 6.474
+      }
+    },
+    "mean_frac": 0.39,
+    "registration": {
+      "session_a": "NE_34",
+      "session_b": "OD_21",
+      "n_rois_a": 851,
+      "n_rois_b": 625,
+      "n_candidates": 433,
+      "n_accepted": 433,
+      "fraction_a_matched": 0.509,
+      "fraction_b_matched": 0.693,
+      "mean_confidence": 0.662,
+      "mean_dice": 0.834,
+      "mean_centroid_dist_px": 6.0
+    }
+  },
+  "c3_event_shuffle": {
+    "mean_frac": 0.046,
+    "std_frac": 0.018,
+    "n_reps": 20
+  }
+}

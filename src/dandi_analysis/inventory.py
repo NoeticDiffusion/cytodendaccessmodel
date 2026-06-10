@@ -1,3 +1,14 @@
+"""NWB asset discovery and inventory reporting for local DANDI data directories.
+
+Scans a local raw-data root recursively for ``.nwb`` files and classifies
+each as *canonical* (sitting under a ``sub-*/`` subdirectory, matching the
+standard DANDI layout) or *non-canonical* (loose files or duplicates).
+Non-canonical files are matched to their canonical counterpart by file stem
+when possible.
+
+The main entry points are ``discover_nwb_assets`` for scanning and
+``build_inventory_report`` for generating a Markdown summary table.
+"""
 from __future__ import annotations
 
 import os

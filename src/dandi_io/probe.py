@@ -1,3 +1,14 @@
+"""Local DANDI asset probing: file existence, size, and basic NWB structure inspection.
+
+After assets are listed by ``DandiClient``, this module resolves each record's
+expected local path and checks whether the file is present and has a plausible
+size.  For NWB files it additionally opens the HDF5 container to extract a
+compact structure summary (top-level keys, neurodata types) without loading
+the full dataset into memory.
+
+The main entry point is ``probe_assets`` for a collection of records, or
+``probe_local_asset`` for a single record.
+"""
 from __future__ import annotations
 
 from pathlib import Path

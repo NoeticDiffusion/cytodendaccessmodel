@@ -1,0 +1,50 @@
+[
+  {
+    "comparison": "SparseKO-7 vs Cre-1",
+    "sko_off_diag_mean": 0.2544,
+    "ctrl_off_diag_mean": 0.4548,
+    "sko_n_pairs": 30,
+    "ctrl_n_pairs": 30,
+    "observed_diff": -0.2003,
+    "null_mean": 0.000457,
+    "null_std": 0.028723,
+    "z": -6.9896,
+    "p_empirical": 0.0,
+    "n_perms": 1000,
+    "effect_direction": "negative",
+    "note": "",
+    "claim": "SparseKO shows significantly lower cross-day similarity (null-separated)."
+  },
+  {
+    "comparison": "SparseKO-7 vs Cre-2",
+    "sko_off_diag_mean": 0.2544,
+    "ctrl_off_diag_mean": 0.3881,
+    "sko_n_pairs": 30,
+    "ctrl_n_pairs": 30,
+    "observed_diff": -0.1337,
+    "null_mean": 0.00022,
+    "null_std": 0.021935,
+    "z": -6.1054,
+    "p_empirical": 0.0,
+    "n_perms": 1000,
+    "effect_direction": "negative",
+    "note": "",
+    "claim": "SparseKO shows significantly lower cross-day similarity (null-separated)."
+  },
+  {
+    "comparison": "SparseKO-7 vs Ctrl-9",
+    "sko_off_diag_mean": 0.2544,
+    "ctrl_off_diag_mean": 0.3348,
+    "sko_n_pairs": 30,
+    "ctrl_n_pairs": 30,
+    "observed_diff": -0.0803,
+    "null_mean": -0.000172,
+    "null_std": 0.016938,
+    "z": -4.7312,
+    "p_empirical": 0.0,
+    "n_perms": 1000,
+    "effect_direction": "negative",
+    "note": "",
+    "claim": "SparseKO shows significantly lower cross-day similarity (null-separated)."
+  }
+]

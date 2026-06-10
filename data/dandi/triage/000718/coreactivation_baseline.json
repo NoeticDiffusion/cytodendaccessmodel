@@ -1,0 +1,330 @@
+{
+  "model": {
+    "full_model": {
+      "linking_index_model": 0.6144570007734897,
+      "context_margin_model": 0.19223695859231527,
+      "recall_mu0": 0.8314461726934327,
+      "recall_mu1": 0.22175726526888132
+    },
+    "fast_context_only": {
+      "linking_index_model": 0.37684893320436263,
+      "context_margin_model": 0.1562793521094839,
+      "recall_mu0": 0.5156963216558783,
+      "recall_mu1": 0.1493942710714897
+    },
+    "replay_no_structure": {
+      "linking_index_model": 0.4084,
+      "context_margin_model": 0.1562793521094839,
+      "recall_mu0": 0.5156963216558783,
+      "recall_mu1": 0.1493942710714897
+    },
+    "random_slow_drift": {
+      "linking_index_model": 0.4549714070806984,
+      "context_margin_model": 0.2002256044216978,
+      "recall_mu0": 0.76790439585498,
+      "recall_mu1": 0.20506726174068596
+    },
+    "fixed_allocation_only": {
+      "linking_index_model": 0.4084,
+      "context_margin_model": 0.19983264785868904,
+      "recall_mu0": 0.7768013567748135,
+      "recall_mu1": 0.1997504303924803
+    }
+  },
+  "data": {
+    "status": "ok",
+    "sessions": [
+      {
+        "session_id": "Ca-EEG2-1__OfflineDay2Session1",
+        "subject_id": "Ca-EEG2-1",
+        "session_label": "OfflineDay2Session1",
+        "window_label": "sleep.SleepIntervals_25",
+        "window_duration_sec": 123.59999999999997,
+        "n_good_units": 538,
+        "n_possible_pairs": 144453,
+        "pair_sampling_mode": "random_without_replacement",
+        "pair_sampling_seed": 3916012082,
+        "n_pairs_tested": 25,
+        "mean_score": 0.075867645517852,
+        "mean_z": 0.11479054701873138,
+        "n_above_threshold": 0,
+        "pairs": [
+          {
+            "trace_i": "20",
+            "trace_j": "161",
+            "co_reactivation_score": 0.31006214599582954,
+            "null_mean": 0.1262532845888757,
+            "null_std": 0.14980747692288662,
+            "z_score": 1.226967206059878
+          },
+          {
+            "trace_i": "107",
+            "trace_j": "478",
+            "co_reactivation_score": -0.011602434352001192,
+            "null_mean": -0.005391683037174741,
+            "null_std": 0.022818614681197457,
+            "z_score": -0.2721791573063421
+          },
+          {
+            "trace_i": "147",
+            "trace_j": "241",
+            "co_reactivation_score": -0.0037322805929361183,
+            "null_mean": -0.000890069245576191,
+            "null_std": 0.02687776433468296,
+            "z_score": -0.1057458243910692
+          },
+          {
+            "trace_i": "212",
+            "trace_j": "437",
+            "co_reactivation_score": -0.0017792174523665113,
+            "null_mean": 0.007754268474991134,
+            "null_std": 0.0577793090539322,
+            "z_score": -0.1649982681249948
+          },
+          {
+            "trace_i": "55",
+            "trace_j": "327",
+            "co_reactivation_score": -0.007607351682094656,
+            "null_mean": 0.005727819121939977,
+            "null_std": 0.07763846309961027,
+            "z_score": -0.17175985035826363
+          },
+          {
+            "trace_i": "185",
+            "trace_j": "452",
+            "co_reactivation_score": -0.005973985459015894,
+            "null_mean": 0.009834813963218298,
+            "null_std": 0.050995512193170806,
+            "z_score": -0.31000373841428475
+          },
+          {
+            "trace_i": "190",
+            "trace_j": "401",
+            "co_reactivation_score": 0.721125877450388,
+            "null_mean": 0.2726522876308746,
+            "null_std": 0.3429709380143426,
+            "z_score": 1.3076139699065663
+          },
+          {
+            "trace_i": "290",
+            "trace_j": "295",
+            "co_reactivation_score": -0.004393909260270673,
+            "null_mean": 0.005202669253841298,
+            "null_std": 0.05421511938041902,
+            "z_score": -0.17700926648845458
+          },
+          {
+            "trace_i": "247",
+            "trace_j": "285",
+            "co_reactivation_score": -0.005788050723517887,
+            "null_mean": -0.004118831638298096,
+            "null_std": 0.017430578285680027,
+            "z_score": -0.09576383857505906
+          },
+          {
+            "trace_i": "15",
+            "trace_j": "371",
+            "co_reactivation_score": 0.44287308064570446,
+            "null_mean": 0.1535952626869962,
+            "null_std": 0.21318276004060593,
+            "z_score": 1.3569475219459968
+          }
+        ]
+      },
+      {
+        "session_id": "Ca-EEG3-4__OfflineDay1Session1",
+        "subject_id": "Ca-EEG3-4",
+        "session_label": "OfflineDay1Session1",
+        "window_label": "sleep.SleepIntervals_12",
+        "window_duration_sec": 371.9333333333333,
+        "n_good_units": 700,
+        "n_possible_pairs": 244650,
+        "pair_sampling_mode": "random_without_replacement",
+        "pair_sampling_seed": 296860002,
+        "n_pairs_tested": 25,
+        "mean_score": 0.015964205410642557,
+        "mean_z": -0.021910118860851292,
+        "n_above_threshold": 0,
+        "pairs": [
+          {
+            "trace_i": "240",
+            "trace_j": "341",
+            "co_reactivation_score": -0.005741618345100074,
+            "null_mean": -0.0025353453067218598,
+            "null_std": 0.022538049517794964,
+            "z_score": -0.14226044875119714
+          },
+          {
+            "trace_i": "32",
+            "trace_j": "192",
+            "co_reactivation_score": -0.003953990162027031,
+            "null_mean": 0.00013866255487672845,
+            "null_std": 0.018899143157626773,
+            "z_score": -0.21655228931646903
+          },
+          {
+            "trace_i": "321",
+            "trace_j": "561",
+            "co_reactivation_score": -0.013257870404711502,
+            "null_mean": 0.002904461845459439,
+            "null_std": 0.03729673400672446,
+            "z_score": -0.43334443834296416
+          },
+          {
+            "trace_i": "266",
+            "trace_j": "564",
+            "co_reactivation_score": -0.007266400972559287,
+            "null_mean": 0.004467282649860321,
+            "null_std": 0.040060030708371226,
+            "z_score": -0.2929025119286205
+          },
+          {
+            "trace_i": "224",
+            "trace_j": "326",
+            "co_reactivation_score": -0.017796274919344816,
+            "null_mean": 0.007130172903796237,
+            "null_std": 0.09044445599297461,
+            "z_score": -0.27559951076578143
+          },
+          {
+            "trace_i": "403",
+            "trace_j": "553",
+            "co_reactivation_score": 0.063644790184919,
+            "null_mean": 0.025145180730521733,
+            "null_std": 0.03890282175986722,
+            "z_score": 0.9896353969396146
+          },
+          {
+            "trace_i": "82",
+            "trace_j": "555",
+            "co_reactivation_score": -0.014389725557916908,
+            "null_mean": 0.005663961340226503,
+            "null_std": 0.03911052330154422,
+            "z_score": -0.5127440188802491
+          },
+          {
+            "trace_i": "453",
+            "trace_j": "477",
+            "co_reactivation_score": -0.004831057624634558,
+            "null_mean": -0.0002570576238684601,
+            "null_std": 0.01945089086535671,
+            "z_score": -0.23515632432613598
+          },
+          {
+            "trace_i": "606",
+            "trace_j": "653",
+            "co_reactivation_score": -0.01605047742061556,
+            "null_mean": -0.0009580412496311359,
+            "null_std": 0.028999376021786767,
+            "z_score": -0.5204400315250134
+          },
+          {
+            "trace_i": "328",
+            "trace_j": "533",
+            "co_reactivation_score": -0.0033947813115030633,
+            "null_mean": -0.0006949976161257647,
+            "null_std": 0.013653232990478272,
+            "z_score": -0.19773951687927105
+          }
+        ]
+      },
+      {
+        "session_id": "Ca-EEG3-4__OfflineDay2Session1",
+        "subject_id": "Ca-EEG3-4",
+        "session_label": "OfflineDay2Session1",
+        "window_label": "sleep.SleepIntervals_1",
+        "window_duration_sec": 65.86666666666667,
+        "n_good_units": 740,
+        "n_possible_pairs": 273430,
+        "pair_sampling_mode": "random_without_replacement",
+        "pair_sampling_seed": 1256964716,
+        "n_pairs_tested": 25,
+        "mean_score": 0.03570397222524393,
+        "mean_z": -0.026358029623507896,
+        "n_above_threshold": 0,
+        "pairs": [
+          {
+            "trace_i": "19",
+            "trace_j": "307",
+            "co_reactivation_score": 0.6597176338567068,
+            "null_mean": 0.23465510692575342,
+            "null_std": 0.31898116260606885,
+            "z_score": 1.3325631001473635
+          },
+          {
+            "trace_i": "330",
+            "trace_j": "764",
+            "co_reactivation_score": -0.010134175074225463,
+            "null_mean": -0.005916154236051868,
+            "null_std": 0.026859536119171412,
+            "z_score": -0.1570399734179667
+          },
+          {
+            "trace_i": "806",
+            "trace_j": "846",
+            "co_reactivation_score": 0.06555057753633764,
+            "null_mean": 0.025194776275684443,
+            "null_std": 0.060260565744870785,
+            "z_score": 0.6696883901075584
+          },
+          {
+            "trace_i": "516",
+            "trace_j": "589",
+            "co_reactivation_score": -0.022111669366395064,
+            "null_mean": -0.012223858823576407,
+            "null_std": 0.021741032664289676,
+            "z_score": -0.45479948885131355
+          },
+          {
+            "trace_i": "452",
+            "trace_j": "795",
+            "co_reactivation_score": -0.008317750473884649,
+            "null_mean": 0.0005130689342206892,
+            "null_std": 0.03739898028627895,
+            "z_score": -0.23612460394662727
+          },
+          {
+            "trace_i": "139",
+            "trace_j": "189",
+            "co_reactivation_score": 0.3418779356671649,
+            "null_mean": 0.12032987712403159,
+            "null_std": 0.16620457645849004,
+            "z_score": 1.3329841046733477
+          },
+          {
+            "trace_i": "42",
+            "trace_j": "149",
+            "co_reactivation_score": -0.013807040975420867,
+            "null_mean": 0.000436324251730397,
+            "null_std": 0.0356211752362275,
+            "z_score": -0.3998566900921746
+          },
+          {
+            "trace_i": "189",
+            "trace_j": "514",
+            "co_reactivation_score": -0.03216970545466424,
+            "null_mean": -0.017940762029903475,
+            "null_std": 0.024899901737383774,
+            "z_score": -0.5714457661251716
+          },
+          {
+            "trace_i": "67",
+            "trace_j": "434",
+            "co_reactivation_score": -0.021381073612259105,
+            "null_mean": -0.010026019468343899,
+            "null_std": 0.027380533310134538,
+            "z_score": -0.41471267251439126
+          },
+          {
+            "trace_i": "691",
+            "trace_j": "831",
+            "co_reactivation_score": -0.04926905404488701,
+            "null_mean": -0.013884459890504264,
+            "null_std": 0.0691371678887047,
+            "z_score": -0.5118027717210515
+          }
+        ]
+      }
+    ]
+  }
+}

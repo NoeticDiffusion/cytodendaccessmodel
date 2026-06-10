@@ -1,3 +1,17 @@
+"""NWB file readiness checks for the DANDI analysis pipeline.
+
+Provides a layered validation pipeline for locally downloaded NWB files:
+
+1. File existence
+2. Minimum file size (rejects stubs and incomplete downloads)
+3. Size stability over a short interval (rejects still-downloading files)
+4. HDF5 openability via ``h5py``
+5. NWB structure validation via ``pynwb``
+
+The main entry points are ``check_readiness`` for a single file,
+``filter_ready`` to screen a collection of discovered assets, and
+``build_readiness_report`` for a Markdown summary.
+"""
 from __future__ import annotations
 
 import time

@@ -1,3 +1,20 @@
+"""Command-line interface for the DANDI I/O layer.
+
+Exposes four subcommands driven by a YAML ingestion config
+(``configs/dandi/<dataset>.yaml``):
+
+- ``list``: list assets available for the configured dandiset version.
+- ``download``: download all assets that pass the selection filter to the
+  configured local storage root.
+- ``probe``: probe locally downloaded files for existence and NWB structure.
+- ``triage``: run dataset-specific triage logic and write Markdown summaries
+  to the triage output directory.
+
+Example usage::
+
+    python -m dandi_io.cli list --config configs/dandi/dataset_000718.yaml
+    python -m dandi_io.cli download --config configs/dandi/dataset_000718.yaml
+"""
 from __future__ import annotations
 
 import argparse

@@ -1,0 +1,254 @@
+[
+  {
+    "acquisitions": [
+      "trial_cell_data"
+    ],
+    "devices": [
+      "Microscope"
+    ],
+    "error": null,
+    "exists": true,
+    "file_size": 463260996,
+    "imaging_planes": [
+      "ImagingPlane"
+    ],
+    "intervals": [],
+    "lab_meta_data": [],
+    "local_path": "data\\dandi\\raw\\001710\\sub-Cre-1\\sub-Cre-1_ses-ymaze-day0-scan0-novel-arm-1_behavior+ophys.nwb",
+    "metadata": {},
+    "modality_hints": [
+      "ophys",
+      "behavior"
+    ],
+    "path": "sub-Cre-1/sub-Cre-1_ses-ymaze-day0-scan0-novel-arm-1_behavior+ophys.nwb",
+    "processing_modules": [
+      "behavior",
+      "ophys"
+    ],
+    "session_id": "ymaze-day0-scan0-novel-arm-1_behavior+ophys.nwb",
+    "subject_id": "Cre-1",
+    "top_level_groups": [
+      "acquisition",
+      "analysis",
+      "file_create_date",
+      "general",
+      "identifier",
+      "processing",
+      "session_description",
+      "session_start_time",
+      "specifications",
+      "stimulus",
+      "timestamps_reference_time"
+    ]
+  },
+  {
+    "acquisitions": [
+      "trial_cell_data"
+    ],
+    "devices": [
+      "Microscope"
+    ],
+    "error": null,
+    "exists": true,
+    "file_size": 355237076,
+    "imaging_planes": [
+      "ImagingPlane"
+    ],
+    "intervals": [],
+    "lab_meta_data": [],
+    "local_path": "data\\dandi\\raw\\001710\\sub-Cre-1\\sub-Cre-1_ses-ymaze-day1-scan0-novel-arm-1_behavior+ophys.nwb",
+    "metadata": {},
+    "modality_hints": [
+      "ophys",
+      "behavior"
+    ],
+    "path": "sub-Cre-1/sub-Cre-1_ses-ymaze-day1-scan0-novel-arm-1_behavior+ophys.nwb",
+    "processing_modules": [
+      "behavior",
+      "ophys"
+    ],
+    "session_id": "ymaze-day1-scan0-novel-arm-1_behavior+ophys.nwb",
+    "subject_id": "Cre-1",
+    "top_level_groups": [
+      "acquisition",
+      "analysis",
+      "file_create_date",
+      "general",
+      "identifier",
+      "processing",
+      "session_description",
+      "session_start_time",
+      "specifications",
+      "stimulus",
+      "timestamps_reference_time"
+    ]
+  },
+  {
+    "acquisitions": [
+      "trial_cell_data"
+    ],
+    "devices": [
+      "Microscope"
+    ],
+    "error": null,
+    "exists": true,
+    "file_size": 502100596,
+    "imaging_planes": [
+      "ImagingPlane"
+    ],
+    "intervals": [],
+    "lab_meta_data": [],
+    "local_path": "data\\dandi\\raw\\001710\\sub-Cre-1\\sub-Cre-1_ses-ymaze-day2-scan0-novel-arm-1_behavior+ophys.nwb",
+    "metadata": {},
+    "modality_hints": [
+      "ophys",
+      "behavior"
+    ],
+    "path": "sub-Cre-1/sub-Cre-1_ses-ymaze-day2-scan0-novel-arm-1_behavior+ophys.nwb",
+    "processing_modules": [
+      "behavior",
+      "ophys"
+    ],
+    "session_id": "ymaze-day2-scan0-novel-arm-1_behavior+ophys.nwb",
+    "subject_id": "Cre-1",
+    "top_level_groups": [
+      "acquisition",
+      "analysis",
+      "file_create_date",
+      "general",
+      "identifier",
+      "processing",
+      "session_description",
+      "session_start_time",
+      "specifications",
+      "stimulus",
+      "timestamps_reference_time"
+    ]
+  },
+  {
+    "acquisitions": [
+      "trial_cell_data"
+    ],
+    "devices": [
+      "Microscope"
+    ],
+    "error": null,
+    "exists": true,
+    "file_size": 452891208,
+    "imaging_planes": [
+      "ImagingPlane"
+    ],
+    "intervals": [],
+    "lab_meta_data": [],
+    "local_path": "data\\dandi\\raw\\001710\\sub-Cre-1\\sub-Cre-1_ses-ymaze-day3-scan0-novel-arm-1_behavior+ophys.nwb",
+    "metadata": {},
+    "modality_hints": [
+      "ophys",
+      "behavior"
+    ],
+    "path": "sub-Cre-1/sub-Cre-1_ses-ymaze-day3-scan0-novel-arm-1_behavior+ophys.nwb",
+    "processing_modules": [
+      "behavior",
+      "ophys"
+    ],
+    "session_id": "ymaze-day3-scan0-novel-arm-1_behavior+ophys.nwb",
+    "subject_id": "Cre-1",
+    "top_level_groups": [
+      "acquisition",
+      "analysis",
+      "file_create_date",
+      "general",
+      "identifier",
+      "processing",
+      "session_description",
+      "session_start_time",
+      "specifications",
+      "stimulus",
+      "timestamps_reference_time"
+    ]
+  },
+  {
+    "acquisitions": [
+      "trial_cell_data"
+    ],
+    "devices": [
+      "Microscope"
+    ],
+    "error": null,
+    "exists": true,
+    "file_size": 404425204,
+    "imaging_planes": [
+      "ImagingPlane"
+    ],
+    "intervals": [],
+    "lab_meta_data": [],
+    "local_path": "data\\dandi\\raw\\001710\\sub-Cre-1\\sub-Cre-1_ses-ymaze-day4-scan0-novel-arm-1_behavior+ophys.nwb",
+    "metadata": {},
+    "modality_hints": [
+      "ophys",
+      "behavior"
+    ],
+    "path": "sub-Cre-1/sub-Cre-1_ses-ymaze-day4-scan0-novel-arm-1_behavior+ophys.nwb",
+    "processing_modules": [
+      "behavior",
+      "ophys"
+    ],
+    "session_id": "ymaze-day4-scan0-novel-arm-1_behavior+ophys.nwb",
+    "subject_id": "Cre-1",
+    "top_level_groups": [
+      "acquisition",
+      "analysis",
+      "file_create_date",
+      "general",
+      "identifier",
+      "processing",
+      "session_description",
+      "session_start_time",
+      "specifications",
+      "stimulus",
+      "timestamps_reference_time"
+    ]
+  },
+  {
+    "acquisitions": [
+      "trial_cell_data"
+    ],
+    "devices": [
+      "Microscope"
+    ],
+    "error": null,
+    "exists": true,
+    "file_size": 500119088,
+    "imaging_planes": [
+      "ImagingPlane"
+    ],
+    "intervals": [],
+    "lab_meta_data": [],
+    "local_path": "data\\dandi\\raw\\001710\\sub-Cre-1\\sub-Cre-1_ses-ymaze-day5-scan0-novel-arm-1_behavior+ophys.nwb",
+    "metadata": {},
+    "modality_hints": [
+      "ophys",
+      "behavior"
+    ],
+    "path": "sub-Cre-1/sub-Cre-1_ses-ymaze-day5-scan0-novel-arm-1_behavior+ophys.nwb",
+    "processing_modules": [
+      "behavior",
+      "ophys"
+    ],
+    "session_id": "ymaze-day5-scan0-novel-arm-1_behavior+ophys.nwb",
+    "subject_id": "Cre-1",
+    "top_level_groups": [
+      "acquisition",
+      "analysis",
+      "file_create_date",
+      "general",
+      "identifier",
+      "processing",
+      "session_description",
+      "session_start_time",
+      "specifications",
+      "stimulus",
+      "timestamps_reference_time"
+    ]
+  }
+]

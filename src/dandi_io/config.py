@@ -1,3 +1,13 @@
+"""YAML-based ingestion configuration loader and validator for the DANDI I/O layer.
+
+Loads dataset-specific YAML files (under ``configs/dandi/``) and coerces them
+into typed ``DandiIngestionConfig`` contracts.  Provides ``resolve_dandi_config``
+as the main entry point and ``ensure_storage_roots`` to create local directory
+trees before download jobs run.
+
+YAML files follow the structure defined by ``DEFAULT_DANDI_CONFIG``; any key
+present in the file overrides the corresponding default before coercion.
+"""
 from __future__ import annotations
 
 from pathlib import Path

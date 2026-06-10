@@ -1,0 +1,10 @@
+group,subject_id,n_days,n_pairs,off_diagonal_mean
+Ctrl,Ctrl-1,6,15,0.2081
+Ctrl,Ctrl-2,4,6,0.2881
+Ctrl,Ctrl-3,6,15,0.2572
+Ctrl,Ctrl-4,5,10,0.3187
+Ctrl,Ctrl-5,6,15,0.3874
+Ctrl,Ctrl-6,6,15,0.2751
+Ctrl,Ctrl-7,6,15,0.3113
+Ctrl,Ctrl-8,6,15,0.2526
+Ctrl,Ctrl-9,6,15,0.3348

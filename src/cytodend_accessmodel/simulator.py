@@ -1,3 +1,17 @@
+"""Core branch-resolved simulator for the cytoskeletal-dendritic accessibility model.
+
+Implements ``CytodendAccessModelSimulator``, the primary executable object in
+this repository.  The simulator operates on two timescales:
+
+- **Fast** (``apply_cue``): cue-driven dendritic activation, context modulation,
+  spine contributions, and eligibility-trace accumulation.
+- **Slow** (``run_consolidation``): replay- and sleep-driven updates to the
+  structural-accessibility field ``M_b`` via a bounded, tag-dependent write rule.
+
+The architecture is deliberately minimal: four branches, one overlap branch, and
+no recurrent connectivity, so that the mechanistic signatures of slow structural
+writing are not confounded by generic routing or recurrence effects.
+"""
 from __future__ import annotations
 
 from copy import deepcopy

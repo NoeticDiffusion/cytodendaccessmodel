@@ -1,3 +1,13 @@
+"""Lightweight DANDI REST API client for asset listing and programmatic download.
+
+``DandiClient`` wraps the official DANDI REST API to list assets for a given
+dandiset and version, resolve subject and session identifiers from asset paths,
+and download individual files via their direct download URLs.
+
+For large reviewer downloads, the ``dandi`` command-line tool is preferred
+(as documented in ``RUN.md``).  This client supports metadata-driven ingestion
+and small programmatic workflows where the full CLI is not needed.
+"""
 from __future__ import annotations
 
 import re

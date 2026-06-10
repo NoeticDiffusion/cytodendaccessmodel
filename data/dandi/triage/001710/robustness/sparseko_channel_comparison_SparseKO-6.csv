@@ -1,0 +1,6 @@
+subject_id,day,ch0_n_rois,ch0_n_frames,ch0_n_valid_trials,ch0_split_half_median,ch0_arm_separation,ch1_n_rois,ch1_n_frames,ch1_n_valid_trials,ch1_split_half_median,ch1_arm_separation
+SparseKO-6,1,390,38950,44,0.9612,0.3057,142,38950,44,0.9683,0.4552
+SparseKO-6,2,417,38889,73,0.9762,0.3422,95,38889,73,0.9792,0.4382
+SparseKO-6,3,444,38973,63,0.9766,0.2638,122,38973,63,0.9838,0.4365
+SparseKO-6,4,504,38013,90,0.9735,0.1885,199,38013,90,0.9805,0.2383
+SparseKO-6,5,380,38966,62,0.9695,0.4086,121,38966,62,0.9876,0.3743

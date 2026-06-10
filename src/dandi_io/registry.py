@@ -1,3 +1,13 @@
+"""Dataset adapter registry for the DANDI I/O layer.
+
+Maps DANDI dataset identifiers (``000336``, ``000718``, ``000871``, ``001710``)
+to their specialized adapter classes and exposes a ``get_dataset_adapter``
+factory that returns the correct adapter for a given ``DandiIngestionConfig``.
+
+Each adapter implements ``DatasetAdapterProtocol``: it can filter assets,
+generate triage markdown, and run dataset-specific probe logic.  The
+``GenericDatasetAdapter`` is used as a fallback for unconfigured datasets.
+"""
 from __future__ import annotations
 
 from typing import Sequence

@@ -1,0 +1,15 @@
+session_id,label,start_sec,stop_sec,duration_sec,epoch_type
+Ca-EEG2-1__OfflineDay2Session1,sleep.SleepIntervals_3,49.672666666666665,97.606,47.93333333333333,quiet_wake
+Ca-EEG2-1__OfflineDay2Session1,sleep.SleepIntervals_9,145.73933333333332,199.606,53.866666666666674,quiet_wake
+Ca-EEG2-1__OfflineDay2Session1,sleep.SleepIntervals_13,217.67266666666666,271.606,53.93333333333334,quiet_wake
+Ca-EEG2-1__OfflineDay2Session1,sleep.SleepIntervals_19,301.67266666666666,331.67266666666666,30.0,quiet_wake
+Ca-EEG2-1__OfflineDay2Session1,sleep.SleepIntervals_21,343.67266666666666,421.606,77.93333333333334,quiet_wake
+Ca-EEG2-1__OfflineDay2Session1,sleep.SleepIntervals_23,427.67266666666666,469.606,41.93333333333334,quiet_wake
+Ca-EEG2-1__OfflineDay2Session1,sleep.SleepIntervals_25,475.67266666666666,599.2726666666666,123.59999999999997,quiet_wake
+Ca-EEG3-4__OfflineDay1Session1,sleep.SleepIntervals_0,0.0,42.8,42.8,quiet_wake
+Ca-EEG3-4__OfflineDay1Session1,sleep.SleepIntervals_12,210.86666666666667,582.8,371.9333333333333,quiet_wake
+Ca-EEG3-4__OfflineDay2Session1,sleep.SleepIntervals_1,16.071666666666665,81.93833333333333,65.86666666666667,quiet_wake
+Ca-EEG3-4__OfflineDay2Session1,sleep.SleepIntervals_11,202.07166666666666,243.93833333333333,41.866666666666674,quiet_wake
+Ca-EEG3-4__OfflineDay2Session1,sleep.SleepIntervals_15,274.005,309.93833333333333,35.93333333333334,quiet_wake
+Ca-EEG3-4__OfflineDay2Session1,sleep.SleepIntervals_23,394.005,424.005,30.0,quiet_wake
+Ca-EEG3-4__OfflineDay2Session1,sleep.SleepIntervals_31,532.005,567.9383333333333,35.93333333333328,quiet_wake

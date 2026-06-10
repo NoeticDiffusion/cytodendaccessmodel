@@ -1,0 +1,264 @@
+[
+  {
+    "acquisitions": [],
+    "devices": [],
+    "error": "Unable to synchronously open file (truncated file: eof = 2599675806, sblock->base_addr = 0, stored_eof = 4043728529)",
+    "exists": true,
+    "file_size": 2599675806,
+    "imaging_planes": [],
+    "intervals": [],
+    "lab_meta_data": [],
+    "local_path": "data\\dandi\\raw\\000871\\sub-656228\\sub-656228_ses-1245548523-acq-1245937736_image+ophys.nwb",
+    "metadata": {
+      "hdf5_probe_error": "Unable to synchronously open file (truncated file: eof = 2599675806, sblock->base_addr = 0, stored_eof = 4043728529)"
+    },
+    "modality_hints": [],
+    "path": "sub-656228/sub-656228_ses-1245548523-acq-1245937736_image+ophys.nwb",
+    "processing_modules": [],
+    "session_id": "1245548523-acq-1245937736_image+ophys.nwb",
+    "subject_id": "656228",
+    "top_level_groups": []
+  },
+  {
+    "acquisitions": [
+      "EyeTracking",
+      "v_in",
+      "v_sig"
+    ],
+    "devices": [
+      "MESO.2"
+    ],
+    "error": null,
+    "exists": true,
+    "file_size": 1144934234,
+    "imaging_planes": [
+      "imaging_plane_1"
+    ],
+    "intervals": [
+      "fixed_gabors_presentations",
+      "gratings_presentations",
+      "movie_flower_fwd_presentations",
+      "movie_touch_of_evil_fwd_presentations",
+      "movie_worms_fwd_presentations",
+      "rotate_gabors_presentations",
+      "spontaneous_presentations"
+    ],
+    "lab_meta_data": [
+      "metadata"
+    ],
+    "local_path": "data\\dandi\\raw\\000871\\sub-644972\\sub-644972_ses-1237338784-acq-1237809219_image+ophys.nwb",
+    "metadata": {},
+    "modality_hints": [
+      "ophys"
+    ],
+    "path": "sub-644972/sub-644972_ses-1237338784-acq-1237809219_image+ophys.nwb",
+    "processing_modules": [
+      "ophys",
+      "running",
+      "stimulus",
+      "stimulus_ophys"
+    ],
+    "session_id": "1237338784-acq-1237809219_image+ophys.nwb",
+    "subject_id": "644972",
+    "top_level_groups": [
+      "acquisition",
+      "analysis",
+      "file_create_date",
+      "general",
+      "identifier",
+      "intervals",
+      "processing",
+      "session_description",
+      "session_start_time",
+      "specifications",
+      "stimulus",
+      "timestamps_reference_time"
+    ]
+  },
+  {
+    "acquisitions": [
+      "EyeTracking",
+      "v_in",
+      "v_sig"
+    ],
+    "devices": [
+      "MESO.2"
+    ],
+    "error": null,
+    "exists": true,
+    "file_size": 1079474009,
+    "imaging_planes": [
+      "imaging_plane_1"
+    ],
+    "intervals": [
+      "fixed_gabors_presentations",
+      "gratings_presentations",
+      "movie_flower_fwd_presentations",
+      "movie_touch_of_evil_fwd_presentations",
+      "movie_worms_fwd_presentations",
+      "rotate_gabors_presentations",
+      "spontaneous_presentations"
+    ],
+    "lab_meta_data": [
+      "metadata"
+    ],
+    "local_path": "data\\dandi\\raw\\000871\\sub-644972\\sub-644972_ses-1237338784-acq-1237809217_image+ophys.nwb",
+    "metadata": {},
+    "modality_hints": [
+      "ophys"
+    ],
+    "path": "sub-644972/sub-644972_ses-1237338784-acq-1237809217_image+ophys.nwb",
+    "processing_modules": [
+      "ophys",
+      "running",
+      "stimulus",
+      "stimulus_ophys"
+    ],
+    "session_id": "1237338784-acq-1237809217_image+ophys.nwb",
+    "subject_id": "644972",
+    "top_level_groups": [
+      "acquisition",
+      "analysis",
+      "file_create_date",
+      "general",
+      "identifier",
+      "intervals",
+      "processing",
+      "session_description",
+      "session_start_time",
+      "specifications",
+      "stimulus",
+      "timestamps_reference_time"
+    ]
+  },
+  {
+    "acquisitions": [
+      "EyeTracking",
+      "v_in",
+      "v_sig"
+    ],
+    "devices": [
+      "MESO.2"
+    ],
+    "error": null,
+    "exists": true,
+    "file_size": 4041517083,
+    "imaging_planes": [
+      "imaging_plane_1"
+    ],
+    "intervals": [
+      "fixed_gabors_presentations",
+      "gratings_presentations",
+      "movie_flower_fwd_presentations",
+      "movie_flower_fwd_rev_presentations",
+      "movie_flower_rev_fwd_presentations",
+      "movie_flower_rev_presentations",
+      "movie_touch_of_evil_fwd_presentations",
+      "movie_touch_of_evil_fwd_rev_presentations",
+      "movie_touch_of_evil_rev_fwd_presentations",
+      "movie_touch_of_evil_rev_presentations",
+      "movie_worms_fwd_presentations",
+      "movie_worms_fwd_rev_presentations",
+      "movie_worms_rev_fwd_presentations",
+      "movie_worms_rev_presentations",
+      "rotate_gabors_presentations",
+      "spontaneous_presentations"
+    ],
+    "lab_meta_data": [
+      "metadata"
+    ],
+    "local_path": "data\\dandi\\raw\\000871\\sub-656228\\sub-656228_ses-1247233186-acq-1247385130_image+ophys.nwb",
+    "metadata": {},
+    "modality_hints": [
+      "ophys"
+    ],
+    "path": "sub-656228/sub-656228_ses-1247233186-acq-1247385130_image+ophys.nwb",
+    "processing_modules": [
+      "ophys",
+      "running",
+      "stimulus",
+      "stimulus_ophys"
+    ],
+    "session_id": "1247233186-acq-1247385130_image+ophys.nwb",
+    "subject_id": "656228",
+    "top_level_groups": [
+      "acquisition",
+      "analysis",
+      "file_create_date",
+      "general",
+      "identifier",
+      "intervals",
+      "processing",
+      "session_description",
+      "session_start_time",
+      "specifications",
+      "stimulus",
+      "timestamps_reference_time"
+    ]
+  },
+  {
+    "acquisitions": [
+      "EyeTracking",
+      "v_in",
+      "v_sig"
+    ],
+    "devices": [
+      "MESO.2"
+    ],
+    "error": null,
+    "exists": true,
+    "file_size": 4016954448,
+    "imaging_planes": [
+      "imaging_plane_1"
+    ],
+    "intervals": [
+      "fixed_gabors_presentations",
+      "gratings_presentations",
+      "movie_flower_fwd_presentations",
+      "movie_flower_fwd_rev_presentations",
+      "movie_flower_rev_fwd_presentations",
+      "movie_flower_rev_presentations",
+      "movie_touch_of_evil_fwd_presentations",
+      "movie_touch_of_evil_fwd_rev_presentations",
+      "movie_touch_of_evil_rev_fwd_presentations",
+      "movie_touch_of_evil_rev_presentations",
+      "movie_worms_fwd_presentations",
+      "movie_worms_fwd_rev_presentations",
+      "movie_worms_rev_fwd_presentations",
+      "movie_worms_rev_presentations",
+      "rotate_gabors_presentations",
+      "spontaneous_presentations"
+    ],
+    "lab_meta_data": [
+      "metadata"
+    ],
+    "local_path": "data\\dandi\\raw\\000871\\sub-656228\\sub-656228_ses-1247233186-acq-1247385128_image+ophys.nwb",
+    "metadata": {},
+    "modality_hints": [
+      "ophys"
+    ],
+    "path": "sub-656228/sub-656228_ses-1247233186-acq-1247385128_image+ophys.nwb",
+    "processing_modules": [
+      "ophys",
+      "running",
+      "stimulus",
+      "stimulus_ophys"
+    ],
+    "session_id": "1247233186-acq-1247385128_image+ophys.nwb",
+    "subject_id": "656228",
+    "top_level_groups": [
+      "acquisition",
+      "analysis",
+      "file_create_date",
+      "general",
+      "identifier",
+      "intervals",
+      "processing",
+      "session_description",
+      "session_start_time",
+      "specifications",
+      "stimulus",
+      "timestamps_reference_time"
+    ]
+  }
+]

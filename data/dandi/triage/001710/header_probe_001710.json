@@ -1,0 +1,718 @@
+{
+  "sessions": [
+    {
+      "path": "I:\\AAA_PYTHON_REPOS_BACKUP\\cytodendkeylock\\data\\dandi\\raw\\001710\\sub-Cre-1\\sub-Cre-1_ses-ymaze-day0-scan0-novel-arm-1_behavior+ophys.nwb",
+      "session_description": "Preprocessed 2P and VR Data",
+      "identifier": "99a58b10-ed93-4dac-8187-b9f5dde977eb",
+      "experimenter": "('Plitt, Mark',)",
+      "institution": "Stanford University",
+      "lab": "Lisa Giocomo",
+      "experiment_description": "YMaze day 0. Novel arm = -1.",
+      "session_start_time": "2026-02-11 15:25:16.516856-08:00",
+      "subject": {
+        "subject_id": "Cre_1",
+        "species": "Mus musculus",
+        "sex": "M",
+        "age": "P200DT0H0M0S"
+      },
+      "acquisitions": [
+        "trial_cell_data"
+      ],
+      "processing_keys": [
+        "behavior",
+        "ophys"
+      ],
+      "interval_names": [],
+      "imaging_planes": [
+        "ImagingPlane"
+      ],
+      "devices": [
+        "Microscope"
+      ],
+      "behavior_channels": {
+        "2P-aligned behavior": [
+          "block",
+          "left or right",
+          "licks",
+          "position",
+          "reward",
+          "speed",
+          "trial end",
+          "trial number",
+          "trial start",
+          "x position",
+          "y position"
+        ],
+        "Full temporal resolution behavior": [
+          "block",
+          "consummatory licks",
+          "left or right",
+          "manual rewards",
+          "non-consummatory licks",
+          "position",
+          "reward",
+          "rotary encoder reading",
+          "speed",
+          "trial end",
+          "trial number",
+          "trial start",
+          "x position",
+          "y position"
+        ]
+      },
+      "roi_response_series": [
+        {
+          "interface": "dF",
+          "name": "dF",
+          "shape": [
+            29954,
+            904
+          ],
+          "n_frames": 29954,
+          "n_rois": 904,
+          "sampling_rate": 15.4609375
+        },
+        {
+          "interface": "fluorescence",
+          "name": "fluorescence",
+          "shape": [
+            29954,
+            904
+          ],
+          "n_frames": 29954,
+          "n_rois": 904,
+          "sampling_rate": 15.4609375
+        },
+        {
+          "interface": "neuropil",
+          "name": "neuropil fluorescence",
+          "shape": [
+            29954,
+            904
+          ],
+          "n_frames": 29954,
+          "n_rois": 904,
+          "sampling_rate": 15.4609375
+        }
+      ],
+      "imaging_plane_info": {
+        "ImagingPlane": {
+          "description": "CA1 pyramidal cell layer",
+          "imaging_rate": 15.4609375,
+          "indicator": "channel 0: jGCaMP7f, channel 1: mCherry",
+          "location": "CA1"
+        }
+      },
+      "annotation_blob_keys": [
+        "mouse",
+        "mux",
+        "novel_arm",
+        "day",
+        "trial_info",
+        "trial_start_inds",
+        "teleport_inds",
+        "place_cell_info",
+        "vr_trial_info"
+      ],
+      "blob_day": 0,
+      "blob_novel_arm": -1,
+      "blob_mouse": "Cre_1",
+      "blob_mux": false
+    },
+    {
+      "path": "I:\\AAA_PYTHON_REPOS_BACKUP\\cytodendkeylock\\data\\dandi\\raw\\001710\\sub-Cre-1\\sub-Cre-1_ses-ymaze-day1-scan0-novel-arm-1_behavior+ophys.nwb",
+      "session_description": "Preprocessed 2P and VR Data",
+      "identifier": "516a9c4d-22c6-4444-a2bc-28a6dbb1eb0e",
+      "experimenter": "('Plitt, Mark',)",
+      "institution": "Stanford University",
+      "lab": "Lisa Giocomo",
+      "experiment_description": "YMaze day 1. Novel arm = -1.",
+      "session_start_time": "2026-02-11 15:25:19.751928-08:00",
+      "subject": {
+        "subject_id": "Cre_1",
+        "species": "Mus musculus",
+        "sex": "M",
+        "age": "P201DT0H0M0S"
+      },
+      "acquisitions": [
+        "trial_cell_data"
+      ],
+      "processing_keys": [
+        "behavior",
+        "ophys"
+      ],
+      "interval_names": [],
+      "imaging_planes": [
+        "ImagingPlane"
+      ],
+      "devices": [
+        "Microscope"
+      ],
+      "behavior_channels": {
+        "2P-aligned behavior": [
+          "block",
+          "left or right",
+          "licks",
+          "position",
+          "reward",
+          "speed",
+          "trial end",
+          "trial number",
+          "trial start",
+          "x position",
+          "y position"
+        ],
+        "Full temporal resolution behavior": [
+          "block",
+          "consummatory licks",
+          "left or right",
+          "manual rewards",
+          "non-consummatory licks",
+          "position",
+          "reward",
+          "rotary encoder reading",
+          "speed",
+          "trial end",
+          "trial number",
+          "trial start",
+          "x position",
+          "y position"
+        ]
+      },
+      "roi_response_series": [
+        {
+          "interface": "dF",
+          "name": "dF",
+          "shape": [
+            38344,
+            520
+          ],
+          "n_frames": 38344,
+          "n_rois": 520,
+          "sampling_rate": 15.4609375
+        },
+        {
+          "interface": "fluorescence",
+          "name": "fluorescence",
+          "shape": [
+            38344,
+            520
+          ],
+          "n_frames": 38344,
+          "n_rois": 520,
+          "sampling_rate": 15.4609375
+        },
+        {
+          "interface": "neuropil",
+          "name": "neuropil fluorescence",
+          "shape": [
+            38344,
+            520
+          ],
+          "n_frames": 38344,
+          "n_rois": 520,
+          "sampling_rate": 15.4609375
+        }
+      ],
+      "imaging_plane_info": {
+        "ImagingPlane": {
+          "description": "CA1 pyramidal cell layer",
+          "imaging_rate": 15.4609375,
+          "indicator": "channel 0: jGCaMP7f, channel 1: mCherry",
+          "location": "CA1"
+        }
+      },
+      "annotation_blob_keys": [
+        "mouse",
+        "mux",
+        "novel_arm",
+        "day",
+        "trial_info",
+        "trial_start_inds",
+        "teleport_inds",
+        "place_cell_info",
+        "vr_trial_info"
+      ],
+      "blob_day": 1,
+      "blob_novel_arm": -1,
+      "blob_mouse": "Cre_1",
+      "blob_mux": false
+    },
+    {
+      "path": "I:\\AAA_PYTHON_REPOS_BACKUP\\cytodendkeylock\\data\\dandi\\raw\\001710\\sub-Cre-1\\sub-Cre-1_ses-ymaze-day2-scan0-novel-arm-1_behavior+ophys.nwb",
+      "session_description": "Preprocessed 2P and VR Data",
+      "identifier": "d7183b67-b27f-4b40-8738-da71408857f5",
+      "experimenter": "('Plitt, Mark',)",
+      "institution": "Stanford University",
+      "lab": "Lisa Giocomo",
+      "experiment_description": "YMaze day 2. Novel arm = -1.",
+      "session_start_time": "2026-02-11 15:25:22.653185-08:00",
+      "subject": {
+        "subject_id": "Cre_1",
+        "species": "Mus musculus",
+        "sex": "M",
+        "age": "P202DT0H0M0S"
+      },
+      "acquisitions": [
+        "trial_cell_data"
+      ],
+      "processing_keys": [
+        "behavior",
+        "ophys"
+      ],
+      "interval_names": [],
+      "imaging_planes": [
+        "ImagingPlane"
+      ],
+      "devices": [
+        "Microscope"
+      ],
+      "behavior_channels": {
+        "2P-aligned behavior": [
+          "block",
+          "left or right",
+          "licks",
+          "position",
+          "reward",
+          "speed",
+          "trial end",
+          "trial number",
+          "trial start",
+          "x position",
+          "y position"
+        ],
+        "Full temporal resolution behavior": [
+          "block",
+          "consummatory licks",
+          "left or right",
+          "manual rewards",
+          "non-consummatory licks",
+          "position",
+          "reward",
+          "rotary encoder reading",
+          "speed",
+          "trial end",
+          "trial number",
+          "trial start",
+          "x position",
+          "y position"
+        ]
+      },
+      "roi_response_series": [
+        {
+          "interface": "dF",
+          "name": "dF",
+          "shape": [
+            36648,
+            797
+          ],
+          "n_frames": 36648,
+          "n_rois": 797,
+          "sampling_rate": 15.4609375
+        },
+        {
+          "interface": "fluorescence",
+          "name": "fluorescence",
+          "shape": [
+            36648,
+            797
+          ],
+          "n_frames": 36648,
+          "n_rois": 797,
+          "sampling_rate": 15.4609375
+        },
+        {
+          "interface": "neuropil",
+          "name": "neuropil fluorescence",
+          "shape": [
+            36648,
+            797
+          ],
+          "n_frames": 36648,
+          "n_rois": 797,
+          "sampling_rate": 15.4609375
+        }
+      ],
+      "imaging_plane_info": {
+        "ImagingPlane": {
+          "description": "CA1 pyramidal cell layer",
+          "imaging_rate": 15.4609375,
+          "indicator": "channel 0: jGCaMP7f, channel 1: mCherry",
+          "location": "CA1"
+        }
+      },
+      "annotation_blob_keys": [
+        "mouse",
+        "mux",
+        "novel_arm",
+        "day",
+        "trial_info",
+        "trial_start_inds",
+        "teleport_inds",
+        "place_cell_info",
+        "vr_trial_info"
+      ],
+      "blob_day": 2,
+      "blob_novel_arm": -1,
+      "blob_mouse": "Cre_1",
+      "blob_mux": false
+    },
+    {
+      "path": "I:\\AAA_PYTHON_REPOS_BACKUP\\cytodendkeylock\\data\\dandi\\raw\\001710\\sub-Cre-1\\sub-Cre-1_ses-ymaze-day3-scan0-novel-arm-1_behavior+ophys.nwb",
+      "session_description": "Preprocessed 2P and VR Data",
+      "identifier": "ccb1a5bd-7306-407d-b39d-99364019f02b",
+      "experimenter": "('Plitt, Mark',)",
+      "institution": "Stanford University",
+      "lab": "Lisa Giocomo",
+      "experiment_description": "YMaze day 3. Novel arm = -1.",
+      "session_start_time": "2026-02-11 15:25:26.188650-08:00",
+      "subject": {
+        "subject_id": "Cre_1",
+        "species": "Mus musculus",
+        "sex": "M",
+        "age": "P203DT0H0M0S"
+      },
+      "acquisitions": [
+        "trial_cell_data"
+      ],
+      "processing_keys": [
+        "behavior",
+        "ophys"
+      ],
+      "interval_names": [],
+      "imaging_planes": [
+        "ImagingPlane"
+      ],
+      "devices": [
+        "Microscope"
+      ],
+      "behavior_channels": {
+        "2P-aligned behavior": [
+          "block",
+          "left or right",
+          "licks",
+          "position",
+          "reward",
+          "speed",
+          "trial end",
+          "trial number",
+          "trial start",
+          "x position",
+          "y position"
+        ],
+        "Full temporal resolution behavior": [
+          "block",
+          "consummatory licks",
+          "left or right",
+          "manual rewards",
+          "non-consummatory licks",
+          "position",
+          "reward",
+          "rotary encoder reading",
+          "speed",
+          "trial end",
+          "trial number",
+          "trial start",
+          "x position",
+          "y position"
+        ]
+      },
+      "roi_response_series": [
+        {
+          "interface": "dF",
+          "name": "dF",
+          "shape": [
+            37853,
+            689
+          ],
+          "n_frames": 37853,
+          "n_rois": 689,
+          "sampling_rate": 15.4609375
+        },
+        {
+          "interface": "fluorescence",
+          "name": "fluorescence",
+          "shape": [
+            37853,
+            689
+          ],
+          "n_frames": 37853,
+          "n_rois": 689,
+          "sampling_rate": 15.4609375
+        },
+        {
+          "interface": "neuropil",
+          "name": "neuropil fluorescence",
+          "shape": [
+            37853,
+            689
+          ],
+          "n_frames": 37853,
+          "n_rois": 689,
+          "sampling_rate": 15.4609375
+        }
+      ],
+      "imaging_plane_info": {
+        "ImagingPlane": {
+          "description": "CA1 pyramidal cell layer",
+          "imaging_rate": 15.4609375,
+          "indicator": "channel 0: jGCaMP7f, channel 1: mCherry",
+          "location": "CA1"
+        }
+      },
+      "annotation_blob_keys": [
+        "mouse",
+        "mux",
+        "novel_arm",
+        "day",
+        "trial_info",
+        "trial_start_inds",
+        "teleport_inds",
+        "place_cell_info",
+        "vr_trial_info"
+      ],
+      "blob_day": 3,
+      "blob_novel_arm": -1,
+      "blob_mouse": "Cre_1",
+      "blob_mux": false
+    },
+    {
+      "path": "I:\\AAA_PYTHON_REPOS_BACKUP\\cytodendkeylock\\data\\dandi\\raw\\001710\\sub-Cre-1\\sub-Cre-1_ses-ymaze-day4-scan0-novel-arm-1_behavior+ophys.nwb",
+      "session_description": "Preprocessed 2P and VR Data",
+      "identifier": "7d6bc4ab-f51e-4b10-840e-a0bac16322a8",
+      "experimenter": "('Plitt, Mark',)",
+      "institution": "Stanford University",
+      "lab": "Lisa Giocomo",
+      "experiment_description": "YMaze day 4. Novel arm = -1.",
+      "session_start_time": "2026-02-11 15:25:29.033483-08:00",
+      "subject": {
+        "subject_id": "Cre_1",
+        "species": "Mus musculus",
+        "sex": "M",
+        "age": "P204DT0H0M0S"
+      },
+      "acquisitions": [
+        "trial_cell_data"
+      ],
+      "processing_keys": [
+        "behavior",
+        "ophys"
+      ],
+      "interval_names": [],
+      "imaging_planes": [
+        "ImagingPlane"
+      ],
+      "devices": [
+        "Microscope"
+      ],
+      "behavior_channels": {
+        "2P-aligned behavior": [
+          "block",
+          "left or right",
+          "licks",
+          "position",
+          "reward",
+          "speed",
+          "trial end",
+          "trial number",
+          "trial start",
+          "x position",
+          "y position"
+        ],
+        "Full temporal resolution behavior": [
+          "block",
+          "consummatory licks",
+          "left or right",
+          "manual rewards",
+          "non-consummatory licks",
+          "position",
+          "reward",
+          "rotary encoder reading",
+          "speed",
+          "trial end",
+          "trial number",
+          "trial start",
+          "x position",
+          "y position"
+        ]
+      },
+      "roi_response_series": [
+        {
+          "interface": "dF",
+          "name": "dF",
+          "shape": [
+            34900,
+            664
+          ],
+          "n_frames": 34900,
+          "n_rois": 664,
+          "sampling_rate": 15.4609375
+        },
+        {
+          "interface": "fluorescence",
+          "name": "fluorescence",
+          "shape": [
+            34900,
+            664
+          ],
+          "n_frames": 34900,
+          "n_rois": 664,
+          "sampling_rate": 15.4609375
+        },
+        {
+          "interface": "neuropil",
+          "name": "neuropil fluorescence",
+          "shape": [
+            34900,
+            664
+          ],
+          "n_frames": 34900,
+          "n_rois": 664,
+          "sampling_rate": 15.4609375
+        }
+      ],
+      "imaging_plane_info": {
+        "ImagingPlane": {
+          "description": "CA1 pyramidal cell layer",
+          "imaging_rate": 15.4609375,
+          "indicator": "channel 0: jGCaMP7f, channel 1: mCherry",
+          "location": "CA1"
+        }
+      },
+      "annotation_blob_keys": [
+        "mouse",
+        "mux",
+        "novel_arm",
+        "day",
+        "trial_info",
+        "trial_start_inds",
+        "teleport_inds",
+        "place_cell_info",
+        "vr_trial_info"
+      ],
+      "blob_day": 4,
+      "blob_novel_arm": -1,
+      "blob_mouse": "Cre_1",
+      "blob_mux": false
+    },
+    {
+      "path": "I:\\AAA_PYTHON_REPOS_BACKUP\\cytodendkeylock\\data\\dandi\\raw\\001710\\sub-Cre-1\\sub-Cre-1_ses-ymaze-day5-scan0-novel-arm-1_behavior+ophys.nwb",
+      "session_description": "Preprocessed 2P and VR Data",
+      "identifier": "caea0306-8b20-4561-81de-a395ddc3d9e3",
+      "experimenter": "('Plitt, Mark',)",
+      "institution": "Stanford University",
+      "lab": "Lisa Giocomo",
+      "experiment_description": "YMaze day 5. Novel arm = -1.",
+      "session_start_time": "2026-02-11 15:25:32.946150-08:00",
+      "subject": {
+        "subject_id": "Cre_1",
+        "species": "Mus musculus",
+        "sex": "M",
+        "age": "P205DT0H0M0S"
+      },
+      "acquisitions": [
+        "trial_cell_data"
+      ],
+      "processing_keys": [
+        "behavior",
+        "ophys"
+      ],
+      "interval_names": [],
+      "imaging_planes": [
+        "ImagingPlane"
+      ],
+      "devices": [
+        "Microscope"
+      ],
+      "behavior_channels": {
+        "2P-aligned behavior": [
+          "block",
+          "left or right",
+          "licks",
+          "position",
+          "reward",
+          "speed",
+          "trial end",
+          "trial number",
+          "trial start",
+          "x position",
+          "y position"
+        ],
+        "Full temporal resolution behavior": [
+          "block",
+          "consummatory licks",
+          "left or right",
+          "manual rewards",
+          "non-consummatory licks",
+          "position",
+          "reward",
+          "rotary encoder reading",
+          "speed",
+          "trial end",
+          "trial number",
+          "trial start",
+          "x position",
+          "y position"
+        ]
+      },
+      "roi_response_series": [
+        {
+          "interface": "dF",
+          "name": "dF",
+          "shape": [
+            37662,
+            771
+          ],
+          "n_frames": 37662,
+          "n_rois": 771,
+          "sampling_rate": 15.4609375
+        },
+        {
+          "interface": "fluorescence",
+          "name": "fluorescence",
+          "shape": [
+            37662,
+            771
+          ],
+          "n_frames": 37662,
+          "n_rois": 771,
+          "sampling_rate": 15.4609375
+        },
+        {
+          "interface": "neuropil",
+          "name": "neuropil fluorescence",
+          "shape": [
+            37662,
+            771
+          ],
+          "n_frames": 37662,
+          "n_rois": 771,
+          "sampling_rate": 15.4609375
+        }
+      ],
+      "imaging_plane_info": {
+        "ImagingPlane": {
+          "description": "CA1 pyramidal cell layer",
+          "imaging_rate": 15.4609375,
+          "indicator": "channel 0: jGCaMP7f, channel 1: mCherry",
+          "location": "CA1"
+        }
+      },
+      "annotation_blob_keys": [
+        "mouse",
+        "mux",
+        "novel_arm",
+        "day",
+        "trial_info",
+        "trial_start_inds",
+        "teleport_inds",
+        "place_cell_info",
+        "vr_trial_info"
+      ],
+      "blob_day": 5,
+      "blob_novel_arm": -1,
+      "blob_mouse": "Cre_1",
+      "blob_mux": false
+    }
+  ]
+}
