@@ -1,0 +1,56 @@
+{
+  "full_model": {
+    "description": "Full replay-dependent slow branch-level structural writing (E019R canonical).",
+    "protocol": "standard",
+    "layer_note": "Both structural and behavioral layers apply.",
+    "params_override": {
+      "structural_lr": 0.18,
+      "replay_gain": 0.8
+    }
+  },
+  "hebbian_weight_only": {
+    "description": "structural_lr=0; M_b frozen. Behavioral linking from E_b co-activation weight.",
+    "protocol": "hebbian",
+    "layer_note": "Structural layer fails (no M_b write). Behavioral Hebbian weight tracked.",
+    "params_override": {
+      "structural_lr": 0.0,
+      "replay_gain": 0.8
+    }
+  },
+  "soma_global_gain_only": {
+    "description": "M_b writes (canonical lr) but to ALL branches uniformly via flat allocation.",
+    "protocol": "soma_global",
+    "layer_note": "Structural layer: uniform write (SIG-A \u2248 0). Behavioral layer: non-specific linking.",
+    "params_override": {
+      "structural_lr": 0.18,
+      "replay_gain": 0.8
+    }
+  },
+  "shuffled_replay": {
+    "description": "Consolidation fires but trace-to-branch assignment shuffled each pass.",
+    "protocol": "shuffled",
+    "layer_note": "Structural layer: random branch write. Behavioral: reduced specificity.",
+    "params_override": {
+      "structural_lr": 0.18,
+      "replay_gain": 0.8
+    }
+  },
+  "eligibility_only": {
+    "description": "E_b exists after encoding but structural_lr=0, replay_gain=0; purely transient.",
+    "protocol": "eligibility",
+    "layer_note": "Transient E_b-based linking at encoding time only; fades immediately.",
+    "params_override": {
+      "structural_lr": 0.0,
+      "replay_gain": 0.0
+    }
+  },
+  "resource_only": {
+    "description": "P_b (replay-driven resource) builds up; structural_lr=0; no persistent M_b.",
+    "protocol": "resource",
+    "layer_note": "Resource/P_b window linking only; no long-term persistence.",
+    "params_override": {
+      "structural_lr": 0.0,
+      "replay_gain": 0.8
+    }
+  }
+}

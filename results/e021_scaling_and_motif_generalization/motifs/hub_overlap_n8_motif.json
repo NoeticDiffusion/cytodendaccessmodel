@@ -1,0 +1,121 @@
+{
+  "motif_id": "hub_overlap_n8",
+  "motif_type": "hub_overlap",
+  "n_branches": 8,
+  "n_traces": 4,
+  "branch_ids": [
+    "b0",
+    "b1",
+    "b2",
+    "b3",
+    "b4",
+    "b5",
+    "b6",
+    "b7"
+  ],
+  "trace_ids": [
+    "th0",
+    "th1",
+    "th2",
+    "th3"
+  ],
+  "allocations": {
+    "th0": {
+      "b0": 0.85,
+      "b1": 0.9,
+      "b2": 0.05,
+      "b3": 0.05,
+      "b4": 0.05,
+      "b5": 0.05,
+      "b6": 0.05,
+      "b7": 0.05
+    },
+    "th1": {
+      "b0": 0.85,
+      "b1": 0.05,
+      "b2": 0.9,
+      "b3": 0.05,
+      "b4": 0.05,
+      "b5": 0.05,
+      "b6": 0.05,
+      "b7": 0.05
+    },
+    "th2": {
+      "b0": 0.85,
+      "b1": 0.05,
+      "b2": 0.05,
+      "b3": 0.9,
+      "b4": 0.05,
+      "b5": 0.05,
+      "b6": 0.05,
+      "b7": 0.05
+    },
+    "th3": {
+      "b0": 0.85,
+      "b1": 0.05,
+      "b2": 0.05,
+      "b3": 0.05,
+      "b4": 0.9,
+      "b5": 0.05,
+      "b6": 0.05,
+      "b7": 0.05
+    }
+  },
+  "overlap_branches_per_pair": {
+    "th0:th1": [
+      "b0"
+    ],
+    "th0:th2": [
+      "b0"
+    ],
+    "th0:th3": [
+      "b0"
+    ],
+    "th1:th2": [
+      "b0"
+    ],
+    "th1:th3": [
+      "b0"
+    ],
+    "th2:th3": [
+      "b0"
+    ]
+  },
+  "expected_linked_pairs": [
+    [
+      "th0",
+      "th1"
+    ],
+    [
+      "th0",
+      "th2"
+    ],
+    [
+      "th0",
+      "th3"
+    ],
+    [
+      "th1",
+      "th2"
+    ],
+    [
+      "th1",
+      "th3"
+    ],
+    [
+      "th2",
+      "th3"
+    ]
+  ],
+  "expected_unlinked_pairs": [],
+  "damage_target_branches": [
+    "b0"
+  ],
+  "rescue_target_branches": [
+    "b0"
+  ],
+  "metadata": {
+    "hub_weight": 0.85,
+    "n_traces": 4
+  }
+}

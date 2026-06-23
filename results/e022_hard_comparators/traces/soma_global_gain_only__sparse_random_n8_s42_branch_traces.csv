@@ -1,0 +1,9 @@
+comparator,motif,branch_id,mb_pre,mb_post,E_b_enc,P_b_post,delta_mb,is_overlap_branch
+soma_global_gain_only,sparse_random_n8_s42,b0,0.5,0.700596259024248,0.6016584601456053,1.0,0.20059625902424805,False
+soma_global_gain_only,sparse_random_n8_s42,b1,0.5,0.700596259024248,1.0,1.0,0.20059625902424805,True
+soma_global_gain_only,sparse_random_n8_s42,b2,0.5,0.700596259024248,0.16410312299148783,1.0,0.20059625902424805,False
+soma_global_gain_only,sparse_random_n8_s42,b3,0.5,0.700596259024248,0.832213336260261,1.0,0.20059625902424805,False
+soma_global_gain_only,sparse_random_n8_s42,b4,0.5,0.700596259024248,0.7022793438602071,1.0,0.20059625902424805,False
+soma_global_gain_only,sparse_random_n8_s42,b5,0.5,0.700596259024248,1.0,1.0,0.20059625902424805,False
+soma_global_gain_only,sparse_random_n8_s42,b6,0.5,0.700596259024248,0.16410312299148783,1.0,0.20059625902424805,False
+soma_global_gain_only,sparse_random_n8_s42,b7,0.5,0.700596259024248,0.16410312299148783,1.0,0.20059625902424805,False

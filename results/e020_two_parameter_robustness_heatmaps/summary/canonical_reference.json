@@ -1,0 +1,11 @@
+{
+  "structural_lr": 0.18,
+  "replay_gain": 0.8,
+  "eligibility_decay": 0.12,
+  "structural_decay": 0.005,
+  "structural_noise": 0.0,
+  "context_gain": 1.0,
+  "timing_gap": 0,
+  "overlap_strength": 0.85,
+  "protocol": "canonical_e020 = e019r (no inter-phase probe cues)"
+}

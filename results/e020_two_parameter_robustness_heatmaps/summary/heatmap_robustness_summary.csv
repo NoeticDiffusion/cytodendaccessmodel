@@ -1,0 +1,7 @@
+pair,param_x,param_y,n_total,n_joint_pass,pct_joint_pass,main_failure_mode,is_noisy
+structural_lr__x__replay_gain,structural_lr,replay_gain,99,70,70.70707070707071,none,False
+eligibility_decay__x__timing_gap,eligibility_decay,timing_gap,72,45,62.5,none,False
+overlap_strength__x__replay_gain,overlap_strength,replay_gain,72,37,51.388888888888886,none,False
+structural_decay__x__structural_lr,structural_decay,structural_lr,77,52,67.53246753246754,none,False
+structural_noise__x__replay_gain,structural_noise,replay_gain,63,55,87.3015873015873,none,True
+context_gain__x__structural_lr,context_gain,structural_lr,77,63,81.81818181818181,none,False

@@ -1,0 +1,26 @@
+{
+  "parameter": "timing_gap",
+  "description": "Null steps inserted between encoding and consolidation (lets E_b decay before consolidation).",
+  "canonical": 0,
+  "values": [
+    0,
+    1,
+    2,
+    4,
+    8,
+    12,
+    16,
+    24
+  ],
+  "seeds": [
+    42
+  ],
+  "n_runs": 8,
+  "thresholds": {
+    "SIG_A": 0.02,
+    "SIG_B": 0.05,
+    "SIG_C": 0.05,
+    "SIG_D": 5.0,
+    "SIG_E": 10.0
+  }
+}

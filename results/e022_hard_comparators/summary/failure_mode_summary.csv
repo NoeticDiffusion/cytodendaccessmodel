@@ -1,0 +1,7 @@
+comparator,n_struct_gSIG_A_fail,n_struct_gSIG_B_fail,n_runs,main_interpretation
+full_model,0,3,4,full_structural_match
+hebbian_weight_only,4,4,4,partial_behavioral_match
+soma_global_gain_only,4,3,4,partial_behavioral_match
+shuffled_replay,1,3,4,full_structural_match
+eligibility_only,4,4,4,transient_only
+resource_only,4,4,4,transient_only

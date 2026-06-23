@@ -1,0 +1,26 @@
+{
+  "parameter": "overlap_strength",
+  "description": "b1 weight in mu1/mu2 allocations. Controls overlap size.",
+  "canonical": 0.85,
+  "values": [
+    0.0,
+    0.1,
+    0.25,
+    0.4,
+    0.6,
+    0.85,
+    0.9,
+    1.0
+  ],
+  "seeds": [
+    42
+  ],
+  "n_runs": 8,
+  "thresholds": {
+    "SIG_A": 0.02,
+    "SIG_B": 0.05,
+    "SIG_C": 0.05,
+    "SIG_D": 5.0,
+    "SIG_E": 10.0
+  }
+}

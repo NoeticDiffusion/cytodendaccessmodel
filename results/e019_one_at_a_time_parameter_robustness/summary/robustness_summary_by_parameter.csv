@@ -1,0 +1,10 @@
+parameter,n_values_tested,n_joint_protected_pass,pct_joint_pass,canonical_value,SIG_A_first_fail,SIG_B_first_fail,SIG_C_first_fail,SIG_D_first_fail,SIG_E_first_fail
+structural_lr,11,9,81.81818181818181,0.18,0.0,0.0,robust,robust,0.0
+replay_gain,9,8,88.88888888888889,0.8,0.0,0.0,robust,robust,0.0
+eligibility_decay,9,9,100.0,0.12,robust,robust,robust,robust,robust
+structural_decay,7,6,85.71428571428571,0.005,robust,0.08,robust,robust,robust
+structural_noise,7,4,57.142857142857146,0.0,robust,robust,robust,robust,robust
+context_gain,7,7,100.0,1.0,robust,robust,robust,robust,robust
+timing_gap,8,6,75.0,0,24,16,robust,robust,robust
+overlap_strength,8,5,62.5,0.85,0.0,0.0,robust,0.0,0.0
+readout_threshold,6,6,100.0,0.3,robust,robust,robust,robust,robust

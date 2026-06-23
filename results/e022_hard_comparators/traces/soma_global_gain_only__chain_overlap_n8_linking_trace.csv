@@ -1,0 +1,4 @@
+comparator,motif,trace_i,trace_j,L_struct_pre,L_struct_post,L_behav_post,L_struct_dmg,is_expected_linked
+soma_global_gain_only,chain_overlap_n8,tc0,tc1,0.4325,0.6107338587119895,0.6107338587119895,0.48398448702694474,True
+soma_global_gain_only,chain_overlap_n8,tc0,tc2,0.09250000000000001,0.13061938018695732,0.13061938018695732,0.118986548742475,False
+soma_global_gain_only,chain_overlap_n8,tc1,tc2,0.4325,0.6107338587119895,0.6107338587119895,0.5779229751831277,True

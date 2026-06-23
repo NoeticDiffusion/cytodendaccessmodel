@@ -1,0 +1,83 @@
+{
+  "experiment_id": "e017",
+  "git_commit": "98436a64ca35df7ae8ffc832f1ce08864f982c63",
+  "python_version": "3.12.0",
+  "cytodend_accessmodel_version": "unknown",
+  "random_seed": 42,
+  "parameters": {
+    "structural_lr": 0.18,
+    "replay_gain": 0.8,
+    "eligibility_decay": 0.12,
+    "structural_decay": 0.005,
+    "structural_gain": 6.0,
+    "structural_max": 1.0,
+    "translation_decay": 0.05,
+    "sleep_gain": 0.0,
+    "context_gain": 1.0,
+    "structural_noise": 0.0,
+    "readout_gain": 5.0,
+    "readout_threshold": 0.3
+  },
+  "protocol": {
+    "branch_ids": [
+      "b0",
+      "b1",
+      "b2",
+      "b3"
+    ],
+    "overlap_branch": "b1",
+    "consolidation_passes": 9,
+    "damage_null_passes": 9,
+    "damage_decay_rate": 0.03,
+    "rescue_passes": 3,
+    "rescue_cue_reps": 3,
+    "rescue_rounds": 3
+  },
+  "trace_allocations": {
+    "mu1": {
+      "b0": 0.9,
+      "b1": 0.85,
+      "b2": 0.05,
+      "b3": 0.05
+    },
+    "mu2": {
+      "b0": 0.05,
+      "b1": 0.85,
+      "b2": 0.9,
+      "b3": 0.05
+    }
+  },
+  "signatures": {
+    "SIG_A_overlap_advantage": 0.12807778924906907,
+    "SIG_B_linking_gain": 0.2397025535339664,
+    "SIG_C_context_separation": 0.15452201985993197,
+    "SIG_D_linking_recall_dissociation": 20.982655917139482,
+    "SIG_E_targeted_rescue_advantage": 33.291885867691406,
+    "mb_pre_overlap": 0.5,
+    "mb_post_overlap": 0.7986072403763136,
+    "delta_m_overlap": 0.2986072403763136,
+    "delta_m_nonoverlap_mean": 0.17052945112724452,
+    "lk_pre": 0.4075,
+    "lk_post_cons": 0.6472025535339664,
+    "lk_post_damage": 0.5057604366905202,
+    "lk_std_rescue": 0.6081333975765643,
+    "lk_targ_rescue": 0.6552221456849311,
+    "r_mu1_pre": 0.621098575351703,
+    "r_mu1_post_cons": 1.4236580817571376,
+    "r_mu1_post_damage": 1.4112476862704355,
+    "link_drop_pct": 21.854381765201587,
+    "recall_drop_pct": 0.8717258480621038,
+    "rec_std_pct": 72.37798978882265,
+    "rec_targ_pct": 105.66987565651405
+  },
+  "output_file_hashes": {
+    "traces\\branch_traces.csv": "38affc4843a4e55e25afe2067bfe6fea19441d415e0a3c0838ee52e36f4cc911",
+    "traces\\trace_support.csv": "28258d6b9d60aca3f34d24905bd1e46289fa14589903b1f1937444f16cfa7e1f",
+    "traces\\linking_trace.csv": "b16d821ccd84dcda1ae7c539f8f6d4d373d390f40250cd48b3995399f01a7145",
+    "summary\\signature_summary.csv": "81bdd0440b2248300fa2f4ad72f5a915afff113418ed0db353308cbb20bfdf97",
+    "figures\\Fig_e017_01_branch_state_traces.png": "f7b4b4890d9175aac657c5321af7687c3d23a7d33a1d48ce74b0e985a472dead",
+    "figures\\Fig_e017_02_structural_accessibility_traces.png": "cb54ffa3229a664e3054ba083fe11d47d3f635cc83d8745a74836ffa546380ba",
+    "figures\\Fig_e017_03_recall_and_linking_traces.png": "132a8544805d1567a143c1c826b432cc06c9ad037c908298f5ce977132311aa4",
+    "figures\\Fig_e017_04_signature_barplot.png": "b804816f10b65bfa01306af580583650505670e411983d6257136d6da40183e5"
+  }
+}

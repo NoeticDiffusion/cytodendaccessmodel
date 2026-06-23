@@ -1,0 +1,16 @@
+{
+  "structural_lr": 0.18,
+  "replay_gain": 0.8,
+  "eligibility_decay": 0.12,
+  "structural_decay": 0.005,
+  "structural_noise": 0.0,
+  "context_gain": 1.0,
+  "timing_gap": 0,
+  "overlap_strength": 0.85,
+  "readout_threshold": 0.3,
+  "SIG_A_score": 0.13601950846626837,
+  "SIG_B_score": 0.2386304214396444,
+  "SIG_C_score": 0.15452201985993197,
+  "SIG_D_score": 20.995806879648978,
+  "SIG_E_score": 154.73338336916808
+}

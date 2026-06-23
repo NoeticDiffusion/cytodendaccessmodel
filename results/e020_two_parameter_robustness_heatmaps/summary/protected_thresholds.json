@@ -1,0 +1,8 @@
+{
+  "SIG_A": 0.02,
+  "SIG_B": 0.05,
+  "SIG_C": 0.05,
+  "SIG_D": 5.0,
+  "SIG_E_normalized": 0.1,
+  "SIG_E_raw": 0.02
+}

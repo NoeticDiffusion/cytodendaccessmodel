@@ -1,0 +1,60 @@
+{
+  "thresholds": {
+    "SIG_A": 0.02,
+    "SIG_B": 0.05,
+    "SIG_C": 0.05,
+    "SIG_D": 5.0,
+    "SIG_E": 10.0
+  },
+  "random_seed": 42,
+  "full_model_joint_pass": true,
+  "any_simpler_passes_joint": false,
+  "no_simpler_passes_all_five": true,
+  "per_comparator": {
+    "full_model": {
+      "joint_pass": true,
+      "n_passed": 5,
+      "SIG_A": true,
+      "SIG_B": true,
+      "SIG_C": true,
+      "SIG_D": true,
+      "SIG_E": true
+    },
+    "fast_context_only": {
+      "joint_pass": false,
+      "n_passed": 2,
+      "SIG_A": false,
+      "SIG_B": false,
+      "SIG_C": true,
+      "SIG_D": true,
+      "SIG_E": false
+    },
+    "replay_no_structure": {
+      "joint_pass": false,
+      "n_passed": 2,
+      "SIG_A": false,
+      "SIG_B": false,
+      "SIG_C": true,
+      "SIG_D": true,
+      "SIG_E": false
+    },
+    "random_slow_drift": {
+      "joint_pass": false,
+      "n_passed": 1,
+      "SIG_A": false,
+      "SIG_B": false,
+      "SIG_C": true,
+      "SIG_D": false,
+      "SIG_E": false
+    },
+    "fixed_allocation_only": {
+      "joint_pass": false,
+      "n_passed": 2,
+      "SIG_A": false,
+      "SIG_B": false,
+      "SIG_C": true,
+      "SIG_D": true,
+      "SIG_E": false
+    }
+  }
+}

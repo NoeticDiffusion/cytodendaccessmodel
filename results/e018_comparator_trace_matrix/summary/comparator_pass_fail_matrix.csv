@@ -1,0 +1,6 @@
+comparator,SIG_A,SIG_B,SIG_C,SIG_D,SIG_E,joint_pass
+full_model,True,True,True,True,True,True
+fast_context_only,False,False,True,True,False,False
+replay_no_structure,False,False,True,True,False,False
+random_slow_drift,False,False,True,False,False,False
+fixed_allocation_only,False,False,True,True,False,False

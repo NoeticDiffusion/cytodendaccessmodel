@@ -1,0 +1,10 @@
+parameter_name,parameter_value,seed,SIG_A_score,SIG_B_score,SIG_C_score,SIG_D_score,SIG_E_score,SIG_A_directional_pass,SIG_B_directional_pass,SIG_C_directional_pass,SIG_D_directional_pass,SIG_E_directional_pass,SIG_A_protected_pass,SIG_B_protected_pass,SIG_C_protected_pass,SIG_D_protected_pass,SIG_E_protected_pass,joint_directional_pass,joint_protected_pass,failure_mode
+eligibility_decay,0.02,42,0.14358599472395792,0.30478823942642197,0.15529514827550112,21.186472916970622,32.17419799999657,True,True,True,True,True,True,True,True,True,True,True,True,none
+eligibility_decay,0.05,42,0.14144137105726165,0.2848363005915291,0.15511179080077436,21.13692621798586,80.58857715497155,True,True,True,True,True,True,True,True,True,True,True,True,none
+eligibility_decay,0.08,42,0.13926340749030688,0.26478019501193806,0.1548867935500687,21.08066864527509,119.64286927813467,True,True,True,True,True,True,True,True,True,True,True,True,none
+eligibility_decay,0.12,42,0.13601950846626837,0.2386304214396444,0.15452201985993197,20.995806879648978,154.73338336916808,True,True,True,True,True,True,True,True,True,True,True,True,none
+eligibility_decay,0.16,42,0.13220363568665114,0.21386144277717511,0.15409121460431352,20.901837798089467,176.3174973893426,True,True,True,True,True,True,True,True,True,True,True,True,none
+eligibility_decay,0.24,42,0.12289461935479001,0.17020656149248137,0.1531060749079657,20.7007063390354,200.66712350290962,True,True,True,True,True,True,True,True,True,True,True,True,none
+eligibility_decay,0.32,42,0.11227616072899962,0.1351863346832486,0.15210734023480912,20.504896152159517,214.46661053798346,True,True,True,True,True,True,True,True,True,True,True,True,none
+eligibility_decay,0.45,42,0.09518966813880882,0.09437706737258567,0.1507690524273034,20.237170750022916,224.58365148310673,True,True,True,True,True,True,True,True,True,True,True,True,none
+eligibility_decay,0.6,42,0.07832300554192079,0.0645219355466673,0.1497673713626973,20.013144127873076,222.47885281784278,True,True,True,True,True,True,True,True,True,True,True,True,none

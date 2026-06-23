@@ -1,0 +1,7 @@
+{
+  "fl_rate_good": 0.25,
+  "fl_rate_moderate": 0.5,
+  "fl_rate_poor": 1.0,
+  "specificity_index_threshold": 0.0,
+  "mechanistic_gsig_threshold": 0.0
+}

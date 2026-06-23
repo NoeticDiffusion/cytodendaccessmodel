@@ -1,68 +1,118 @@
 # Claims to Experiments
 
-This file is a reviewer-facing map from the manuscript claims to the scripts,
-data requirements, outputs, and figures that reproduce or constrain them. Use
-`RUN.md` for exact setup and command order; use this file to understand why each
-experiment exists.
+This is the reviewer-facing map for the **current** manuscript:
+*Slow Branch-Level Accessibility as a Structural Constraint on Memory Linking*.
 
-## Claim Boundaries
+It is organized around three explicit tiers:
 
-The repository can reproduce the executable simulator results and the reported
-open-data analyses. It cannot, by itself, directly observe the proposed slow
-cytoskeletal accessibility field. The biological hypotheses remain falsifiable
-targets for future branch-resolved perturbation experiments, while the code here
-reproduces the downstream signatures reported in the article.
+1. **Primary evidence**: the simulator-first article stack (`E017` to `E022R`, plus `E023` figure assembly).
+2. **Foundational legacy**: earlier experiment families (`exp001` to `exp016`, `exp013`, `exp_seed_validation.py`) retained for lineage, onboarding, and historical context.
+3. **Supplementary framing**: DANDI and open-data bridge material, older conceptual assets, and the companion conceptual article.
 
-## Data Download Size
+The older root map has been preserved in `CLAIMS_TO_EXPERIMENTS_legacy.md`.
 
-The no-data simulator claims require no DANDI download. The full open-data
-reproduction for DANDI `000718`, `000336`, and `001710` is much larger: reviewers
-should plan for approximately **180-200 GB** of free disk space before starting
-the Level 2 downloads in `RUN.md`. If disk space is limited, audit one dataset
-claim at a time rather than downloading all open-data assets at once.
+## Reviewer Start Here
 
-## Manuscript Claim Map
+Use these files together:
 
-| Manuscript area | Claim or signature | Primary commands | Required data | Expected reviewer-facing output | Figure/table link | Reviewer verdict |
-| --- | --- | --- | --- | --- | --- | --- |
-| Testable Predictions, H1 | Cytoskeletal or structural perturbation should alter branch-level access, not only global excitability. | External wet-lab test proposed; executable stress tests: `python experiments/exp005_pathology.py`, `python experiments/exp009_rescue_linking.py`, `python experiments/exp014_structural_gate_ablation.py` | None for simulator scripts | Terminal verdicts for vulnerability, rescue, and structural-gate ablation | Main text H1; Table 1 vulnerability/rescue rows | Reproduces an executable proxy, not direct biological validation |
-| Testable Predictions, H2 | Temporally adjacent memories should link more strongly when they share branch allocation and compatible support states. | `python experiments/exp001_minimal_branch_linking.py`, `python experiments/exp003_timing_replay_linking.py`, `python experiments/exp010_multitrace_overlap.py`, `python experiments/exp011_branch_topology.py` | None | Terminal summaries; `data/reviewer/013_canonical_values.json` after `exp013` | Table 1; S2 Appendix | Reproducible simulator claim |
-| Testable Predictions, H3 | Contextual retrieval depends on accessibility of the relevant branch subset, not cue quality alone. | `python experiments/exp002_context_sensitive_recall.py`, `python experiments/exp012_retrieval_readout.py`, `python experiments/exp015_comparator_baselines.py` | None | Terminal context/retrieval verdicts and comparator panel | Table 1; S2 Appendix | Reproducible simulator claim with bounded interpretation because fast contextual gating contributes |
-| Executable Instantiation | Replay-dependent consolidation writes overlap-branch structural accessibility and increases linking. | `python experiments/exp001_minimal_branch_linking.py`, `python experiments/exp006_asymmetric_consolidation.py`, `python experiments/exp013_paper_summary.py` | None | Terminal metrics; `data/reviewer/013_canonical_values.json` | Table 1; S2 Appendix | Reproducible no-data result |
-| Executable Instantiation | Robustness sweeps preserve protected directional claims. | `python experiments/exp004_robustness.py`, `python experiments/exp_seed_validation.py` | None | Terminal pass-rate summaries and canonical RNG-state check | Table 1 robustness row; S2 Appendix | Reproducible no-data result |
-| Executable Instantiation | Simpler baselines do not reproduce the joint signature profile. | `python experiments/exp014_structural_gate_ablation.py`, `python experiments/exp015_comparator_baselines.py`, `python experiments/exp016_task_family.py` | None | Terminal ablation/comparator verdicts | Table 1; S2 Appendix | Reproducible no-data result |
-| Open-Data Evaluation, DANDI `000718` | NeutralExposure-defined core units show modest excess enrichment during high-synchrony offline events above a strong burst baseline. | `python experiments/dandi_000718_01_inventory.py` through `python experiments/dandi_000718_14_h1_pri_enrichment.py` as listed in `RUN.md` | DANDI `000718` selected subjects | `data/dandi/triage/000718/h1_pri_enrichment.json`, `.md`, `.log`; supporting `h1_robustness.*`, `h1_specificity.*`, `coreactivation_baseline.*` | Figures 6 and 7; S3 Appendix Table 7 | Reproducible open-data bridge; not sequence-level replay proof |
-| Open-Data Evaluation, DANDI `000336` | Cross-plane coupling is structured and above null across analyzed bundle pairs; strict bilateral access-constraint match is cleanest in the supplementary cross-area pair. | `python experiments/dandi_000336_01_inventory.py` through `python experiments/dandi_000336_06_full_bundle.py` | DANDI `000336` selected subjects | `data/dandi/triage/000336/full_bundle_coupling.json`, `.md`, `.log`; supporting cross-plane outputs | Table 2; Figures 8 and 9; S3 Appendix Table 8 | Reproducible open-data bridge; speaks to structured access constraints, not direct slow-field measurement |
-| Open-Data Evaluation, DANDI `001710` | SparseKO has lower subject-level cross-day stability than Cre under the implemented subject-level null, with weaker separation from Ctrl and channel sensitivity. | `python experiments/dandi_001710_01_inventory.py` through `python experiments/dandi_001710_08_robustness_and_nulls.py` | DANDI `001710` full selected bundle | `data/dandi/triage/001710/replication_bundle/`; `data/dandi/triage/001710/robustness/group_null_tests.json`, `.md`, `claim_boundary.md`, `day_lag_similarity.*` | Table 3; S3 Appendix Tables 9-12 | Reproducible open-data bridge; bounded by channel sensitivity and indirect arm-label audit |
-| Simulator x DANDI bridge | Simulator parameter sensitivity and bootstrap summaries connect model-scale predictions to DANDI-facing signatures. | `python experiments/dandi_simulator_07_bootstrap_ci.py`, `python experiments/dandi_simulator_09_sensitivity.py` | None for simulator bridge | `data/dandi/triage/model/simulator_sensitivity.json`, `.md`, `.log` and bootstrap outputs | Supporting robustness context | Reviewer audit / sensitivity layer |
+- `reviewer_slow_branch_level_accessibility.ipynb`: primary reviewer notebook for the current article.
+- `README.md`: top-level orientation and reviewer path.
+- `article/Slow Branch-Level Accessibility as a Structural Constraint on Memory Linking/Slow Branch-Level Accessibility as a Structural Constraint on Memory Linking.typ`: current manuscript source.
+- `article/Slow Branch-Level Accessibility as a Structural Constraint on Memory Linking/v2_claim_ledger.md`: article-level claim ledger.
+- `article/Slow Branch-Level Accessibility as a Structural Constraint on Memory Linking/v2_figure_manifest.md`: figure-by-figure article map.
 
-## Legacy or Supplementary Pipelines
+## Claim Boundary
 
-`configs/dandi/dataset_000871.yaml` and `experiments/dandi_000871_*.py` are
-kept as legacy or supplementary cross-plane analyses. They are not required for
-the current manuscript claims, which use DANDI `000336`, `000718`, and `001710`.
-Run them only if you want to inspect the older cross-plane workflow or compare
-the `000336` migration against prior outputs.
+This repository supports a narrow simulator-first claim:
+
+> replay-dependent slow branch-level writing better reproduces the tested joint
+> signature profile for memory linking than the tested comparators do.
+
+This repository does **not** directly measure `M_b`, establish a unique cytoskeletal
+memory code, or turn the DANDI analyses into main evidence for the current paper.
+
+## Primary Evidence Tier
+
+These are the main experiments for the current article and should be reviewed first.
+
+| Current article claim or section | Primary experiments | Main results directory or artifact | Article figure or table | Notebook section |
+| --- | --- | --- | --- | --- |
+| Conceptual framing and theory-to-executable bridge | `E023`, concept pack | `article/.../figures2/`, `article/.../figures3_concepts/` | `Fig 1`, evidence and comparator concept figures | `Repository map and evidence tiers`; `Current claim ladder for the slow-branch article` |
+| `C01` overlap-branch structural strengthening (`SIG-A`) | `E017` | `results/e017_traceable_simulator_core/` | `Fig 2`, `Table 2` | `Current claim ladder for the slow-branch article` |
+| `C02` linking gain after consolidation (`SIG-B`) | `E017` | `results/e017_traceable_simulator_core/` | `Fig 2`, `Table 2` | `Current claim ladder for the slow-branch article` |
+| `C03` context separation is present but not discriminating (`SIG-C`) | `E018` with reference to canonical behavior | `results/e018_comparator_trace_matrix/` | `Fig 3`, `Table 2`, `Table 3` | `Current claim ladder for the slow-branch article` |
+| `C04-C05` damage sensitivity and targeted rescue (`SIG-D`, `SIG-E`) | `E017` | `results/e017_traceable_simulator_core/` | `Fig 2`, overlap-rescue concept figure, `Table 2` | `Current claim ladder for the slow-branch article` |
+| `C06-C09` comparator discrimination across baseline and hard alternatives | `E018`, `E022` | `results/e018_comparator_trace_matrix/`, `results/e022_hard_comparators/` | `Fig 3`, `Table 3` | `Current claim ladder for the slow-branch article` |
+| `C10` replay identity requirement and shuffled-replay scaling failure | `E022R` | `results/e022r_shuffled_replay_scaling_audit/` | `Fig 6` | `Current claim ladder for the slow-branch article` |
+| `C11` bounded robustness regime | `E019`, `E020` | `results/e019_one_at_a_time_parameter_robustness/`, `results/e020_two_parameter_robustness_heatmaps/` | `Fig 4`, `Table 4` | `Current main evidence path` |
+| `C12-C14` scaling, motifs, weak-overlap failure, hub overlinking boundary | `E021`, `E021R` | `results/e021_scaling_and_motif_generalization/`, `results/e021r_generalized_specificity_gate/` | `Fig 5`, `Table 5` | `Current main evidence path` |
+| `C15-C16` explicit non-claims and article limits | article discussion plus ledger | `v2_claim_ledger.md` | Discussion; S3 framing | `Scope boundary`; `Supplementary and DANDI boundary` |
+
+### Primary Evidence Ladder in Order
+
+1. `exp017_traceable_simulator_core.py`
+2. `exp018_comparator_trace_matrix.py`
+3. `exp019_one_at_a_time_parameter_robustness.py`
+4. `exp020_two_parameter_robustness_heatmaps.py`
+5. `exp021_scaling_and_motif_generalization.py`
+6. `exp021r_generalized_specificity_gate.py`
+7. `exp022_hard_comparators.py`
+8. `exp022r_shuffled_replay_scaling_audit.py`
+9. `exp023_article_figure_assembly.py`
+
+## Foundational Legacy Tier
+
+These files are still important, but they are no longer the main evidence ladder for the current article.
+
+| Legacy family | Role now | Representative files | Why retained |
+| --- | --- | --- | --- |
+| `exp001-exp003` | Early minimal demos | `exp001_minimal_branch_linking.py`, `exp002_context_sensitive_recall.py`, `exp003_timing_replay_linking.py` | Best retained as optional lineage demos in the reviewer notebook, not as current article evidence |
+| `exp004`, seed validation | Early robustness and reproducibility checks | `exp004_robustness.py`, `exp_seed_validation.py` | `exp004` is superseded by `E019-E020`; `exp_seed_validation.py` remains a useful optional reproducibility cross-check |
+| `exp005`, `exp009`, `exp014` | Perturbation, rescue, ablation lineage | `exp005_pathology.py`, `exp009_rescue_linking.py`, `exp014_structural_gate_ablation.py` | Important precursors to the current damage and rescue framing |
+| `exp010`, `exp016` | Earlier motif and topology explorations | `exp010_multitrace_overlap.py`, `exp016_task_family.py` | Hand-built precursors to `E021-E021R`, retained as lineage rather than primary evidence |
+| `exp011`, `exp012` | Exploratory extensions beyond the current paper scope | `exp011_branch_topology.py`, `exp012_retrieval_readout.py` | Potentially interesting spillover and readout checks, but outside the current manuscript claim surface |
+| `exp013` | Legacy canonical summary | `exp013_paper_summary.py` and `data/reviewer/013_canonical_values.json` | Useful optional reviewer cross-check, but numerically distinct from the E017-E022R stack |
+| Older reviewer walkthrough | Legacy reviewer path | `reviewer_branch_resolved_walkthrough.ipynb` | Keep available as a companion, not the default entry point |
+
+For this layer, use `CLAIMS_TO_EXPERIMENTS_legacy.md` if you want the older article-oriented mapping in full.
+
+## Supplementary Framing Tier
+
+These materials are retained explicitly rather than implicitly, but they should not be mistaken for the main evidence ladder.
+
+| Supplementary family | Current status | Main files |
+| --- | --- | --- |
+| Older conceptual assets | Framing and intuition only | `article/.../figures/` and `A Cytoskeletal-Dendritic Accessibility Model.typ` |
+| New concept pack | Reviewer-facing framing for current paper | `article/.../figures3_concepts/` |
+| DANDI `000718`, `000336`, `001710` | Exploratory observable bridges | `data/dandi/triage/`, S3 appendix materials |
+| DANDI `000871` and related scripts | Legacy supplementary workflow | `configs/dandi/dataset_000871.yaml`, `experiments/dandi_000871_*.py` |
+
+## Article Figure and Experiment Routing
+
+| Article asset | Main source |
+| --- | --- |
+| `Fig 1` | `E023` assembly plus current concept figure assets |
+| `Fig 2` | `E017` |
+| `Fig 3` | `E018` and `E022` |
+| `Fig 4` | `E019` and `E020` |
+| `Fig 5` | `E021` and `E021R` |
+| `Fig 6` | `E022R` |
+| `Table 2` | `E017` |
+| `Table 3` | `E018` and `E022` |
+| `Table 4` | `E019` and `E020` |
+| `Table 5` | `E021` and `E021R` |
 
 ## Recommended Reviewer Flow
 
-1. Read the abstract, Table 1, Open-Data Evaluation, S2 Appendix, and S3 Appendix.
-2. Follow `RUN.md` Level 0 and Level 1 to reproduce all no-data simulator claims.
-3. Download only the DANDI datasets needed for the open-data claim you want to audit.
-4. Run the corresponding Level 2 commands in `RUN.md`.
-5. Regenerate open-data figures with `python -m dandi_analysis.visualisation.cli`.
-6. Open `notebooks/reviewer_reproduction_walkthrough.py` after the scripts finish
-   to inspect a compact, derived-output summary.
+1. Open `reviewer_slow_branch_level_accessibility.ipynb`.
+2. Read the current manuscript and `v2_claim_ledger.md`.
+3. Inspect `results/e017_*` to `results/e022r_*` in order.
+4. Use `CLAIMS_TO_EXPERIMENTS_legacy.md` only if you want the earlier lineage or the older manuscript posture.
+5. Treat DANDI and S3 as supplementary unless you are explicitly reviewing the open-data bridge.
 
-## Latest Local Dry-Run Status
+## Data and Runtime Note
 
-Local dry-run on 2026-04-28:
+The **primary simulator-first evidence tier** requires no DANDI download.
 
-- Install step: passed with `python -m pip install -e ".[dev,viz]"`.
-- Test suite: passed, `127 passed`, `2 warnings`.
-- Level 1 no-data simulator suite: passed after install, including `exp001`
-  through `exp016`, `exp_seed_validation.py`, and `gen_figures_executable.py`.
-- Reviewer walkthrough: passed and found
-  `data/reviewer/013_canonical_values.json`.
-- DANDI data-backed pass: skipped because no local NWB files were available
-  under `data/dandi/raw/` during this dry-run.
+The full DANDI-backed reproduction for `000718`, `000336`, and `001710` is much larger
+and should be treated as optional reviewer work for the supplementary bridge layer.

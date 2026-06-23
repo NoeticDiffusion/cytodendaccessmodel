@@ -1,0 +1,5 @@
+experiment,SIG_A,SIG_B,SIG_C,SIG_D,SIG_E_raw,SIG_E_normalized,joint_pass_A_D,notes
+E017,0.1281,0.2397,0.1545,20.9827,33.2919,0.3329,True,Post-cons + post-damage probe cues active between phases. Generic rescue = standard (plain) consolidation. SIG-E old pp = rec_targ% - rec_std%.
+E018,0.1281,0.2397,0.1545,20.9827,33.2919,0.3329,True,Post-cons + post-damage probe cues active (same as E017). Generic rescue = plain consolidation (no pre-cue). SIG-E identical to E017 — confirms protocol identity.
+E019,0.1360,0.2386,0.1545,20.9958,154.7334,1.5473,True,No inter-phase probe cues. Generic rescue = plain consolidation (no pre-cue). Large SIG-E because generic rescue cannot rebuild M_b without E_b pre-loading.
+E019R,0.1360,0.2386,0.1545,20.9958,0.2188,1.5473,True,

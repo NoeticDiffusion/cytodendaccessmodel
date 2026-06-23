@@ -1,0 +1,42 @@
+{
+  "full_model": {
+    "description": "All mechanisms active: fast access, eligibility, replay, slow M_b write.",
+    "random_drift": false,
+    "expected_joint_pass": true,
+    "structural_lr": 0.18,
+    "replay_gain": 0.8,
+    "structural_decay": 0.005
+  },
+  "fast_context_only": {
+    "description": "Fast context gating active; M_b frozen at init (structural_lr=0, decay=0).",
+    "random_drift": false,
+    "expected_joint_pass": false,
+    "structural_lr": 0.0,
+    "replay_gain": 0.8,
+    "structural_decay": 0.0
+  },
+  "replay_no_structure": {
+    "description": "Replay updates transient E_b/P_b but cannot write M_b (structural_lr=0).",
+    "random_drift": false,
+    "expected_joint_pass": false,
+    "structural_lr": 0.0,
+    "replay_gain": 0.8,
+    "structural_decay": 0.005
+  },
+  "random_slow_drift": {
+    "description": "Slow Gaussian drift of matched scale (\u03c3\u22480.025/pass), non-specific branch targeting. Uses BASE_PARAMS for fast dynamics.",
+    "random_drift": true,
+    "expected_joint_pass": false,
+    "structural_lr": 0.18,
+    "replay_gain": 0.8,
+    "structural_decay": 0.005
+  },
+  "fixed_allocation_only": {
+    "description": "Overlap by construction; no dynamic E_b/P_b/M_b updating.",
+    "random_drift": false,
+    "expected_joint_pass": false,
+    "structural_lr": 0.0,
+    "replay_gain": 0.0,
+    "structural_decay": 0.0
+  }
+}

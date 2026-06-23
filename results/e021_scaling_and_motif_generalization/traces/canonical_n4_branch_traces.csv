@@ -1,0 +1,5 @@
+run_id,branch_id,mb_pre,mb_post,delta_mb,is_overlap_branch,is_damage_branch
+canonical_n4,b0,0.5,0.7439711773754457,0.2439711773754457,False,False
+canonical_n4,b1,0.5,0.7986072403763136,0.2986072403763136,True,True
+canonical_n4,b2,0.5,0.7791481601240312,0.2791481601240312,False,False
+canonical_n4,b3,0.5,0.48574995557463224,-0.014250044425367758,False,False

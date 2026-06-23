@@ -1,0 +1,9 @@
+run_id,branch_id,mb_pre,mb_post,delta_mb,is_overlap_branch,is_damage_branch
+chain_overlap_n8,b0,0.5,0.6950923651312817,0.1950923651312817,False,False
+chain_overlap_n8,b1,0.5,0.752566086046061,0.252566086046061,True,True
+chain_overlap_n8,b2,0.5,0.7246390409210449,0.22463904092104492,False,False
+chain_overlap_n8,b3,0.5,0.7880735730436971,0.2880735730436971,True,False
+chain_overlap_n8,b4,0.5,0.758840286230705,0.258840286230705,False,False
+chain_overlap_n8,b5,0.5,0.4883638440192214,-0.011636155980778606,False,False
+chain_overlap_n8,b6,0.5,0.4883638440192214,-0.011636155980778606,False,False
+chain_overlap_n8,b7,0.5,0.4883638440192214,-0.011636155980778606,False,False

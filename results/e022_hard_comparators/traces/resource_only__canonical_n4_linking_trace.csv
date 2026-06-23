@@ -1,0 +1,2 @@
+comparator,motif,trace_i,trace_j,L_struct_pre,L_struct_post,L_behav_post,L_struct_dmg,is_expected_linked
+resource_only,canonical_n4,mu1,mu2,0.4075,0.3895250031807056,0.8132395011805507,0.3047790477609101,True

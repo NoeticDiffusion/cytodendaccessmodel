@@ -1,0 +1,121 @@
+{
+  "motif_id": "sparse_random_n8_s123",
+  "motif_type": "sparse_random",
+  "n_branches": 8,
+  "n_traces": 4,
+  "branch_ids": [
+    "b0",
+    "b1",
+    "b2",
+    "b3",
+    "b4",
+    "b5",
+    "b6",
+    "b7"
+  ],
+  "trace_ids": [
+    "ts0",
+    "ts1",
+    "ts2",
+    "ts3"
+  ],
+  "allocations": {
+    "ts0": {
+      "b0": 0.8,
+      "b1": 0.05,
+      "b2": 0.8,
+      "b3": 0.05,
+      "b4": 0.05,
+      "b5": 0.05,
+      "b6": 0.05,
+      "b7": 0.05
+    },
+    "ts1": {
+      "b0": 0.05,
+      "b1": 0.8,
+      "b2": 0.05,
+      "b3": 0.05,
+      "b4": 0.05,
+      "b5": 0.05,
+      "b6": 0.8,
+      "b7": 0.05
+    },
+    "ts2": {
+      "b0": 0.05,
+      "b1": 0.05,
+      "b2": 0.8,
+      "b3": 0.05,
+      "b4": 0.05,
+      "b5": 0.05,
+      "b6": 0.8,
+      "b7": 0.05
+    },
+    "ts3": {
+      "b0": 0.05,
+      "b1": 0.8,
+      "b2": 0.05,
+      "b3": 0.05,
+      "b4": 0.05,
+      "b5": 0.05,
+      "b6": 0.8,
+      "b7": 0.05
+    }
+  },
+  "overlap_branches_per_pair": {
+    "ts0:ts1": [],
+    "ts0:ts2": [
+      "b2"
+    ],
+    "ts0:ts3": [],
+    "ts1:ts2": [
+      "b6"
+    ],
+    "ts1:ts3": [
+      "b1",
+      "b6"
+    ],
+    "ts2:ts3": [
+      "b6"
+    ]
+  },
+  "expected_linked_pairs": [
+    [
+      "ts0",
+      "ts2"
+    ],
+    [
+      "ts1",
+      "ts2"
+    ],
+    [
+      "ts1",
+      "ts3"
+    ],
+    [
+      "ts2",
+      "ts3"
+    ]
+  ],
+  "expected_unlinked_pairs": [
+    [
+      "ts0",
+      "ts1"
+    ],
+    [
+      "ts0",
+      "ts3"
+    ]
+  ],
+  "damage_target_branches": [
+    "b2"
+  ],
+  "rescue_target_branches": [
+    "b2"
+  ],
+  "metadata": {
+    "density": 0.3,
+    "n_active_per_trace": 2,
+    "strong_weight": 0.8,
+    "seed": 123
+  }
+}

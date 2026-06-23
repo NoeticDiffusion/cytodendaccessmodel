@@ -1,0 +1,9 @@
+parameter_name,parameter_value,seed,SIG_A_score,SIG_B_score,SIG_C_score,SIG_D_score,SIG_E_score,SIG_A_directional_pass,SIG_B_directional_pass,SIG_C_directional_pass,SIG_D_directional_pass,SIG_E_directional_pass,SIG_A_protected_pass,SIG_B_protected_pass,SIG_C_protected_pass,SIG_D_protected_pass,SIG_E_protected_pass,joint_directional_pass,joint_protected_pass,failure_mode
+timing_gap,0,42,0.13601950846626837,0.2386304214396444,0.15452201985993197,20.995806879648978,154.73338336916808,True,True,True,True,True,True,True,True,True,True,True,True,none
+timing_gap,1,42,0.12486452692432642,0.22951730030652795,0.15452201985993197,20.926251370801115,163.1985571407393,True,True,True,True,True,True,True,True,True,True,True,True,none
+timing_gap,2,42,0.11069868477227493,0.2113330121577056,0.15452201985993197,20.81402019344701,176.77648891590562,True,True,True,True,True,True,True,True,True,True,True,True,none
+timing_gap,4,42,0.09414125946694703,0.17496563379743324,0.15452201985993197,20.6034590161432,205.65144177174176,True,True,True,True,True,True,True,True,True,True,True,True,none
+timing_gap,8,42,0.06469921990246753,0.11294799106730719,0.15452201985993197,20.158136562983444,266.50140364167873,True,True,True,True,True,True,True,True,True,True,True,True,none
+timing_gap,12,42,0.042432384558910984,0.06764233584372381,0.15452201985993197,19.75306294643461,325.237821513294,True,True,True,True,True,True,True,True,True,True,True,True,none
+timing_gap,16,42,0.027032194664832643,0.03696981537277755,0.15452201985993197,19.430635763247412,376.8786423944913,True,True,True,True,True,True,False,True,True,True,True,False,SIG_B
+timing_gap,24,42,0.010469603306684134,0.004689517899100826,0.15452201985993197,19.014218859849887,454.56624597583175,True,True,True,True,True,False,False,True,True,True,True,False,SIG_A;SIG_B

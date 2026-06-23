@@ -1,0 +1,2 @@
+run_id,motif_type,n_branches,n_traces,seed,gSIG_A,gSIG_B,gSIG_C,gSIG_D,gSIG_E,NR_targeted,NR_generic,gSIG_A_pass,gSIG_B_pass,gSIG_C_pass,gSIG_D_pass,gSIG_E_pass,joint_pass,first_failed,false_linking_rate,specificity_index,delta_L_expected_pairs,delta_L_unlinked_pairs
+strong_overlap_n8,strong_overlap,8,2,42,0.23685859547820448,0.2953859665689256,0.7502615352920641,0.17670975218216445,1.5660966435787285,1.010401470293431,-0.5556951732852975,True,True,True,True,True,True,none,nan,nan,0.2953859665689256,0.0

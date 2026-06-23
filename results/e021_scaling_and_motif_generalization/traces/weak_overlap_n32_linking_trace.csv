@@ -1,0 +1,2 @@
+run_id,trace_i,trace_j,L_pre,L_post,L_dmg,L_targ,L_gen,is_expected_linked,is_expected_unlinked
+weak_overlap_n32,mu1,mu2,0.12625,0.16590650024174275,0.14642826268811163,0.17380439213782187,0.1360955493738359,False,True

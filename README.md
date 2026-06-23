@@ -1,12 +1,11 @@
 # cytodendaccessmodel
 
 Companion code repository for the article
-*A branch-resolved cytoskeletal-dendritic accessibility model of associative memory*.
+*Slow Branch-Level Accessibility as a Structural Constraint on Memory Linking*.
 
-The repository brings together the executable memory scaffold, DANDI open-data
-tooling, and experiment entry points so that the theoretical article, the
-computational model, and the empirical analyses can be inspected and reproduced
-together.
+The repository contains the executable simulator, result artifacts, article source,
+and supplementary open-data tooling required to inspect and reproduce the
+simulator-first manuscript claims.
 
 ---
 
@@ -14,7 +13,7 @@ together.
 
 ```
 src/cytodend_accessmodel/   # associative-memory simulator and contracts
-src/dandi_analysis/         # dataset-specific analysis helpers (000336, 000718, 001710; 000871 legacy)
+src/dandi_analysis/         # dataset-specific analysis helpers (000336, 000718, 001710)
 src/dandi_io/               # generic DANDI listing, downloading, and probing CLI
 experiments/                # runnable experiment scripts
 configs/                    # YAML configuration files for DANDI datasets
@@ -27,7 +26,7 @@ data/                       # local data root (not tracked by git — see RUN.md
 
 ## Installation
 
-Python `>=3.10` is required. The reviewer reproduction path is CPU-sufficient;
+Python `>=3.10` is required. The primary reproduction path is CPU-sufficient;
 CUDA is not required.
 
 ```bash
@@ -56,30 +55,39 @@ Run the test suite:
 pytest
 ```
 
-Run the first simulator experiment (no data required):
+Run the primary canonical simulator experiment (no data required):
 
 ```bash
-python experiments/exp001_minimal_branch_linking.py
+python experiments/exp017_traceable_simulator_core.py
 ```
 
-### Reviewer orientation
+### Reproduction entry points
 
-The primary entry point for reviewers is the root-level Jupyter notebook:
+The primary entry point is the root-level notebook:
 
-**`reviewer_branch_resolved_walkthrough.ipynb`** — open and run all cells from
-the repository root.  The notebook ships with pre-executed outputs so all key
-results are visible without running anything.  It covers:
+**`reviewer_slow_branch_level_accessibility.ipynb`** — top-level routing for the
+simulator evidence tiers, legacy lineage, and supplementary bridges.
 
-- Simulator primer and guided Level 1 reproduction
-- Artifact-status audit of all expected outputs
-- Optional DANDI open-data workflow (Levels 2–3)
+The repository is organized into three tiers:
+
+- **Primary evidence:** `E017–E022R`, assembled figures in `figures2/`, and the
+  Typst article source under `article/`.
+- **Legacy lineage:** `exp001–exp016`, earlier claim maps, and validation scripts
+  retained for lineage and optional cross-checks.
+- **Supplementary framing:** `figures3_concepts/`, DANDI bridge material, and S3
+  appendix analyses.
 
 Supporting reference files:
 
-- `CLAIMS_TO_EXPERIMENTS.md` — maps article claims to commands, outputs, and
-  manuscript figures/tables.
+- `CLAIMS_TO_EXPERIMENTS.md` — claim map for the current article.
 - `RUN.md` — level-by-level reproduction workflow (Levels 0–3).
-- `OUTPUTS.md` — lists where scripts write reviewer-facing artifacts.
+- `OUTPUTS.md` — lists where scripts write output artifacts.
+
+Current article source:
+
+- `article/Slow Branch-Level Accessibility as a Structural Constraint on Memory Linking/Slow Branch-Level Accessibility as a Structural Constraint on Memory Linking.typ`
+- `article/Slow Branch-Level Accessibility as a Structural Constraint on Memory Linking/v2_claim_ledger.md`
+- `article/Slow Branch-Level Accessibility as a Structural Constraint on Memory Linking/v2_figure_manifest.md`
 
 ---
 
@@ -94,12 +102,15 @@ python -m dandi_io.cli download --config configs/dandi/dataset_000718.yaml
 python -m dandi_io.cli probe    --config configs/dandi/dataset_000718.yaml
 ```
 
-Equivalent current-manuscript configs exist for datasets `000336` and `001710`
-under `configs/dandi/`. Dataset `000871` configs/scripts are retained as
-legacy or supplementary cross-plane analyses and are not required for the
-current manuscript claims.
+Equivalent configs exist for datasets `000336` and `001710` under `configs/dandi/`.
+Dataset `000871` scripts are retained as legacy supplementary material and are not
+required for the current manuscript claims.
 
-DANDI data and derived artefacts are written under:
+The DANDI analyses belong to the **supplementary bridge layer**, not the primary
+evidence ladder. Readers who only need to verify the main article claims can stop
+after the no-data simulator stack (`E017–E022R`).
+
+DANDI data and derived artifacts are written under:
 
 ```
 data/dandi/raw/
@@ -116,6 +127,6 @@ resource notes, and troubleshooting see **`RUN.md`**.
 
 - All experiment scripts assume they are run from the repository root.
 - The `data/` directory is excluded from version control via `.gitignore`.
-- The manuscript source and supporting information are included under
-  `article/`; rebuild with Typst only if you need to regenerate PDFs from the
-  `.typ` sources.
+- The manuscript source and supporting information are included under `article/`;
+  rebuild with Typst only if you need to regenerate PDFs from the `.typ` sources.
+- Older article framing, notebooks, and claim maps are retained as legacy materials.

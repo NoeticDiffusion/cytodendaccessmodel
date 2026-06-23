@@ -1,0 +1,12 @@
+parameter_name,parameter_value,seed,SIG_A_score,SIG_B_score,SIG_C_score,SIG_D_score,SIG_E_score,SIG_A_directional_pass,SIG_B_directional_pass,SIG_C_directional_pass,SIG_D_directional_pass,SIG_E_directional_pass,SIG_A_protected_pass,SIG_B_protected_pass,SIG_C_protected_pass,SIG_D_protected_pass,SIG_E_protected_pass,joint_directional_pass,joint_protected_pass,failure_mode
+structural_lr,0.0,42,0.0,-0.017974996819294375,0.14801320585098252,19.21182983448674,0.0,False,False,True,True,False,False,False,True,True,False,False,False,SIG_A;SIG_B;SIG_E
+structural_lr,0.03,42,0.03421110434379861,0.04146365328200702,0.15040012725652416,19.744151810171854,81.75876470677102,True,True,True,True,True,True,False,True,True,True,True,False,SIG_B
+structural_lr,0.06,42,0.06289302610275635,0.0931063803179295,0.15194231111584905,20.15470611960233,122.89554004674986,True,True,True,True,True,True,True,True,True,True,True,True,none
+structural_lr,0.09,42,0.08679084069103288,0.1378661255341841,0.15296865724061112,20.463367638797994,143.14524426198844,True,True,True,True,True,True,True,True,True,True,True,True,none
+structural_lr,0.12,42,0.10656584125587441,0.17656291490065446,0.15367154044228418,20.69386774326868,152.18537037982185,True,True,True,True,True,True,True,True,True,True,True,True,none
+structural_lr,0.15,42,0.12280327431553481,0.20993182913965036,0.15416586595064827,20.86625880249765,155.1122454541627,True,True,True,True,True,True,True,True,True,True,True,True,none
+structural_lr,0.18,42,0.13601950846626837,0.2386304214396444,0.15452201985993197,20.995806879648978,154.73338336916808,True,True,True,True,True,True,True,True,True,True,True,True,none
+structural_lr,0.21,42,0.14666866720742158,0.26324561181288997,0.15478425783566718,21.09370134694377,152.63675919284174,True,True,True,True,True,True,True,True,True,True,True,True,none
+structural_lr,0.27,42,0.16180731097204074,0.30225822610316655,0.1551314760150298,21.22473472139332,146.5323667079336,True,True,True,True,True,True,True,True,True,True,True,True,none
+structural_lr,0.33,42,0.17082840396441554,0.3304840228940178,0.15533968301157422,21.30116326864476,140.2777233673953,True,True,True,True,True,True,True,True,True,True,True,True,none
+structural_lr,0.4,42,0.1762037015060226,0.35341011601296435,0.15548795311102684,21.3509674725126,134.05619352673784,True,True,True,True,True,True,True,True,True,True,True,True,none

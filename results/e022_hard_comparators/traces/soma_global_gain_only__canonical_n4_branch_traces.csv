@@ -1,0 +1,5 @@
+comparator,motif,branch_id,mb_pre,mb_post,E_b_enc,P_b_post,delta_mb,is_overlap_branch
+soma_global_gain_only,canonical_n4,b0,0.5,0.743000376211421,0.832213336260261,1.0,0.243000376211421,False
+soma_global_gain_only,canonical_n4,b1,0.5,0.743000376211421,1.0,1.0,0.243000376211421,True
+soma_global_gain_only,canonical_n4,b2,0.5,0.743000376211421,1.0,1.0,0.243000376211421,False
+soma_global_gain_only,canonical_n4,b3,0.5,0.743000376211421,0.1025839838602069,1.0,0.243000376211421,False

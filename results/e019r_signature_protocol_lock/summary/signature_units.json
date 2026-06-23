@@ -1,0 +1,8 @@
+{
+  "SIG_A": "delta_M_b (dimensionless, approx [-1, 1])",
+  "SIG_B": "delta_L (dimensionless, bounded by allocation geometry)",
+  "SIG_C": "recall-support units (dimensionless)",
+  "SIG_D": "percentage points (linking% drop - recall% drop; bounded)",
+  "SIG_E_raw": "delta_L (dimensionless, absolute linking difference between rescue conditions)",
+  "SIG_E_normalized": "dimensionless NR difference (normalized_recovery_targeted - normalized_recovery_reference; CAN exceed 1.0 \u2014 label as 'overshoot', NOT 'percentage points')"
+}

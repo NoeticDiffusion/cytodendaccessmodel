@@ -1,0 +1,299 @@
+A note on interpreting your SciScore report.
+SciScore scores all papers on a scale of 1-10, based on the expectation that the methods section of your paper contains statements about sex of subjects, blinding, randomization of subjects, and catalog numbers and RRIDs for all research resources. If the tool does not find a criterion, such as blinding, it will state "not detected" and it will take off points. If it finds a sentence that matches a criterion "female rats were used..." then the sentence will be provided in the report and the score will increase. If SciScore deems that a criterion is "not applicable" to the study, then points will not be removed from the report. The average SciScore across all journals in PubMed Central was 4.2 in 2019, for a more granular breakdown please see the following paper (Menke et al, 2020; PMID:33196023).
+
+...
+
+SciScore is an automated tool that is designed to assist expert reviewers by finding and presenting formulaic information scattered throughout a paper in a standard, easy to digest format. SciScore is not a substitute for expert review. SciScore checks to make sure that rigor criteria are addressed by authors. SciScore does not guarantee that the rigor criteria it detects are appropriate for a particular study. SciScore also checks for the presence and correctness of several unique identifiers, including RRIDs (research resource identifiers) in the manuscript, detects sentences that appear to be missing RRIDs, and can even suggest RRIDs under certain circumstances. All RRID suggestions should be verified; only the author can know whether the suggestions are correct.
+
+Below you will find information about what SciScore finds or expects to find about your study. The creators of SciScore used several checklists, endorsed by various funders, journals, or scientific societies, to determine if we should add the item to SciScore. These checklists include:
+
+NIH Rigor Guideline (required for all NIH funded investigators)
+MDAR Checklist (required by Science, it is a combination of STAR Methods and Nature Checklist)
+ARRIVE guidelines (requested by over 1000 journals in studies that involve animal subjects)
+CONSORT guideline (required in studies involving patients)
+STAR Methods (required by Cell Press family journals especially where lots of reagents and resources are used)
+RRID (requested by over 1000 journals for various reagents and resources)
+Note, not all items in any one guideline are scored by SciScore, but we attempt to point out below, which checklists require the item. Items that are typically present in the methods section are checked. Many items are required by multiple guidelines.
+
+Additional FAQs for SciScore can be found here: https://www.sciscore.com/#faqs
+
+Rigor Table:
+In the rigor table (Table 1), SciScore highlights sentences that include various elements of rigor as described by Hackam and Redelmeier in 2006, and by van der Warp and colleagues in 2010. SciScore was trained using sentences from thousands of published papers that were tagged by expert curators to indicate that the sentence described a rigor criterion such as blinding (either during the experiment or during data analysis). SciScore looks for items listed on the report and when an item is detected, the sentence is included, when an item is not detected, the tool reports "not detected". It is possible that a criterion is not necessary for a particular manuscript. In these cases, the score is not decreased by a "not detected". For example, if an IRB section is not filled in, but no animals or human participants are detected. SciScore, an automated tool, can also make a mistake. If SciScore makes substantial mistakes with your manuscript, please contact us to help us learn from our mistakes. Please see our FAQ section for more details.
+
+Please note there is currently a bug with the IRB section of the rigor table. While this section was intended to disappear when not scored, it shows up. We are working on a solution to this. Apologies for the inconvenience.
+
+The rigor items detected in this version of SciScore include the following:
+Ethical Approval: expected when euthanasia or vertebrate organism is detected
+
+Institutional Review Board Statement
+MDAR, CONSORT
+A statement (usually a single sentence) addressing IRB approval for biomedical research involving human subjects (or why IRB approval was not required).
+More information from authority: (please see instuctional materials about IRBs and human subject protections from NIH)
+If we find an IRB statement, then SciScore expects to find the following items ((ie_criteria or attrition), sex, (age or weight), randomization, blinding, power);
+Example: The trial was approved by the NRES Committee London—South East.
+Consent Statement
+
+MDAR, CONSORT
+A statement (usually a single sentence) addressing subject/patient consent in human research (or why consent was not required).
+If we find a consent statement, then SciScore expects to find the following items ((ie_criteria or attrition), sex, (age or weight), randomization, blinding, power);
+Example: All infants were enrolled with informed parental permission under a protocol that was reviewed and approved by the Institutional Review Boards of the respective study sites.
+Institutional Animal Care and Use Committee Statement
+
+MDAR, ARRIVE
+A statement (usually a single sentence) addressing IACUC ethical approval for research involving vertebrate organisms.
+More information from the NIH Office of Laboratory Animal Welfare
+If we find an IACUC statement, then SciScore expects to find the following items ((ie_criteria or attrition), sex, (age or weight), randomization, blinding, power);
+Example: All animal experiments were performed in accordance with relevant guidelines and regulations and were approved by the University of Pennsylvania Institutional Animal Care and Use Committee (IACUC).
+Field Sample Permit
+
+MDAR
+A statement (usually a single sentence) addressing field sampling approval for research (or why field approval was not required).
+If we find a permit, then SciScore expects to find the following items (randomization, blinding, power);
+Example: Permission to conduct field surveys on each location was given by the individual landowners concerned, and by the regulatory authority (Natural England) in those situations where the field site was afforded protected status (i.e. Site of Special Scientific Interest).
+Euthanasia
+
+MDAR
+A statement addressing the method and/or agent used regarding the euthanasia of organisms.
+Authoritative source for information: Sivula & Suckow 2018 doi: 10.1201/9781315152189-35
+If we find a euthanasia agent, then SciScore expects to find the following items ((iacuc), (ie_criteria or attrition), sex, (age or weight), randomization, blinding, power);
+Example: Mice were deeply anesthetized by intraperitoneal injection of sodium thiopental before decapitation, followed by brain extraction.
+Study Participation
+
+Inclusion & Exclusion Criteria
+MDAR, NIH, CONSORT
+Statement(s) discussing both the inclusion and exclusion criteria of the experiment.
+If we find a statement about inclusion and exclusion criteria, then SciScore expects to find the following items (randomization, blinding, power);
+Example: Subjects were eligible for the cross-sectional study if they were fluent in English and had a sexual partner (SP) in the previous 18 months and ineligible if they were post-menopausal or had undergone a sex change.
+Attrition
+MDAR
+A statement reporting the dropout of any subjects or samples.
+If we find a statement about attrition, then SciScore expects to find the following items (randomization, blinding, power);
+Example: Of these, 21 ticks could not be removed from the birds and 162 ticks were lost due to technical problems during nucleic acid extraction, resulting in 1,150 ticks available for analysis.
+Sex as a biological variable
+
+MDAR, NIH, CONSORT, ARRIVE
+Reporting the sex of any and all organisms, cell lines, and human subjects.
+NIH Video explaining SABV policy
+If we find a statement about sex of subjects, then SciScore expects to find the following items (randomization, blinding, power);
+Example: All females were of reproductive age and none were on progestin.
+Subject Demographics
+Age
+MDAR, ARRIVE
+Reporting the age of any and all organisms and human subjects.
+For human subjects please see Implementation of the NIH Inclusion Across the Lifespan Policy; for animal subjects please see Training video module for the Vertebrate Animals
+If we find an age statement, then SciScore expects to find the following items (sex, randomization, blinding, power);
+Example: Their age varied from 19 to 47 years (mean 26.3 , ssd 6.4) and length of relationship from 4 months to 23 years (mean 3.7, ssd 4.4).
+Weight
+MDAR, ARRIVE
+Reporting the weight of any and all organisms and human subjects.
+If we find a weight statement, then SciScore expects to find the following items (sex, randomization, blinding, power);
+Example: Six healthy adult rhesus macaques (Macaca mulatta) of Chinese origin (4–8 kg, three males and three females, 4–8 years old) were inoculated intramuscularly (i.m.) with 1,000 pfu of EBOV Makona strain.
+Randomization of subjects into groups
+MDAR, NIH, CONSORT, ARRIVE
+Considered addressed when a statement describing whether randomization was used (e.g. assigning subjects to experimental groups, positions in a multiwell device, processing order, etc.).
+Good overview of topic Suresh 2011 (doi: 10.4103/0974-1208.82352)
+If we find a randomization statement, then SciScore expects to find the following items (blinding, power);
+Example: Animals were assigned to experimental groups using simple randomization.
+Blinding of investigator or analysis
+MDAR, NIH, CONSORT, ARRIVE
+A statement discussing the degree to which experimenters were unaware (or blinded) of group assignment and/or outcome assessment.
+Blinding in preclinical studies short video (Anita Bandrowski); short video of blinding types in clinical trials (Terry Shaneyfelt); tips for surgical trials Karanicolas et al (2010)
+If we find a blinding statement, then SciScore expects to find the following items (randomization, power);
+Example: Responses were then scored by an experimenter blinded to injection condition and experimental cohort.
+Power analysis for group size
+
+MDAR, NIH, CONSORT, ARRIVE
+A statement addressing how (and if) an appropriate sample size was computed.
+If we find a statement about power analysis, then SciScore expects to find the following items (randomization, blinding);
+Example: Sample size was based on estimations by power analysis with a level of significance of 0.05 and a power of 0.9.
+Example: Because this was a pilot study, a formal power calculation was not required.
+Replication Information
+
+Number of replications
+MDAR
+If we find a replication information, then SciScore expects to find the following items (randomization, blinding, power);
+Example: Bioassays were replicated three times.
+Type of replication
+
+MDAR
+If we find a statement about replication type, then SciScore expects to find the following items (randomization, blinding, power);
+This can be a biological or technical replicate.
+Cell line Confirmation: expected when a cell line is detected
+
+Cell Line Authentication
+MDAR, NIH
+A statement detailing how the cell lines used were authenticated (e.g. short tandem repeat analysis). This is only required when cell lines are detected.
+If we find a statement about cell line authentication, then SciScore expects to find the following items (sex, randomization, blinding, power);
+Example: MOLM-14 cells were authenticated by STR profiling and flow cytometry.
+Cell Line Contamination Check
+MDAR, NIH
+A statement addressing the mycoplasma contamination status of the cell lines used. This is only required when cell lines are detected.
+If we find a statement about contamination of cell lines, then SciScore expects to find the following items (sex, randomization, blinding, power);
+Example: All cell lines were obtained from ATCC and tested negative for mycoplasma contamination.
+Code Information: Code Availability
+
+MDAR
+If we find code information, then SciScore expects to find the following items (randomization, blinding, power);
+Code Identifiers
+MDAR
+URL from github, google code, bitbucket
+Data Information: Data Availability
+
+MDAR
+If we find data, then SciScore expects to find the following items (randomization, blinding, power);
+Data Identifiers
+MDAR
+If we find data identifiers, then SciScore expects to find the following items (randomization, blinding, power);
+dbSNP, dbVar, Sequence Read Archive, BioProject, Protein Circular Dichroism Data Bank, ArrayExpress, GEO, European Genome-phenome Archive, Japanese Genotype-phenotype Archive, MassIVE, MetaboLights, PeptideAtlas, ProteomeXchange, FlowRepository, Image Data Resource, European Nucleotide Archive, UniProt, dbGaP, Biostudies, and ClinVar
+Protocol Identifiers
+
+MDAR
+If we find protocol identifiers, then SciScore expects to find the following items (randomization, blinding, power);
+protocols.io URL or DOI, Nature Protocols DOI, etc.
+Scoring for Rigor Table (total 5 points):
+The rigor table makes up 5 points of the total score. Those five points are split evenly among the expected rigor criteria. Scores are rounded to the nearest whole number. For each sentence that describes an expected rigor criterion, e.g. blinding, SciScore adds the fractional number of points for that criterion, and if it is unable to find a statement on blinding then this section is labeled "Not Detected" and receives a score of 0. To improve detection, please make sure that your language is clear and written in standard English.
+
+Conditional criteria such as cell line authenticity are only included in the expected list if cell lines are detected in the Key Resources table (Table 2). Likewise, an IACUC statement is expected if an appropriate animal is detected in the Key Resources table. Currently, the field sample permit will be detected but never expected.
+
+When organisms or human participants are detected, it is expected that blinding, group selection criteria such as randomization and inclusion/exclusion, attrition, and demographic information such as sex or gender will be present. Biological variables such as sex should inform subject and group selection.
+
+SciScore attempts to classify papers based on the paper type to reduce the burden of requiring all criteria where it may be irrelevant, however, we tend to err on the side of caution, expecting criteria where SciScore is unsure. We do this because SciScore is primarily a tool that assists peer review by bringing attention to something that may have been omitted.
+
+Protocol, code, and data identifiers refer to persistent identifiers (either a DOI such as DOI:10.17504/protocols.io.9gbh3sn, a URL such as https://github.com/tophat, or an accession number in a repository such as GSE145917). SciScore will then try to authenticate these. For accession numbers, SciScore will check for the identifiers’ existence in their source database. For DOIs and URLs, SciScore will check to see if these resolve. Identifiers that are validated will be displayed in blue, while dead links will be shown in red such as DOI:10.17504/protocols.io.9gbh3snr. This is intended to quickly alert the author or reviewer to potential problems with a website or a typo in an accession number. SciScore does not check the relevance of the cited identifiers, only their existence. In rare cases, a typo may still result in a valid identifier. Consequently, we wish to remind users that SciScore is not a substitute for expert review. Rather, SciScore should be used in concert with reviewers for the best results.
+
+How to get a better score on this section
+Ensure that each criterion that is expected is addressed in your manuscript (refer to what is expected in the rigor items list above). Adding more rigor criteria such as the github URL to the tools developed or a protocol DOI from your favorite protocol repository will increase points for this section. Pro Tip:
+If SciScore expects that a criterion should be filled (e.g., blinding), but you do not believe that this is relevant, address it using a negative statement. Examples:
+
+No subjects were excluded from our study.
+We did not assess whether subjects were male or female because embryos were not genotyped.
+Experimental subjects were not randomized into groups because this was deemed irrelevant to this study.
+Experimenters were not blinded to the subject's genotype because knockout mice were visibly different from controls.
+We did not check for sample sizes using a power analysis because our study does not report statistics on between groups or within group variables.
+No technical replication was completed because the Sasquatch was visible only once.
+Possible Problems: SciScore does not recognize my sentence as fulfilling the criterion. In some cases such as power analysis, there are a surprisingly small number of example sentences in the published literature. This is a serious problem for science, but also for SciScore because text mining analysis depends on seeing lots of syntax patterns. Take a look at the sentences above, these syntax patterns were tested and should be recognized. Writing similar sentences positive or negative should enable SciScore to recognize your sentence.
+
+Tip for reviewers: If you see the word Sasquatch in the manuscript, consider rejecting the paper.
+
+Key Resources Table
+The key resources table (Table 2), contains:
+
+Sentences that “should” have RRIDs
+Key biological resources detected (names of cell lines or antibodies)
+RRIDs - if detected, these are checked / validated by SciScore
+RRIDs are unique identifiers for reagents and other resources that largely overlap with the resource types that have been labeled as particularly problematic by the National Institutes of Health in recent changes to their grant review criteria, please see "key biological resources", e.g., antibodies, cell lines and transgenic organisms. The RRID initiative is led by community repositories that provide persistent, unique identifiers to their resources, such as transgenic mice, salamanders, antibodies, cell lines, plasmids and software projects such as statistical software. RRIDs are described on the rrids.org website and in a primer by Bandrowski and Martone in 2016.
+
+RRIDs are unique numbers that resolve to a particular database record, for example, the RRID:CVCL_0063 resolves to this record for a cell line (Cellosaurus community repository): https://web.expasy.org/cellosaurus/CVCL_0063.
+
+How does it work? The information in the Cellosaurus database (https://web.expasy.org/cellosaurus/) is structured and curated by Cellosaurus staff, the authority for cell lines (all RRIDs have an authority specific for the resource type). If authors use this RRID, then SciScore will ask the database about that particular identifier. In cases where a RRID fails to resolve (i.e. database has no record of that identifier, most likely due to a typo), SciScore will display an “unresolved” error message in red. If an RRID was recently submitted to the authority by authors, it often takes a week or more to become available in the database, thus exercising caution in the interpretation of the SciScore report in cases of newly minted RRIDs is advisable.
+Sentences that ‘should have RRIDs’ are detected by SciScore using patterns in sentences that are similar to how each resource is commonly described in published papers. A sentence that describes one or more antibodies may be detected by SciScore and this will be placed into the table without a corresponding RRID. SciScore will then attempt to find the name, catalog number, and vendor of the resource. In cases where the tool is relatively confident, it will suggest an RRID (this will contain the word “suggestion” and be in gray), as a courtesy. A link is provided, so authors can quickly verify whether the correct RRID was suggested.
+
+Note of caution: Please verify all RRID suggestions, only the author can know whether suggestions are correct.
+
+The Key Resources types detected in this version of SciScore include the following:
+Antibodies
+All antibodies should be listed with the company name, catalog number and RRID. It is also a good practice to add the lot number, just in case there is lot variability.
+
+Authority: Antibody Registry (ABR)
+Homepage https://antibodyregistry.org
+Submit Data https://antibodyregistry.org/add
+Example: Burchpilot antibody (DSHB Cat# nc82, RRID:AB_2314866)
+Cell Lines
+All cell lines should be listed with the company or source where they were obtained, the catalog number (if applicable), and the RRID from Cellosaurus. Cellosaurus contains the ICLAC.org list of problematic cell lines, thus looking at the cell line record ensures that authors are made aware of any warnings on cell lines or other known issues.
+
+Authority: Cellosaurus
+Homepage https://web.expasy.org/
+Contact Page https://web.expasy.org/contact
+Example: HEK293 (NCBI_Iran Cat# C497, RRID:CVCL_0045)
+Organisms
+Please check here for latest URLs for data submission (https://scicrunch.org/resources/about/guidelines#organism) Organisms obtained from stock centers should be listed with their stock center generated or approved RRIDs.
+
+Mice, authority: Mouse Genome Informatics (MGI)
+
+Rats, authority: Rat Genome Database (RGD)
+
+Worm, authority: Wormbase
+
+Fly, authority: Flybase
+
+Zebrafish, authority: Zebrafish Information Network (ZFIN)
+
+Xiphophorus, authority: XGSC
+
+Frog (Xenopus), authority: Xenbase
+
+Salamander (Ambystoma), authority: AGSC
+
+Pig, authority: NSRRC
+
+Tetrahymena, authority: Tetrahymena Stock Center
+
+Please note, each authority may have one or more associated stock centers. Please check with the RRID portal to find the right organism.
+
+Example: C57BL/6J mouse (RRID:IMSR_JAX:000664)
+Plasmids
+Please add the full citation, including the RRID for each plasmid into your methods section.
+
+Authority: Addgene
+Homepage http://www.addgene.org/
+Submit Plasmids http://www.addgene.org/depositing/start-deposit/
+Example: pMD2.G plasmid (RRID:Addgene_12259)
+Software tools, Databases, & Core Facilities
+RRIDs for software tools and databases, which do not always have a paper about them, are often suggested by SciScore, please verify that the tools listed are what was used and include the RRID in your paper. For shared facilities within your university, RRIDs are a great way to track their use. Please use RRIDs in the methods section or in the acknowledgement section.
+
+Authority: SciCrunch Registry (SCR)
+Homepage https://scicrunch.org/browse/resourcedashboard
+Submit Data https://scicrunch.org/resources/about/resource?form=Resource&rel=26
+Example: PubMed (RRID:SCR_004846)
+Scoring for Resources Table (total 5 points):
+The total for the entire Key Resources table is 5 points with scores rounded to the nearest whole number. Each resource that is detected in this section is included in the score. For each valid RRID detected with matching metadata (e.g. catalog number or name), full points are awarded. Because a single resource can often be described in a variety of ways, SciScore utilizes fuzzy matching to correctly link resources with their corresponding RRIDs. In cases where multiple resources and RRIDs are listed out in a single sentence, authors should verify that the resources and RRIDs are correctly matched as SciScore is not perfect. Partial points are awarded if SciScore detects resources where a suggestion can be made, or if an RRID does not resolve properly. Therefore, the way to maximize the points from this section is to add RRIDs and proper citations that include vendor names, catalog numbers, lot and version numbers into the methods section of the manuscript for every key resource used.
+
+How to get a better score on this section Ensure that each antibody, mouse, cell line (etc) has an accompanying RRID. SciScore will point out sentences or parts of a table, where these items are located. Adding more RRIDs for additional antibodies that SciScore did not find does not hurt your score, it improves it. Pro Tip: Use the catalog number and vendor to improve the probability that the antibody name and RRID will be recognized as the same item.
+
+Common Problem: Antibody name shows up in one sentence the next “sentence” contains the RRID so SciScore thinks that my RRID is alone and there is an unidentified antibody. This can happen when a sentence is broken in your document, a return character or another invisible symbol may be at fault. Check your manuscript.
+
+Common Problem: Two antibodies, e.g., anti-mouse-nAChR antibody and nAChR antibody, are the same, but SciScore puts both on the list. To help SciScore, use the same name throughout the methods section. There should be no need to use the RRID twice.
+
+Other Entities Table (not included in scoring)
+The other entities table (Table 3) contains:
+
+Statistical tests
+Oligonucleotides
+Additional problems, if found
+Sentences containing entities of interest are shown in the leftmost column, while the specific statistical tests and oligonucleotides detected are displayed in the right column. Again, none of the criteria in the “other entities table” impact the overall score.
+
+General notes on interpretation of text mining results:
+Incorrect sentences: SciScore is a machine learning, text analysis tool, and it is therefore susceptible to making two types of errors: false positives and false negatives.
+
+False negatives:
+The most common error occurs when the algorithm fails to detect a sentence that contains a rigor criterion or a resource, such as an antibody. False negatives generally occur either because the sentence is complex or in a less common syntax pattern. Generally, simple sentences in clear standard English are simpler to process and result in fewer false negatives. If a truly complex sentence structure is required to describe reagents, a table may help not only SciScore, but also human readers. If an RRID is detected in a sentence, SciScore will be triggered to take a look at the sentence, which may have been skipped otherwise.
+
+False positives:
+This type of error occurs when SciScore falsely detects something including cases where a sentence does not contain an antibody, but the algorithm asserts that this sentence does have an antibody. If many resources are used and all have RRIDs, a single false positive will not reduce the score substantially, if at all. But if only 1-2 resources are used or if the false positive is in the cell line or organism category, it will trigger scoring for cell line authentication and other rigor criteria, which can reduce your SciScore needlessly. False positives are most often seen in the tools portion of table 2, as the algorithm detects company names, where it should not. We try to minimize these false positives using several strategies, however, they still occur in roughly 3-5% of cases. If this impacts your score, please contact our team (http://sciscore.com) and include the sentence where SciScore made the error. While we can't fix the score, SciScore can certainly learn from its mistakes for improved performance next time around.
+
+
+General Questions
+What will I receive after I submit my methods section?
+SciScore returns three reports (downloadable all together in a .zip file) and a score between 1 and 10. These reports cover a wide range of rigor criteria and research resource types (e.g., antibodies, cell lines, plasmids, etc.). Scores range between 1 and 10 and are based on both rigor adherence and resource reporting completeness.
+How can I improve my SciScore?
+Wherever possible, we try to provide useful suggestions to help you improve your report, e.g. a missing RRID or a typo in your dataset link. Adding those to your methods section might already improve your SciScore. Next is to look more thoroughly at the various sections of the report to see where information is expected but missing.
+
+Addressing certain rigor criteria in the methods section like blinding, randomization of groups, and power analysis, even if it is to simply state that they are not relevant to the study, should improve your score. In general, though, the more rigor criteria you include, the higher your score will be.
+
+For each research resource that is identified, adding a research resource identifier (RRID) or other important metadata, like the catalog number and vendor, should improve the score. Please note, every RRID is associated with product information. SciScore will try to match the sentence context with this data, and if this information does not match, the score will be lower. If English is not your native language, you may consider sending your methods section to a colleague to help improve sentence clarity.
+If I find something wrong with my report, what do I do?
+Please contact us to report any problems. SciScore can only learn from its mistakes if it knows about them.
+What happens when a journal submits my methods section for me?
+If a journal submits your paper, they must follow journal specific privacy policies. As the submitting party, the journal would be responsible for any actions taken as a result of SciScore.
+
+Materials, Design, Analysis, Reporting (MDAR)
+What is MDAR?
+MDAR (Materials, Design, Analysis, and Reporting) is a multidisciplinary research framework aimed at helping authors, editors, and other interested parties increase reporting transparency within life science manuscripts. The MDAR checklist aims to serve as a generic, minimum reporting standard for life science studies, a complement to journal and community-specific guidelines and initiatives.
+
+The MDAR checklist has been a collaborative effort from 13 high-impact journals (i.e. eLife, Science, PNAS, etc.) across a variety of publishers. Using SciScore, you can automatically check your manuscript against the checklist in under a minute.
+Why would MDAR be relevant for me?
+As of 2020, the journal Science requires an MDAR report to be submitted with acceptance of each paper, you can generate one here in as little as 1 minute.
+
+By serving as a generic, minimum reporting standard, MDAR hopes to improve reporting standards compliance across a variety of life science guidelines with the end goal being to improve research reproducibility. In addition, 13 high-impact journals (i.e. eLife, Science, PNAS, etc.) have begun testing the MDAR checklist with potential for expanded implementation in the near future.
+Can I just use SciScore's automatically generated MDAR report?
+We welcome you to use our automatically generated MDAR reports when submitting to journals that require such a report, however, please be mindful that SciScore cannot detect every MDAR criteria as of yet (currently, ~80%). We point out where information is missing, but you may need to fill in additional information as requested by the journal that you are submitting to.

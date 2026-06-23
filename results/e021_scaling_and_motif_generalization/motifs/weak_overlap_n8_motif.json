@@ -1,0 +1,61 @@
+{
+  "motif_id": "weak_overlap_n8",
+  "motif_type": "weak_overlap",
+  "n_branches": 8,
+  "n_traces": 2,
+  "branch_ids": [
+    "b0",
+    "b1",
+    "b2",
+    "b3",
+    "b4",
+    "b5",
+    "b6",
+    "b7"
+  ],
+  "trace_ids": [
+    "mu1",
+    "mu2"
+  ],
+  "allocations": {
+    "mu1": {
+      "b0": 0.9,
+      "b1": 0.3,
+      "b2": 0.05,
+      "b3": 0.05,
+      "b4": 0.05,
+      "b5": 0.05,
+      "b6": 0.05,
+      "b7": 0.05
+    },
+    "mu2": {
+      "b0": 0.05,
+      "b1": 0.3,
+      "b2": 0.9,
+      "b3": 0.05,
+      "b4": 0.05,
+      "b5": 0.05,
+      "b6": 0.05,
+      "b7": 0.05
+    }
+  },
+  "overlap_branches_per_pair": {
+    "mu1:mu2": []
+  },
+  "expected_linked_pairs": [],
+  "expected_unlinked_pairs": [
+    [
+      "mu1",
+      "mu2"
+    ]
+  ],
+  "damage_target_branches": [
+    "b1"
+  ],
+  "rescue_target_branches": [
+    "b1"
+  ],
+  "metadata": {
+    "overlap_weight": 0.3
+  }
+}

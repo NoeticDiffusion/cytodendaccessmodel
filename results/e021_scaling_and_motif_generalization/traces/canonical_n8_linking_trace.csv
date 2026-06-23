@@ -1,0 +1,2 @@
+run_id,trace_i,trace_j,L_pre,L_post,L_dmg,L_targ,L_gen,is_expected_linked,is_expected_unlinked
+canonical_n8,mu1,mu2,0.4125,0.6516059758040459,0.5099696221475968,0.6546793560145846,0.4316720623341519,True,False

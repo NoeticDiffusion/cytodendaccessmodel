@@ -1,0 +1,4 @@
+comparator,motif,trace_i,trace_j,L_struct_pre,L_struct_post,L_behav_post,L_struct_dmg,is_expected_linked
+resource_only,chain_overlap_n8,tc0,tc1,0.4325,0.41342224263964455,0.8597185035416522,0.3276221699112249,True
+resource_only,chain_overlap_n8,tc0,tc2,0.09250000000000001,0.08841978599807429,0.17971850354165236,0.0805452082332695,False
+resource_only,chain_overlap_n8,tc1,tc2,0.4325,0.41342224263964455,0.8597185035416522,0.3912116694775512,True
