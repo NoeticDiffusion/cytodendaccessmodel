@@ -66,18 +66,18 @@ class TestArticleTextSources:
             assert "Abstract" in text, "draft.md should contain an Abstract section"
 
     def test_typst_article_exists(self):
-        typ = ARTICLE_DIR / "Slow Branch-Level Accessibility as a Structural Constraint on Memory Linking.typ"
+        typ = ARTICLE_DIR / "Slow Branch-Level Accessibility as a Structural Constraint.typ"
         assert typ.exists(), f"Typst article not found at {typ}"
 
     def test_typst_article_contains_figures(self):
-        typ = ARTICLE_DIR / "Slow Branch-Level Accessibility as a Structural Constraint on Memory Linking.typ"
+        typ = ARTICLE_DIR / "Slow Branch-Level Accessibility as a Structural Constraint.typ"
         if typ.exists():
             text = typ.read_text(encoding="utf-8")
             assert "figures2/" in text, "Typst article should reference figures2/"
             assert "Fig_e023_01" in text, "Typst article should reference Fig_e023_01"
 
     def test_typst_article_contains_equations(self):
-        typ = ARTICLE_DIR / "Slow Branch-Level Accessibility as a Structural Constraint on Memory Linking.typ"
+        typ = ARTICLE_DIR / "Slow Branch-Level Accessibility as a Structural Constraint.typ"
         if typ.exists():
             text = typ.read_text(encoding="utf-8")
             assert "M_b" in text, "Typst article should contain M_b variable"

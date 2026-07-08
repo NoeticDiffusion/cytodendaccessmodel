@@ -17,7 +17,7 @@ Use these files together:
 
 - `reviewer_slow_branch_level_accessibility.ipynb`: primary reviewer notebook for the current article.
 - `README.md`: top-level orientation and reviewer path.
-- `article/Slow Branch-Level Accessibility as a Structural Constraint on Memory Linking/Slow Branch-Level Accessibility as a Structural Constraint on Memory Linking.typ`: current manuscript source.
+- `article/Slow Branch-Level Accessibility as a Structural Constraint on Memory Linking/Slow Branch-Level Accessibility as a Structural Constraint.typ`: current manuscript source.
 - `article/Slow Branch-Level Accessibility as a Structural Constraint on Memory Linking/v2_claim_ledger.md`: article-level claim ledger.
 - `article/Slow Branch-Level Accessibility as a Structural Constraint on Memory Linking/v2_figure_manifest.md`: figure-by-figure article map.
 

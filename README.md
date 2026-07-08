@@ -85,7 +85,7 @@ Supporting reference files:
 
 Current article source:
 
-- `article/Slow Branch-Level Accessibility as a Structural Constraint on Memory Linking/Slow Branch-Level Accessibility as a Structural Constraint on Memory Linking.typ`
+- `article/Slow Branch-Level Accessibility as a Structural Constraint on Memory Linking/Slow Branch-Level Accessibility as a Structural Constraint.typ`
 - `article/Slow Branch-Level Accessibility as a Structural Constraint on Memory Linking/v2_claim_ledger.md`
 - `article/Slow Branch-Level Accessibility as a Structural Constraint on Memory Linking/v2_figure_manifest.md`
 

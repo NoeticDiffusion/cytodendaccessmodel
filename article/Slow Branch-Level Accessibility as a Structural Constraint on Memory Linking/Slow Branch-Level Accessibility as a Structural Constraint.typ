@@ -1,11 +1,12 @@
 // Slow Branch-Level Accessibility as a Structural Constraint on Memory Linking
 // Typst source — converted from draft.md (E023)
-// Uses template_eLife.typ for layout conventions.
+// Uses template.typ for layout conventions (PLOS Computational Biology submission).
 
-#import "template_eLife.typ": elife-template, abstract-block, supplement-box, note-line, clean-table
+#import "template.typ": essay-template, abstract-block, supplement-box, note-line, clean-table
 
-#show: elife-template.with(
+#show: essay-template.with(
   title: [Slow Branch-Level Accessibility as a Structural Constraint on Memory Linking],
+  short_title: [Slow branch-level accessibility and memory linking],
   authors: [Robin Langell],
   affiliations: [Independent Researcher],
   correspondence: [hello\@noeticdiffusion.com],
@@ -17,9 +18,7 @@
     ]
   ],
   abstract: [
-    Dendritic branches are active computational compartments whose local state can shape whether synaptic input is amplified, stabilized, or later recruited. However, it remains unclear whether memory linking requires only fast contextual gating and synaptic strengthening, or whether recent activity can also leave a slower branch-level accessibility bias that constrains future reuse. Here we introduce a
-    simulator-first framework for testing slow branch-level accessibility as a structural constraint on memory linking. The model separates fast branch access from a slower structural variable, $M_b$, updated by eligibility, replay, and consolidation support. In a canonical two-trace motif, replay-dependent slow writing produces overlap-branch strengthening, linking gain, perturbation-sensitive loss, and targeted
-    rescue. These signatures are traceable in exported simulator dynamics and are not reproduced by nine tested simpler or alternative comparator classes. Robustness analyses show that the joint profile occupies a bounded write--replay regime rather than a single tuned point. Scaling and motif tests show that the mechanism generalizes across tested branch counts and motif classes, while weak overlap and hub-like universal overlap define expected boundary conditions. These results support slow branch-level accessibility as an executable, falsifiable model-discrimination hypothesis. They do not establish a unique molecular or cytoskeletal memory code.
+    Dendritic branches are active computational compartments whose local state can shape whether synaptic input is amplified, stabilized, or later recruited. However, it remains unclear whether memory linking requires only fast contextual gating and synaptic strengthening, or whether recent activity can also leave a slower branch-level accessibility bias that constrains future reuse. Here we introduce a simulator-first framework for testing slow branch-level accessibility as a structural constraint on memory linking. The model separates fast branch access from a slower structural variable, $M_b$, updated by eligibility, replay, and consolidation support. In a canonical two-trace motif, replay-dependent slow writing produces overlap-branch strengthening, linking gain, perturbation-sensitive loss, and targeted rescue. These signatures are traceable in exported simulator dynamics and are not reproduced by nine tested simpler or alternative comparator classes. Robustness analyses show that the joint profile occupies a bounded write--replay regime rather than a single tuned point. Scaling and motif tests show that the mechanism generalizes across tested branch counts and motif classes, while weak overlap and hub-like universal overlap define expected boundary conditions. These results support slow branch-level accessibility as an executable, falsifiable model-discrimination hypothesis. They do not establish a unique molecular or cytoskeletal memory code.
   ],
 )
 
