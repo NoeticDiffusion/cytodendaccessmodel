@@ -31,6 +31,34 @@ Expected files:
 - `figure_E6_comparator_heatmap.svg`
 - `figure_E7_motif_family.svg`
 
+## Primary article E025 tuned common-probe comparison
+
+The manuscript's primary simulator comparison is written by
+`python experiments/exp025_tuned_common_probe.py` under:
+
+- `results/e025_common_probe_tuning/metadata/` — frozen plan, candidate registry, topology and probe manifests, calibration, and hashes
+- `results/e025_common_probe_tuning/summary/` — candidate selection, holdout comparisons, and claim status
+- `results/e025_common_probe_tuning/scores/` — candidate and topology-draw level holdout scores
+- `results/e025_common_probe_tuning/sensitivity/centered_cluster_bootstrap_holm.csv` — post-hoc centered cluster-bootstrap sensitivity; not preregistered
+- `experiments/exp025_cluster_bootstrap_sensitivity.py` — reruns the post-hoc sensitivity and writes its result table and hashes
+- `project/neural_computation/e025_preregistration_plan_v1_0_frozen_20260925.md` — byte-exact preregistration named by the pre-run freeze manifest
+- `project/neural_computation/e025_inference_sensitivity_20261030.md` — sign-flip assumptions and sensitivity-analysis scope
+- `results/e025_common_probe_tuning/figures/Fig_e025_01_tuned_common_probe.png` — publication-facing comparison, rendered by `python experiments/exp025_render_common_probe_figure.py`
+
+## Historical E024 protocol-development comparison
+
+The historical protocol-development comparison was written by `python experiments/exp024_common_probe_comparison.py` under:
+
+- `results/e024_common_probe_comparison/metadata/` — frozen protocol copy, run configuration, model registry, calibration, and probe manifest
+- `results/e024_common_probe_comparison/summary/primary_by_seed.csv` — per-seed primary outcomes
+- `results/e024_common_probe_comparison/summary/primary_model_summary.csv` — motif and macro summaries
+- `results/e024_common_probe_comparison/summary/paired_comparator_summary.csv` — paired tests and decisions
+- `results/e024_common_probe_comparison/summary/secondary_by_seed.csv` — secondary context, branch-mask, and recovery outcomes
+- `results/e024_common_probe_comparison/summary/claim_ledger.md` — machine-generated primary decision summary
+- `results/e024_common_probe_comparison/figures/Fig_e024_01_primary_effects.png` — original Swedish rendering
+
+The manuscript uses `results/e024_common_probe_comparison/figures/Fig_e024_01_primary_effects_en.png`, rendered from the frozen primary summary by `python experiments/exp024_render_english_figure.py`. Registered recovery-arm aggregation is produced by `python experiments/exp024_summarize_secondary.py`; hashes and post-processing details are in `results/e024_common_probe_comparison/metadata/figure_postprocessing.md`.
+
 ## DANDI `000718`
 
 Primary triage directory:

@@ -79,20 +79,18 @@ $M_b$ may represent any combination of slow branch-local processes.
 // ─────────────────────────────────────────────────────────────────────────────
 == S5.3. Minimal biological formalization: variable structure and equations
 
-This figure provides a visual companion to the S1 mathematical appendix. It shows the
-fast-state variables ($x_b$, $s_t$, $A_b$), the slow-state variables ($M_b$, $E_b$,
-$P_b$), the memory readout ($R_mu$), and the two key equations: the fast factorization
-$A_b = A_f dot.c A_s$ and the slow update $dot(M)_b$. Readers who find the S1
-state-space notation dense may find this visual layout a more accessible entry point.
-
-The figure uses the general biological notation from S1; the main text uses the
-executable simulator form where $P_b(t) W(t)$ makes the consolidation window explicit.
-See S1 §Correspondence between general and executable forms for the alignment.
+This historical schematic illustrates a broader theoretical formulation, not the discrete
+updates executed in E017--E025. In particular, its $x_b$ is an ungated integration state
+and its readout includes $A_b$ explicitly. In the implemented simulator, $x_b$ already
+includes access gating, so recall support does not multiply by $A_b$ again. See S1,
+Mapping from the continuous family to the executable simulator, for the limitations
+of the correspondence and the exact discrete update equations.
 
 #figure(
   image("figures/figure_3_minimal_biological_formalization_v3.png", width: 95%),
   caption: [
-    *Minimal biological formalization: variable structure and update equations.*
+    *Historical theoretical formalization: variable structure and update equations.*
+    This diagram is not the executed E017--E025 readout; see the explanatory text above.
     Left: fast states ($x_b$ branch integration, $s_t$ spine access, $A_b$ effective
     access). Centre: slow states ($M_b$ structural bias, $overline(E)_b$ eligibility tag,
     $P_b$ capture resource). Right: memory readout $R_mu = sum_b a_(mu b) A_b x_b$.
@@ -133,24 +131,21 @@ and provides intuition for the simulator's two-trace overlap motif.
 // ─────────────────────────────────────────────────────────────────────────────
 == S5.5. Evidence ladder and claim boundary
 
-The staircase below summarizes the primary simulator-first evidence chain from traceable
-dynamics to motif boundaries. It also makes the retained claim boundary explicit:
-supplementary open-data analyses are exploratory bridges, whereas direct biological
-validation and any unique molecular code claim remain outside the support provided by
-this paper. Readers unfamiliar with the paper's overall architecture may find this figure
-useful as an orientation before reading the Results.
+The figure separates historical internal mechanism diagnostics and boundary analyses from
+the primary E025 common-probe comparison. The equal-budget, locked-holdout comparison
+does not demonstrate a unique slow-writing advantage on its defined task. The evidence
+is limited to the tested implementations, adapters, parameter ranges, and generated
+topologies; S3 open-data bridges do not validate the latent state.
 
 #figure(
-  image("figures3_concepts/evidence_ladder.png", width: 95%),
+  image("figures3_concepts/Fig_e025_s5_evidence_ladder.svg", width: 95%),
   caption: [
-    *Evidence ladder and claim boundary.*
-    The staircase summarizes the simulator-first evidence chain from traceable branch
-    dynamics (E017) through canonical signatures (E018), robustness (E019--E020), motif
-    generalization (E021--E021R), hard comparators (E022), and replay audit (E022R). The
-    right side marks what the paper does _not_ support: direct biological validation of
-    $M_b$, a unique molecular memory code, or a validated DANDI/open-data claim. The
-    supplementary open-data analyses (S3 Appendix) are exploratory bridges, not primary
-    evidence.
+    *Evidence ladder and claim boundary.* E017--E022R characterize simulator dynamics,
+    internal mechanism signatures, and parameter and motif boundaries. E024 develops a
+    common probe; E025 compares tuned model families on a locked holdout. Hebbian and
+    resource-only variants exceeded the full model on the primary readout, while shuffled
+    replay was practically equivalent under the registered decision rule. No biological
+    measurement of $M_b$ or unique molecular memory code is established.
   ],
 ) <fig-evidence-ladder>
 
@@ -172,32 +167,30 @@ than generic rescue applied to non-overlap branches (SIG-E).
     selectively reduces the linking score $L_(A B)$ while largely preserving single-trace
     recall support $R_A$ and $R_B$ (SIG-D). Targeted rescue --- which restores eligibility
     on the overlap branch --- recovers linking more than non-targeted generic rescue
-    (SIG-E). This logic motivates the two-tier rescue protocol used in all comparator
-    evaluations.
+    (SIG-E). This is a historical mechanism-specific diagnostic; E025 uses a separate
+    common-probe comparison and does not test this rescue protocol across all families.
   ],
 ) <fig-overlap-damage-rescue>
 
 // ─────────────────────────────────────────────────────────────────────────────
-== S5.7. Comparator fairness and model-discrimination logic
+== S5.7. Comparator evaluation and model-discrimination logic
 
-This figure makes explicit the two-level evaluation design used for all comparators. An
-alternative model is not rejected merely because it lacks $M_b$. It is first evaluated
-on output-level metrics (linking gain, damage sensitivity, recovery index) that are
-computable regardless of mechanism. It is then evaluated on structural mechanistic
-signatures that require $M_b$-like branch-specific writing. Only when both levels fail
-does the alternative fall outside the joint profile.
+E025 compares specified model families using a shared probe and readout after equal-budget
+tuning. Historical E018/E022 mechanism signatures and proxy outcomes describe internal
+behavior under their original protocols; they are not the E025 common-readout test and
+cannot by themselves establish an output-level advantage for slow writing.
 
 #figure(
-  image("figures3_concepts/comparator_fairness.png", width: 90%),
+  image("figures3_concepts/Fig_e025_s5_comparator_comparison.svg", width: 95%),
   caption: [
-    *Comparator fairness and model-discrimination logic.*
-    Alternatives are evaluated first on output-level linking and damage patterns (left
-    column: B1, B3, B5 metrics) and then on whether they reproduce overlap-branch
-    structural writing, rescue selectivity, and cross-scale specificity (right column:
-    SIG-A, SIG-B, SIG-E, gSIG-A). Comparators are not dismissed merely for lacking
-    $M_b$; they are rejected when they fail the full mechanistic and output-level joint
-    profile. This design prevents circular evaluation and directly addresses the
-    comparator-fairness objection.
+    *Comparator evaluation and model-discrimination logic.* E025 used a shared probe,
+    model-defined adapters, 32 candidate configurations per family, and independent
+    development, validation, and holdout topology draws. On the immediate readout the
+    full model exceeded five testable alternatives, was practically equivalent to
+    shuffled replay, and was exceeded by Hebbian and resource-only variants. Eligibility-only
+    had no qualifying candidate. These are outcomes for the specified implementations and
+    the registered decision rule, conditional on the sign-flip assumption; S2 reports the
+    post-hoc bootstrap sensitivity and further limits.
   ],
 ) <fig-comparator-fairness>
 

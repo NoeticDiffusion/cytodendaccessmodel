@@ -1,0 +1,6 @@
+check,status,detail
+zero_input_readout_baseline,pass,zero raw support maps to sigmoid baseline at threshold 0.3
+probe_state_isolation,pass,probe operates on a deep copy and leaves the frozen state unchanged
+explicit_no_replay,pass,"P_b decays only: expected=0.475, observed=0.475"
+hub_boundary_NA,pass,hub motif is registered as a boundary case and omitted from primary mean
+canonical_pair_manifest,pass,expected two directed eligible pairs; observed=2

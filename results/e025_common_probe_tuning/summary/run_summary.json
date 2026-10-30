@@ -1,0 +1,28 @@
+{
+  "holdout_configurations_scored": 17,
+  "holdout_draws": 100,
+  "selected_candidates": {
+    "fast_context_only": "fast_context_only_c02",
+    "fixed_allocation_only": "fixed_allocation_only_c02",
+    "full_model": "full_model_c16",
+    "hebbian_weight_only": "hebbian_weight_only_c05",
+    "random_slow_drift": "random_slow_drift_c24",
+    "replay_no_structure": "replay_no_structure_c24",
+    "resource_only": "resource_only_c16",
+    "shuffled_replay": "shuffled_replay_c12",
+    "soma_global_gain_only": "soma_global_gain_only_c01"
+  },
+  "selection_status": {
+    "eligibility_only": "no_qualifying_tuned_candidate",
+    "fast_context_only": "selected",
+    "fixed_allocation_only": "selected",
+    "full_model": "selected",
+    "hebbian_weight_only": "selected",
+    "random_slow_drift": "selected",
+    "replay_no_structure": "selected",
+    "resource_only": "selected",
+    "shuffled_replay": "selected",
+    "soma_global_gain_only": "selected"
+  },
+  "unique_immediate_advantage_supported": false
+}

@@ -1,0 +1,19 @@
+{
+  "analysis": "post-hoc centered topology-cluster bootstrap sensitivity",
+  "preregistered": false,
+  "inference": "Approximate nonparametric bootstrap of the 100 paired topology-draw macros, centered at each null boundary; not an exact randomization test.",
+  "scope": "Conditional on the selected candidates/adapters, frozen topology generator, and independent topology-draw sampling.",
+  "replicates": 200000,
+  "seed": 250926,
+  "margin": 0.02,
+  "holm_family_size": 54,
+  "script": "experiments\\exp025_cluster_bootstrap_sensitivity.py",
+  "script_sha256": "984806538602419240e71f1ef2acac111c902c15d9d2f7a24b7cacf307abcdb5",
+  "input": "results\\e025_common_probe_tuning\\scores\\holdout_draw_scores.csv",
+  "input_sha256": "e98038e2112335a2c546bdebd594334d4ba71411791a89da4c320e6e9f47010b",
+  "comparison_input": "results\\e025_common_probe_tuning\\summary\\holdout_comparisons.csv",
+  "comparison_sha256": "cafea2c30f014a4f19a31de078efc440f3aa46c7309099fc4bb942c700da2f9e",
+  "output": "results\\e025_common_probe_tuning\\sensitivity\\centered_cluster_bootstrap_holm.csv",
+  "output_sha256": "f8d1366abdefa85cb1718b4509c68021be60442688eae0ba98e8b9ff55349bae",
+  "metadata": "results\\e025_common_probe_tuning\\sensitivity\\centered_cluster_bootstrap_metadata.json"
+}

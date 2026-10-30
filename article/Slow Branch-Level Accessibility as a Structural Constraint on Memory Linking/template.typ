@@ -72,7 +72,7 @@
       bottom: 0em,
     ),
     width: auto,
-  )[body]
+  )[ #body ]
 }
 
 #let wide-table(table-content, extra-margin: 0.75in) = wide-block(

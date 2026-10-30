@@ -55,7 +55,7 @@ Run the test suite:
 pytest
 ```
 
-Run the primary canonical simulator experiment (no data required):
+Run the historical canonical trace experiment (no data required):
 
 ```bash
 python experiments/exp017_traceable_simulator_core.py
@@ -68,10 +68,19 @@ The primary entry point is the root-level notebook:
 **`reviewer_slow_branch_level_accessibility.ipynb`** — top-level routing for the
 simulator evidence tiers, legacy lineage, and supplementary bridges.
 
+For the current manuscript, start with the preregistered E025 tuning plan and locked
+common-probe results, then inspect the earlier simulator families as mechanism and
+boundary analyses.
+
 The repository is organized into three tiers:
 
-- **Primary evidence:** `E017–E022R`, assembled figures in `figures2/`, and the
-  Typst article source under `article/`.
+- **Primary model comparison:** `E025` equal-budget tuned common-probe results in
+  `results/e025_common_probe_tuning/`, with the preregistration and manifests under
+  `project/neural_computation/` and the Typst article source under `article/`.
+- **Protocol-development history:** `E024` common-probe results in
+  `results/e024_common_probe_comparison/`; these are not pooled with E025.
+- **Historical simulator analyses:** `E017–E022R` and the assembled figures in
+  `figures2/`.
 - **Legacy lineage:** `exp001–exp016`, earlier claim maps, and validation scripts
   retained for lineage and optional cross-checks.
 - **Supplementary framing:** `figures3_concepts/`, DANDI bridge material, and S3
@@ -107,8 +116,9 @@ Dataset `000871` scripts are retained as legacy supplementary material and are n
 required for the current manuscript claims.
 
 The DANDI analyses belong to the **supplementary bridge layer**, not the primary
-evidence ladder. Readers who only need to verify the main article claims can stop
-after the no-data simulator stack (`E017–E022R`).
+evidence ladder. Readers who only need to verify the main article claims can start with
+E025's equal-budget tuned common-probe comparison, then inspect E017–E022R for the
+historical mechanism and boundary analyses.
 
 DANDI data and derived artifacts are written under:
 

@@ -1,0 +1,45 @@
+Ja, **Neural Computation** (MIT Press) är på många sätt en **ännu bättre och mer naturlig hemvist** för just denna artikel i sitt nuvarande utförande.
+
+Här är en jämförelse av varför *Neural Computation* är ett starkt kort, vad som skiljer den från *PLOS Comp Bio*, och vad du ändå behöver skruva på innan du skickar in.
+
+---
+
+### Varför *Neural Computation* passar bättre
+
+1. **Hög tolerans för tung matematik och SDE-formalism**
+* *PLOS Computational Biology* vill ha en väldigt bred, biologiskt tillgänglig berättelse där matematiken snabbt översätts till experimentell biologi.
+* *Neural Computation* är uppbyggt runt teoretisk beräkningsneurovetenskap, SDE-modeller, matrisoperatörer och teoretiska simulatorer. Deras granskare blir inte avskräckta av matematiska abstraktioner – de förväntar sig dem.
+
+
+2. **Accepterar både metod/simulator och teoretisk mekanism**
+* I *Neural Computation* behöver du inte "tvinga" artikeln att framstå som en ren biologisk upptäckt om du har byggt en stark teoretisk simuleringsarkitektur. Du kan stolt deklarera att artikeln introducerar **både** ett beräkningsmässigt kontrollramverk och en teoretisk princip för långsam grenbaserad tillgänglighet.
+
+
+3. **Inget krav på omedelbara experimentella biologiska data**
+* Tidskriften uppskattar teoretiska "proof-of-concept"-modeller som visar hur en viss beräkningsmässig begränsning (t.ex. tidsfördröjd minneslänkning på grennivå) kan lösas i princip.
+
+
+
+---
+
+### Vad du ÄNDÅ måste fixa innan du skickar till *Neural Computation*
+
+Låt inte tidskriftens matematiska profil bli en ursäkt för att strunta i redaktörens feedback. *Neural Computation*-granskare är extremt noggranna med logisk skärpa och vill ha orubblig struktur:
+
+* **Svara på redaktörens huvudfråga i mening 1-2:**
+Deklarera direkt i Abstract och Introduktion vad artikeln är:
+> *"We present a theoretical control model and discrete-continuous simulator to investigate how slow, branch-level dendritic accessibility ($A_s$) constrains multi-timescale memory linking..."*
+
+
+* **Definiera variablerna i en expliiciterad variabel/parameter-tabell:**
+Även matematiskt tunga läsare uppskattar en ren tabell i metodavsnittet som förklarar vad $A_f$, $A_s$, $M_b$ och $\tau_{\text{slow}}$ representerar i modellen och i den konceptuella neuronmodellen.
+* **Tydliggör den teoretiska vinsten:**
+Gör det glasklart vad din modell åstadkommer som standardmodeller för minneslänkning (t.ex. rena synaptiska $I_{Ca}$-modeller) *inte* klarar av.
+
+---
+
+### Sammanfattande rekommendation
+
+Skicka till **Neural Computation**.
+
+Det kräver minimala ändringar i din faktiska kod och matematik – du behöver bara göra en **pedagogisk putsning av texten**, lägga till en parametertabell och göra inramningen knivskarp i inledningen. Det gör manuskriptet oantastligt för deras granskare.

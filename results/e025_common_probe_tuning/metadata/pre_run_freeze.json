@@ -1,0 +1,91 @@
+{
+  "bootstrap_replicates": 10000,
+  "candidate_count_per_model": 32,
+  "consolidation_passes": 9,
+  "created_utc": "2026-09-25T13:50:29.983743+00:00",
+  "experiment": "E025 tuned common-probe comparison",
+  "generated_file_sha256": {
+    "parameter_registry": "056c47f298e6ced335599e220bf9e47dd5b8f5f3fdbe0cbae5997a3d698697c7",
+    "probe_manifest": "576c0a1bf99e6bcdb09e448fa4a3176398a8955ffe00cedc68969461f097f3d7",
+    "topology_manifest": "e3b81a6f3783af6d15b9e4da0f08dab64776ba823941b12cd48eb7b046b325d4"
+  },
+  "git": {
+    "commit": "ce564934591f54e70d679abfa00ccddb5165c3be",
+    "working_tree_status": [
+      " M CLAIMS_TO_EXPERIMENTS.md",
+      " M OUTPUTS.md",
+      " M README.md",
+      " M \"article/Slow Branch-Level Accessibility as a Structural Constraint on Memory Linking/S1_Appendix.pdf\"",
+      " M \"article/Slow Branch-Level Accessibility as a Structural Constraint on Memory Linking/S1_Appendix.typ\"",
+      " M \"article/Slow Branch-Level Accessibility as a Structural Constraint on Memory Linking/S2_Appendix.pdf\"",
+      " M \"article/Slow Branch-Level Accessibility as a Structural Constraint on Memory Linking/S2_Appendix.typ\"",
+      " M \"article/Slow Branch-Level Accessibility as a Structural Constraint on Memory Linking/Slow Branch-Level Accessibility as a Structural Constraint.pdf\"",
+      " M \"article/Slow Branch-Level Accessibility as a Structural Constraint on Memory Linking/Slow Branch-Level Accessibility as a Structural Constraint.typ\"",
+      " M \"article/Slow Branch-Level Accessibility as a Structural Constraint on Memory Linking/template.typ\"",
+      " M \"article/Slow Branch-Level Accessibility as a Structural Constraint on Memory Linking/v2_claim_ledger.md\"",
+      " M \"article/Slow Branch-Level Accessibility as a Structural Constraint on Memory Linking/v2_figure_manifest.md\"",
+      " M reviewer_slow_branch_level_accessibility.ipynb",
+      " M reviewer_slow_branch_level_accessibility_ipynb.txt",
+      "?? RUN.md",
+      "?? \"article/Slow Branch-Level Accessibility as a Structural Constraint on Memory Linking/S6_Changelog.pdf\"",
+      "?? \"article/Slow Branch-Level Accessibility as a Structural Constraint on Memory Linking/S6_Changelog.typ\"",
+      "?? \"article/Slow Branch-Level Accessibility as a Structural Constraint on Memory Linking/figures2/Fig_e024_01_common_probe_comparison.png\"",
+      "?? experiments/exp024_common_probe_comparison.py",
+      "?? experiments/exp024_render_english_figure.py",
+      "?? experiments/exp024_summarize_secondary.py",
+      "?? experiments/exp025_tuned_common_probe.py",
+      "?? project/external_response/",
+      "?? project/ideas_m/",
+      "?? project/neural_computation/",
+      "?? results/e024_common_probe_comparison/",
+      "?? tests/test_e024_common_probe_comparison.py"
+    ]
+  },
+  "inference_seed": 250925,
+  "input_sha256": {
+    "experiments/exp024_common_probe_comparison.py": "b5b745d09249fe8348854a5184f228af751fbd1d8da7b63d232a00f21281274c",
+    "experiments/exp025_tuned_common_probe.py": "18fccf5778e91c27e15d7d976a32696527db76e2ddb4e80a41c885f952c2e951",
+    "project/neural_computation/e025_parameter_registry.csv": "056c47f298e6ced335599e220bf9e47dd5b8f5f3fdbe0cbae5997a3d698697c7",
+    "project/neural_computation/e025_parameter_registry.csv.sha256": "4490bcbc994f4fc8618b2273dfca102b915a16564cf7d460183a55908c315b19",
+    "project/neural_computation/e025_preregistration_plan.md": "0d57224d7066409f01061ffe57aa843d8ab799540f2b8a1452dc3fa690a34950",
+    "project/neural_computation/e025_probe_manifest.csv": "576c0a1bf99e6bcdb09e448fa4a3176398a8955ffe00cedc68969461f097f3d7",
+    "project/neural_computation/e025_probe_manifest.csv.sha256": "756022006722b8fcd554564be4329e93fb68f4ba21783d204140b05876556453",
+    "project/neural_computation/e025_topology_manifest.csv": "e3b81a6f3783af6d15b9e4da0f08dab64776ba823941b12cd48eb7b046b325d4",
+    "project/neural_computation/e025_topology_manifest.csv.sha256": "47cfd75fb652f61a838ec4bfca6e076619cc6024ac481bce90d01034940fd039",
+    "project/neural_computation/generate_e025_parameter_registry.py": "84efbeb1d4c57ba4f97bb3c99203fffd199125e8e0417be0ea2e2280d0594cc2",
+    "project/neural_computation/generate_e025_topology_manifests.py": "aea0053c9b7b67216a7cb8e4dd0f26536506df364094d34526edaf15fe19ec39",
+    "src/cytodend_accessmodel/contracts.py": "7fc0612382072f45592b649b1f3f778bbfeeb094e2017ecba90ad879e87b1038",
+    "src/cytodend_accessmodel/motifs.py": "d9730b929e26a42f69f368f4c83d529b67560bd993447fea27a8e94e4b4e54e7",
+    "src/cytodend_accessmodel/simulator.py": "a27dfb4ee641d0189936f76208b58590fa37e5655daf53f81ed8d8208c8c8522"
+  },
+  "minimum_effect": 0.02,
+  "models": [
+    "full_model",
+    "fast_context_only",
+    "replay_no_structure",
+    "random_slow_drift",
+    "fixed_allocation_only",
+    "hebbian_weight_only",
+    "soma_global_gain_only",
+    "shuffled_replay",
+    "eligibility_only",
+    "resource_only"
+  ],
+  "numpy": "1.26.4",
+  "primary_strata": [
+    "canonical",
+    "strong_overlap",
+    "chain_overlap",
+    "sparse_random"
+  ],
+  "protocol_version": "1.0-preregistered",
+  "python": "3.12.0",
+  "randomization_replicates": 100000,
+  "sensitivity_stratum": "hub_overlap",
+  "split_draw_counts": {
+    "development": 40,
+    "holdout": 100,
+    "validation": 40
+  },
+  "washout_passes": 9
+}

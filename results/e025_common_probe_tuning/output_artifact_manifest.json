@@ -1,0 +1,19 @@
+{
+  "completed_utc": "2026-09-25T14:55:38.646380+00:00",
+  "freeze_sha256": "ea8d955ae662af5c6abc43cfcffc4835a6e1a30ed68be6ae8779b6c3afa8549c",
+  "outputs_sha256": {
+    "scores/development_candidate_scores.csv": "f163c11b9fc932998749ceafcfc47e462d1a17e8e2a08edb9aed7753a5a9199d",
+    "scores/development_draw_scores.csv": "fd5732de863891d911cf7a3dc1c364882ff721fe96d90745949fbe81149fdc07",
+    "scores/holdout_candidate_scores.csv": "6ce9a9ddd5db6ab3fef53366cbbdad56309db593c297e8708b5a9d1bca458ebb",
+    "scores/holdout_draw_scores.csv": "e98038e2112335a2c546bdebd594334d4ba71411791a89da4c320e6e9f47010b",
+    "scores/holdout_nominal_scores.csv": "3f5fbd37ad08166dbdc742832b670ecb0cae313a1937c60411247867dad7ca11",
+    "scores/validation_candidate_scores.csv": "1acec19a856ac404f4e6c818724e42145fd148b400b8e9915b959dfa69f7f490",
+    "scores/validation_draw_scores.csv": "a2afa49a7067781fac3e28d4527260d086cc1061c21c950d19043b121e0af882",
+    "summary/candidate_selection.csv": "e13b4809bfe61ce24ab625978dd36f254aa8474d265fe29390841c46880c22e5",
+    "summary/claim_status.json": "44af64ec5644d8ce47b079ecee8444265cf16199a04f1d77deeac89db3a6abce",
+    "summary/holdout_comparisons.csv": "cafea2c30f014a4f19a31de078efc440f3aa46c7309099fc4bb942c700da2f9e",
+    "summary/holdout_hypotheses.csv": "def06f0a6fa7a91eddb2bcfcc51bef5c3e195cc8f472397c316acdfa9e73367c",
+    "summary/hub_sensitivity.csv": "23c79887f60cc4a0d543871ee3c549686e8b285dd2aa59275c6861a1ed5e0221",
+    "summary/run_summary.json": "fd1e57f29b6e33ba0ca0b82d9dddb9b8cd65a310c661353f7b70322e2612d3b9"
+  }
+}

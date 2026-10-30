@@ -1,0 +1,3 @@
+Additional Editor Comments (if provided):
+
+While an interesting direction for research study, this manuscript is not clearly presented. This makes its possible novel contributions to the theory of learning and memory unclear. Although the underlying model equations are presented, parameters and variables are not properly explained and often not described how they map to neurobiology, which makes understanding the proposed model difficult. It's also unclear whether the paper proposes to introduce a new simulator for the field, insights to mechanisms of learning and memory, or both. Code is notably made available though. Overall I suggest restructuring this paper for clarity.

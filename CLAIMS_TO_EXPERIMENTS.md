@@ -1,11 +1,11 @@
 # Claims to Experiments
 
 This is the reviewer-facing map for the **current** manuscript:
-*Slow Branch-Level Accessibility as a Structural Constraint on Memory Linking*.
+*Testing Slow Branch-Level Accessibility in a Simulator of Memory Linking*.
 
 It is organized around three explicit tiers:
 
-1. **Primary evidence**: the simulator-first article stack (`E017` to `E022R`, plus `E023` figure assembly).
+1. **Primary model comparison**: E025 equal-budget tuned common-probe outcomes; `E017` to `E022R` provide historical simulator mechanism, robustness, and motif results; `E023` assembles the earlier figures; E024 is protocol-development history.
 2. **Foundational legacy**: earlier experiment families (`exp001` to `exp016`, `exp013`, `exp_seed_validation.py`) retained for lineage, onboarding, and historical context.
 3. **Supplementary framing**: DANDI and open-data bridge material, older conceptual assets, and the companion conceptual article.
 
@@ -23,13 +23,20 @@ Use these files together:
 
 ## Claim Boundary
 
-This repository supports a narrow simulator-first claim:
+The current manuscript supports a narrow simulator-first claim:
 
-> replay-dependent slow branch-level writing better reproduces the tested joint
-> signature profile for memory linking than the tested comparators do.
+> A branch-resolved simulator makes a slow, replay- and eligibility-dependent
+> accessibility hypothesis executable, but E025 does not show a unique output-level
+> advantage for the full model after equal-budget tuning and holdout evaluation.
 
-This repository does **not** directly measure `M_b`, establish a unique cytoskeletal
-memory code, or turn the DANDI analyses into main evidence for the current paper.
+The tuned full model mean was `D=0.022703` (95% topology-draw bootstrap CI
+`0.022538–0.022864`). It exceeded five comparator families, was practically equivalent
+to shuffled replay, and was exceeded by Hebbian weight-only (`D=0.093304`) and
+resource-only (`D=0.094349`) after the preregistered Holm correction. Eligibility-only
+had no qualifying tuned candidate, so its inference is unavailable. These results apply
+to the tested adapters, parameter ranges, task, and readout. They do **not** directly
+measure `M_b`, establish a unique cytoskeletal memory code, or turn DANDI analyses into
+main evidence.
 
 ## Primary Evidence Tier
 
@@ -37,28 +44,30 @@ These are the main experiments for the current article and should be reviewed fi
 
 | Current article claim or section | Primary experiments | Main results directory or artifact | Article figure or table | Notebook section |
 | --- | --- | --- | --- | --- |
+| `E25-1` through `E25-6` tuned common-probe outcome and comparator decisions | `E025` | `results/e025_common_probe_tuning/`; plan and manifests in `project/neural_computation/` | Fig. 2; S2 Table | `E025 primary result and limitations` |
+| Historical E024 common-probe outcome | `E024` | `results/e024_common_probe_comparison/`; original protocol in `project/neural_computation/model_comparison_protocol.md` | S2 Appendix | `Historical E024 protocol-development result` |
 | Conceptual framing and theory-to-executable bridge | `E023`, concept pack | `article/.../figures2/`, `article/.../figures3_concepts/` | `Fig 1`, evidence and comparator concept figures | `Repository map and evidence tiers`; `Current claim ladder for the slow-branch article` |
-| `C01` overlap-branch structural strengthening (`SIG-A`) | `E017` | `results/e017_traceable_simulator_core/` | `Fig 2`, `Table 2` | `Current claim ladder for the slow-branch article` |
-| `C02` linking gain after consolidation (`SIG-B`) | `E017` | `results/e017_traceable_simulator_core/` | `Fig 2`, `Table 2` | `Current claim ladder for the slow-branch article` |
-| `C03` context separation is present but not discriminating (`SIG-C`) | `E018` with reference to canonical behavior | `results/e018_comparator_trace_matrix/` | `Fig 3`, `Table 2`, `Table 3` | `Current claim ladder for the slow-branch article` |
-| `C04-C05` damage sensitivity and targeted rescue (`SIG-D`, `SIG-E`) | `E017` | `results/e017_traceable_simulator_core/` | `Fig 2`, overlap-rescue concept figure, `Table 2` | `Current claim ladder for the slow-branch article` |
-| `C06-C09` comparator discrimination across baseline and hard alternatives | `E018`, `E022` | `results/e018_comparator_trace_matrix/`, `results/e022_hard_comparators/` | `Fig 3`, `Table 3` | `Current claim ladder for the slow-branch article` |
-| `C10` replay identity requirement and shuffled-replay scaling failure | `E022R` | `results/e022r_shuffled_replay_scaling_audit/` | `Fig 6` | `Current claim ladder for the slow-branch article` |
-| `C11` bounded robustness regime | `E019`, `E020` | `results/e019_one_at_a_time_parameter_robustness/`, `results/e020_two_parameter_robustness_heatmaps/` | `Fig 4`, `Table 4` | `Current main evidence path` |
-| `C12-C14` scaling, motifs, weak-overlap failure, hub overlinking boundary | `E021`, `E021R` | `results/e021_scaling_and_motif_generalization/`, `results/e021r_generalized_specificity_gate/` | `Fig 5`, `Table 5` | `Current main evidence path` |
-| `C15-C16` explicit non-claims and article limits | article discussion plus ledger | `v2_claim_ledger.md` | Discussion; S3 framing | `Scope boundary`; `Supplementary and DANDI boundary` |
+| `C01-C05` canonical internal mechanism signatures | `E017`, `E018` | `results/e017_traceable_simulator_core/`, `results/e018_comparator_trace_matrix/` | `Fig 3`, `Table 2`; historical context in Fig. 4 | `Canonical mechanism signatures` |
+| Historical mechanism-specific comparator signatures | `E018`, `E022` | `results/e018_comparator_trace_matrix/`, `results/e022_hard_comparators/` | `Fig 4`, `Table 3` | `Historical comparator diagnostics` |
+| `C15` shuffled-replay specificity under the implemented structural metric | `E022R` | `results/e022r_shuffled_replay_scaling_audit/` | `Fig 7` | `Current claim ladder for the slow-branch article` |
+| `C12` bounded internal robustness regime | `E019`, `E020` | `results/e019_one_at_a_time_parameter_robustness/`, `results/e020_two_parameter_robustness_heatmaps/` | `Fig 5`, `Table 4` | `Where the model generalizes and where it fails` |
+| `C13-C14` internal scaling, motifs, weak-overlap failure, hub overlinking | `E021`, `E021R` | `results/e021_scaling_and_motif_generalization/`, `results/e021r_generalized_specificity_gate/` | `Fig 6`, `Table 5` | `Where the model generalizes and where it fails` |
+| Explicit non-claims and article limits | E025 plus discussion and ledger | `v2_claim_ledger.md`; `results/e025_common_probe_tuning/summary/claim_status.json` | Fig. 2; Discussion; S3 framing | `Scope boundary`; `E025 primary result and limitations` |
 
 ### Primary Evidence Ladder in Order
 
-1. `exp017_traceable_simulator_core.py`
-2. `exp018_comparator_trace_matrix.py`
-3. `exp019_one_at_a_time_parameter_robustness.py`
-4. `exp020_two_parameter_robustness_heatmaps.py`
-5. `exp021_scaling_and_motif_generalization.py`
-6. `exp021r_generalized_specificity_gate.py`
-7. `exp022_hard_comparators.py`
-8. `exp022r_shuffled_replay_scaling_audit.py`
-9. `exp023_article_figure_assembly.py`
+1. `experiments/exp025_tuned_common_probe.py` (primary tuned holdout comparison)
+2. `experiments/exp025_render_common_probe_figure.py` (figure from saved holdout outputs)
+3. `experiments/exp017_traceable_simulator_core.py`
+4. `experiments/exp018_comparator_trace_matrix.py`
+5. `experiments/exp019_one_at_a_time_parameter_robustness.py`
+6. `experiments/exp020_two_parameter_robustness_heatmaps.py`
+7. `experiments/exp021_scaling_and_motif_generalization.py`
+8. `experiments/exp021r_generalized_specificity_gate.py`
+9. `experiments/exp022_hard_comparators.py`
+10. `experiments/exp022r_shuffled_replay_scaling_audit.py`
+11. `experiments/exp023_article_figure_assembly.py` (historical E017–E022R figures)
+12. `experiments/exp024_common_probe_comparison.py` (historical protocol-development run)
 
 ## Foundational Legacy Tier
 
@@ -92,11 +101,12 @@ These materials are retained explicitly rather than implicitly, but they should 
 | Article asset | Main source |
 | --- | --- |
 | `Fig 1` | `E023` assembly plus current concept figure assets |
-| `Fig 2` | `E017` |
-| `Fig 3` | `E018` and `E022` |
-| `Fig 4` | `E019` and `E020` |
-| `Fig 5` | `E021` and `E021R` |
-| `Fig 6` | `E022R` |
+| `Fig 2` | `E025` |
+| `Fig 3` | `E017` |
+| `Fig 4` | `E018` and `E022` (historical proxies) |
+| `Fig 5` | `E019` and `E020` |
+| `Fig 6` | `E021` and `E021R` |
+| `Fig 7` | `E022R` |
 | `Table 2` | `E017` |
 | `Table 3` | `E018` and `E022` |
 | `Table 4` | `E019` and `E020` |
@@ -106,9 +116,10 @@ These materials are retained explicitly rather than implicitly, but they should 
 
 1. Open `reviewer_slow_branch_level_accessibility.ipynb`.
 2. Read the current manuscript and `v2_claim_ledger.md`.
-3. Inspect `results/e017_*` to `results/e022r_*` in order.
-4. Use `CLAIMS_TO_EXPERIMENTS_legacy.md` only if you want the earlier lineage or the older manuscript posture.
-5. Treat DANDI and S3 as supplementary unless you are explicitly reviewing the open-data bridge.
+3. Inspect E025's locked holdout outputs first, then E017–E022R for historical mechanism and boundary results.
+4. Use E024 only for protocol-development history; its estimates are not pooled with E025.
+5. Use `CLAIMS_TO_EXPERIMENTS_legacy.md` only if you want the earlier lineage.
+6. Treat DANDI and S3 as supplementary unless you are explicitly reviewing the open-data bridge.
 
 ## Data and Runtime Note
 
